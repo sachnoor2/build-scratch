@@ -1,8 +1,8 @@
 name: stitch
 
-# Public shell runner. Holds no project content: it authenticates to the private project with a
-# fine-grained token, pulls that project's already-rendered frames, stitches them, and uploads the
-# finished film. Delete this repository once the video is delivered.
+# Public shell runner. Holds no project content and names no private repository: the project is
+# supplied at dispatch time from repository secrets. It authenticates with a fine-grained token,
+# pulls the already-rendered frames, stitches them, and uploads the finished film.
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
       - name: Check out the private project
         uses: actions/checkout@v4
         with:
-          repository: sachnoor2/video-mass-exists
+          repository: ${{ secrets.PRIVATE_REPO_NAME }}
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: project
 
@@ -41,7 +41,7 @@ jobs:
           merge-multiple: true
           path: project/public/out
           run-id: ${{ inputs.run_id }}
-          repository: sachnoor2/video-mass-exists
+          repository: ${{ secrets.PRIVATE_REPO_NAME }}
           github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Frames the resume run finished
@@ -51,7 +51,7 @@ jobs:
           merge-multiple: true
           path: project/public/out
           run-id: ${{ inputs.resume_run_id }}
-          repository: sachnoor2/video-mass-exists
+          repository: ${{ secrets.PRIVATE_REPO_NAME }}
           github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Narration audio and the measured manifest
@@ -60,7 +60,7 @@ jobs:
           name: voice
           path: project
           run-id: ${{ inputs.run_id }}
-          repository: sachnoor2/video-mass-exists
+          repository: ${{ secrets.PRIVATE_REPO_NAME }}
           github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Shot list from the measured voice
