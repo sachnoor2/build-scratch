@@ -1,0 +1,95 @@
+name: stitch
+
+# Public shell runner. Holds no project content: it authenticates to the private project with a
+# fine-grained token, pulls that project's already-rendered frames, stitches them, and uploads the
+# finished film. Delete this repository once the video is delivered.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Private run id holding frames-* and the voice artifact"
+        required: true
+        default: "43879811023"
+      resume_run_id:
+        description: "Private run id holding the slice-* artifacts"
+        required: true
+        default: "43994226611"
+
+permissions:
+  contents: read
+
+jobs:
+  stitch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the private project
+        uses: actions/checkout@v4
+        with:
+          repository: sachnoor2/video-mass-exists
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: project
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Frames the render run finished
+        uses: actions/download-artifact@v4
+        with:
+          pattern: frames-*
+          merge-multiple: true
+          path: project/public/out
+          run-id: ${{ inputs.run_id }}
+          repository: sachnoor2/video-mass-exists
+          github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+
+      - name: Frames the resume run finished
+        uses: actions/download-artifact@v4
+        with:
+          pattern: slice-*
+          merge-multiple: true
+          path: project/public/out
+          run-id: ${{ inputs.resume_run_id }}
+          repository: sachnoor2/video-mass-exists
+          github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+
+      - name: Narration audio and the measured manifest
+        uses: actions/download-artifact@v4
+        with:
+          name: voice
+          path: project
+          run-id: ${{ inputs.run_id }}
+          repository: sachnoor2/video-mass-exists
+          github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+
+      - name: Shot list from the measured voice
+        working-directory: project
+        run: python3 scripts/make_shotlist.py
+
+      - name: Install
+        working-directory: project
+        run: npm ci --no-audit --no-fund
+
+      - name: Every frame, no gaps
+        working-directory: project
+        run: python3 scripts/check_frames.py
+
+      - name: Stitch
+        working-directory: project
+        run: python3 scripts/stitch.py
+
+      - name: QA gate
+        working-directory: project
+        run: python3 scripts/qa.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: video
+          path: |
+            project/out/video.mp4
+            project/qa.log
+            project/shotlist.json
+            project/src/manifest.json
+          if-no-files-found: warn
