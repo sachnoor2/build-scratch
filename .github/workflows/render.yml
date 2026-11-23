@@ -70,7 +70,7 @@ jobs:
         id: matrix
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, os, math
+          import json, os, math, sys
           manifest = json.load(open("src/manifest.json", encoding="utf-8"))
           last = manifest["scenes"][-1]
           total = int(last["start"] + last["dur"])   # exactly what <Composition durationInFrames> gets
@@ -78,7 +78,7 @@ jobs:
           size = math.ceil(total / shards)
           chunks = [{"index": i + 1, "start": i * size, "end": min((i + 1) * size - 1, total - 1)}
                     for i in range(shards) if i * size <= total - 1]
-          print(f"measured total: {total} frames", flush=True)
+          print(f"measured total: {total} frames, {len(chunks)} shards", file=sys.stderr)
           print("chunks=" + json.dumps(chunks))
           PY
 
