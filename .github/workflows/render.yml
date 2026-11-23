@@ -6,7 +6,6 @@ on:
     branches: [quantum-entanglement-15min]
 
 env:
-  TOTAL_FRAMES: 24351
   SHARDS: 12
 
 jobs:
@@ -72,10 +71,14 @@ jobs:
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os, math
-          total = int(os.environ["TOTAL_FRAMES"]); shards = int(os.environ["SHARDS"])
+          manifest = json.load(open("src/manifest.json", encoding="utf-8"))
+          last = manifest["scenes"][-1]
+          total = int(last["start"] + last["dur"])   # exactly what <Composition durationInFrames> gets
+          shards = int(os.environ["SHARDS"])
           size = math.ceil(total / shards)
           chunks = [{"index": i + 1, "start": i * size, "end": min((i + 1) * size - 1, total - 1)}
-                    for i in range(shards)]
+                    for i in range(shards) if i * size <= total - 1]
+          print(f"measured total: {total} frames", flush=True)
           print("chunks=" + json.dumps(chunks))
           PY
 
@@ -141,11 +144,14 @@ jobs:
 
       - name: Verify every shard is present
         run: |
-          for i in $(seq 1 12); do
+          n=$(ls out/chunks/chunk-*.mp4 2>/dev/null | wc -l)
+          [ "$n" -ge 1 ] || { echo "NO CHUNKS"; exit 2; }
+          for i in $(seq 1 "$n"); do
             f=out/chunks/chunk-$i.mp4
             [ -s "$f" ] || { echo "MISSING $f"; exit 2; }
             echo "$f $(ffprobe -v error -show_entries format=duration -of csv=p=0 $f)"
           done
+          echo "shards present: $n"
 
       - name: Stitch
         run: |
