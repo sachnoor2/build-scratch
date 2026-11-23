@@ -1,0 +1,2062 @@
+{
+  "shots": {
+    "01-01": {
+      "template": "pair",
+      "props": {
+        "left": "A",
+        "right": "B",
+        "mid": "one state"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-02": {
+      "template": "quote",
+      "props": {
+        "line": "ONE STATE, TWO PLACES"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-03": {
+      "template": "board",
+      "props": {
+        "title": "NOT JUST MATCHING",
+        "lines": [
+          "matching results ≠ entanglement",
+          "the joint state is the object"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-04": {
+      "template": "pair",
+      "props": {
+        "left": "?",
+        "right": "?",
+        "mid": "predict"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-05": {
+      "template": "board",
+      "props": {
+        "title": "THE TRAP",
+        "lines": [
+          "opposite results can be ordinary",
+          "or they can be quantum"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-06": {
+      "template": "quote",
+      "props": {
+        "line": "PRE-SET, OR NOT?"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-07": {
+      "template": "board",
+      "props": {
+        "title": "TWO EXPLANATIONS",
+        "lines": [
+          "local pre-set values",
+          "a non-separable state"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-08": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1935",
+            "EPR"
+          ],
+          [
+            "1964",
+            "Bell"
+          ],
+          [
+            "2022",
+            "Nobel"
+          ]
+        ],
+        "at": 0
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-09": {
+      "template": "board",
+      "props": {
+        "title": "NOT THE SAME",
+        "lines": [
+          "two clocks agree",
+          "neither describes the other"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-10": {
+      "template": "pair",
+      "props": {
+        "left": "A",
+        "right": "B",
+        "mid": "no separate story"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-11": {
+      "template": "quote",
+      "props": {
+        "line": "ONE THING, TWO PLACES"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-12": {
+      "template": "board",
+      "props": {
+        "title": "WHY IT IS ODD",
+        "lines": [
+          "not two things",
+          "one description"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "01-13": {
+      "template": "card",
+      "props": {
+        "n": "2",
+        "title": "गणित की बनावट",
+        "sub": "THE MATHEMATICS"
+      },
+      "accent": "cyan",
+      "chapter": 1,
+      "chapterTitle": "एक अवस्था, दो कण"
+    },
+    "02-01": {
+      "template": "formula",
+      "props": {
+        "eq": "|Ψ⟩AB",
+        "note": "the joint state"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-02": {
+      "template": "formula",
+      "props": {
+        "eq": "|a⟩A × |b⟩B",
+        "note": "separable"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-03": {
+      "template": "formula",
+      "props": {
+        "eq": "|Ψ⟩AB ≠ |a⟩ × |b⟩",
+        "note": "entangled"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-04": {
+      "template": "board",
+      "props": {
+        "title": "A CLEAN TEST",
+        "lines": [
+          "factor the state?",
+          "yes → separate",
+          "no → entangled"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-05": {
+      "template": "pair",
+      "props": {
+        "left": "↑",
+        "right": "↓",
+        "mid": "singlet"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-06": {
+      "template": "board",
+      "props": {
+        "title": "EVERY AXIS",
+        "lines": [
+          "not one fixed axis",
+          "the whole frame rotates together"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-07": {
+      "template": "quote",
+      "props": {
+        "line": "NO HIDDEN SCRIPT"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-08": {
+      "template": "levels",
+      "props": {
+        "items": [
+          "JOINT STATE",
+          "PART A",
+          "PART B"
+        ],
+        "note": "parts are not independent"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-09": {
+      "template": "quote",
+      "props": {
+        "line": "EINSTEIN'S OBJECTION"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-10": {
+      "template": "three",
+      "props": {
+        "items": [
+          "Φ+",
+          "Φ−",
+          "Ψ+",
+          "Ψ−"
+        ],
+        "note": "four Bell states"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-11": {
+      "template": "rig",
+      "props": {
+        "left": "photon",
+        "right": "pair"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-12": {
+      "template": "formula",
+      "props": {
+        "eq": "1 photon → 2 photons",
+        "note": "SPDC"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-13": {
+      "template": "board",
+      "props": {
+        "title": "THE ANGLE MATTERS",
+        "lines": [
+          "0° → perfect match",
+          "45° → half the time",
+          "90° → always opposite"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-14": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": null
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "02-15": {
+      "template": "card",
+      "props": {
+        "n": "3",
+        "title": "EPR, 1935",
+        "sub": "THE CHALLENGE"
+      },
+      "accent": "violet",
+      "chapter": 2,
+      "chapterTitle": "गणित की बनावट"
+    },
+    "03-01": {
+      "template": "three",
+      "props": {
+        "items": [
+          "EINSTEIN",
+          "PODOLSKY",
+          "ROSEN"
+        ],
+        "note": "1935"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-02": {
+      "template": "quote",
+      "props": {
+        "line": "IS QUANTUM COMPLETE?"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-03": {
+      "template": "pair",
+      "props": {
+        "left": "A",
+        "right": "B",
+        "mid": "instant?"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-04": {
+      "template": "board",
+      "props": {
+        "title": "EPR'S ANSWER",
+        "lines": [
+          "each particle carries its answer",
+          "measurement only reveals it"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-05": {
+      "template": "formula",
+      "props": {
+        "eq": "λ",
+        "note": "a pre-set value per particle"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-06": {
+      "template": "board",
+      "props": {
+        "title": "LOCALITY",
+        "lines": [
+          "no instant influence",
+          "no faster than light"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-07": {
+      "template": "quote",
+      "props": {
+        "line": "WORDS ONLY, FOR 30 YEARS"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-08": {
+      "template": "levels",
+      "props": {
+        "items": [
+          "THEORY",
+          "TEST",
+          "VERDICT"
+        ],
+        "note": "the test was missing"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-09": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1935",
+            "EPR"
+          ],
+          [
+            "1964",
+            "Bell"
+          ],
+          [
+            "2022",
+            "Nobel"
+          ]
+        ],
+        "at": 1
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-10": {
+      "template": "quote",
+      "props": {
+        "line": "A CRITERION OF REALITY"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-11": {
+      "template": "board",
+      "props": {
+        "title": "THE ARGUMENT",
+        "lines": [
+          "predict without touching",
+          "so it was decided already"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-12": {
+      "template": "levels",
+      "props": {
+        "items": [
+          "LOCALITY",
+          "REALISM"
+        ],
+        "note": "EPR's two assumptions"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-13": {
+      "template": "pair",
+      "props": {
+        "left": "A",
+        "right": "B",
+        "mid": "one system"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-14": {
+      "template": "quote",
+      "props": {
+        "line": "NO TEST, NO VERDICT"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "03-15": {
+      "template": "card",
+      "props": {
+        "n": "4",
+        "title": "बेल, 1964",
+        "sub": "THE INEQUALITY"
+      },
+      "accent": "gold",
+      "chapter": 3,
+      "chapterTitle": "EPR, उन्नीस सौ पैंतीस"
+    },
+    "04-01": {
+      "template": "quote",
+      "props": {
+        "line": "WHAT IF VALUES ARE PRE-SET?"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-02": {
+      "template": "formula",
+      "props": {
+        "eq": "S ≤ 2",
+        "note": "any local pre-set theory"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-03": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": null
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-04": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.828
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-05": {
+      "template": "board",
+      "props": {
+        "title": "THE DECISION",
+        "lines": [
+          "below 2 → hidden values win",
+          "above 2 → quantum wins"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-06": {
+      "template": "quote",
+      "props": {
+        "line": "MEASURE IT"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-07": {
+      "template": "levels",
+      "props": {
+        "items": [
+          "LOCALITY",
+          "REALISM",
+          "FREE CHOICE"
+        ],
+        "note": "three assumptions"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-08": {
+      "template": "board",
+      "props": {
+        "title": "THE LOOPHOLES",
+        "lines": [
+          "locality",
+          "detection",
+          "free choice"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-09": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1972",
+            "Freedman"
+          ],
+          [
+            "1982",
+            "Aspect"
+          ],
+          [
+            "2015",
+            "loophole-free"
+          ]
+        ],
+        "at": 0
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-10": {
+      "template": "rig",
+      "props": {
+        "left": "a1 / a2",
+        "right": "b1 / b2"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-11": {
+      "template": "formula",
+      "props": {
+        "eq": "S = E(a1,b1) + E(a1,b2) + E(a2,b1) − E(a2,b2)",
+        "note": "CHSH"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-12": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": null
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-13": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.828
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-14": {
+      "template": "quote",
+      "props": {
+        "line": "THE CEILING: 2√2"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-15": {
+      "template": "board",
+      "props": {
+        "title": "THE MOVE",
+        "lines": [
+          "a philosophical dispute",
+          "became a number"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "04-16": {
+      "template": "card",
+      "props": {
+        "n": "5",
+        "title": "पहले प्रयोग",
+        "sub": "THE EXPERIMENTS"
+      },
+      "accent": "cyan",
+      "chapter": 4,
+      "chapterTitle": "बेल की सीमा"
+    },
+    "05-01": {
+      "template": "card",
+      "props": {
+        "n": "5",
+        "title": "1972",
+        "sub": "THE FIRST TEST"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-02": {
+      "template": "rig",
+      "props": {
+        "left": "A",
+        "right": "B"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-03": {
+      "template": "quote",
+      "props": {
+        "line": "200 HOURS OF DATA"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-04": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.4
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-05": {
+      "template": "board",
+      "props": {
+        "title": "THE LOCALITY HOLE",
+        "lines": [
+          "settings were fixed in advance",
+          "the pair could 'know' the question"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-06": {
+      "template": "card",
+      "props": {
+        "n": "6",
+        "title": "1982",
+        "sub": "ASPECT"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-07": {
+      "template": "rig",
+      "props": {
+        "left": "switch",
+        "right": "switch"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-08": {
+      "template": "quote",
+      "props": {
+        "line": "6 m  ·  20 ns"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-09": {
+      "template": "board",
+      "props": {
+        "title": "THE RESULT",
+        "lines": [
+          "violation confirmed",
+          "local explanation excluded"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-10": {
+      "template": "board",
+      "props": {
+        "title": "HOW IT IS MEASURED",
+        "lines": [
+          "polariser at an angle",
+          "click or no click"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-11": {
+      "template": "rig",
+      "props": {
+        "left": "click",
+        "right": "click"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-12": {
+      "template": "quote",
+      "props": {
+        "line": "SIX SIGMA"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-13": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.6
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-14": {
+      "template": "quote",
+      "props": {
+        "line": "THE CLEANEST RESULT"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "05-15": {
+      "template": "card",
+      "props": {
+        "n": "7",
+        "title": "छेद",
+        "sub": "THE LOOPHOLES"
+      },
+      "accent": "gold",
+      "chapter": 5,
+      "chapterTitle": "पहले प्रयोग"
+    },
+    "06-01": {
+      "template": "three",
+      "props": {
+        "items": [
+          "LOCALITY",
+          "DETECTION",
+          "FREE CHOICE"
+        ],
+        "note": "three loopholes"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-02": {
+      "template": "board",
+      "props": {
+        "title": "LOCALITY",
+        "lines": [
+          "switch after the pair leaves",
+          "no time for a signal"
+        ]
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-03": {
+      "template": "rig",
+      "props": {
+        "left": "few",
+        "right": "few"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-04": {
+      "template": "quote",
+      "props": {
+        "line": "THE DETECTION HOLE"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-05": {
+      "template": "board",
+      "props": {
+        "title": "FREE CHOICE",
+        "lines": [
+          "who picks the setting?",
+          "could anything bias it?"
+        ]
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-06": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1972",
+            "Freedman"
+          ],
+          [
+            "1982",
+            "Aspect"
+          ],
+          [
+            "2015",
+            "loophole-free"
+          ]
+        ],
+        "at": 2
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-07": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.4
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-08": {
+      "template": "quote",
+      "props": {
+        "line": "THE SAME ANSWER, EVERY TIME"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-09": {
+      "template": "board",
+      "props": {
+        "title": "NOT A DEBATE",
+        "lines": [
+          "a measured violation",
+          "repeated across labs"
+        ]
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-10": {
+      "template": "quote",
+      "props": {
+        "line": "A HOLE IS AN ESCAPE ROUTE"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-11": {
+      "template": "board",
+      "props": {
+        "title": "HOLE ONE",
+        "lines": [
+          "settings must change fast",
+          "faster than light could tell"
+        ]
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-12": {
+      "template": "board",
+      "props": {
+        "title": "HOLE TWO",
+        "lines": [
+          "most photons are lost",
+          "the sample may be biased"
+        ]
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-13": {
+      "template": "three",
+      "props": {
+        "items": [
+          "DELFT",
+          "NIST",
+          "VIENNA"
+        ],
+        "note": "2015"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-14": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.4
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "06-15": {
+      "template": "card",
+      "props": {
+        "n": "8",
+        "title": "नोबेल",
+        "sub": "2022"
+      },
+      "accent": "magenta",
+      "chapter": 6,
+      "chapterTitle": "तीन छेद"
+    },
+    "07-01": {
+      "template": "card",
+      "props": {
+        "n": "9",
+        "title": "2022",
+        "sub": "NOBEL PRIZE"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-02": {
+      "template": "three",
+      "props": {
+        "items": [
+          "CLAUSER",
+          "ASPECT",
+          "ZEILINGER"
+        ],
+        "note": "2022"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-03": {
+      "template": "quote",
+      "props": {
+        "line": "THE FIRST TEST"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-04": {
+      "template": "quote",
+      "props": {
+        "line": "THE SETTING SWITCH"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-05": {
+      "template": "quote",
+      "props": {
+        "line": "TELEPORTATION"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-06": {
+      "template": "board",
+      "props": {
+        "title": "WHAT IT HONOURED",
+        "lines": [
+          "the experiments",
+          "not a product"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-07": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1972",
+            "first test"
+          ],
+          [
+            "1982",
+            "locality"
+          ],
+          [
+            "2015",
+            "all loopholes"
+          ]
+        ],
+        "at": 0
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-08": {
+      "template": "quote",
+      "props": {
+        "line": "THE CITATION"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-09": {
+      "template": "board",
+      "props": {
+        "title": "THE SECOND HALF",
+        "lines": [
+          "experiments",
+          "and a new field"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-10": {
+      "template": "channel",
+      "props": {
+        "left": "A",
+        "right": "B",
+        "note": "state moved"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-11": {
+      "template": "quote",
+      "props": {
+        "line": "NOT A PRODUCT AWARD"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "07-12": {
+      "template": "card",
+      "props": {
+        "n": "10",
+        "title": "संदेश नहीं",
+        "sub": "NO MESSAGE"
+      },
+      "accent": "gold",
+      "chapter": 7,
+      "chapterTitle": "नोबेल, दो हज़ार बाईस"
+    },
+    "08-01": {
+      "template": "quote",
+      "props": {
+        "line": "NOT ONE BIT"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-02": {
+      "template": "channel",
+      "props": {
+        "left": "ALICE",
+        "right": "BOB",
+        "note": "noise"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-03": {
+      "template": "board",
+      "props": {
+        "title": "BOB SEES NOTHING",
+        "lines": [
+          "his results look random",
+          "unchanged by her choice"
+        ]
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-04": {
+      "template": "channel",
+      "props": {
+        "left": "ALICE",
+        "right": "BOB",
+        "note": "classical"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-05": {
+      "template": "board",
+      "props": {
+        "title": "COMPARE NOTES",
+        "lines": [
+          "two lists",
+          "compared at light speed"
+        ]
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-06": {
+      "template": "quote",
+      "props": {
+        "line": "NOT FASTER THAN LIGHT"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-07": {
+      "template": "board",
+      "props": {
+        "title": "NO CONFLICT",
+        "lines": [
+          "correlation is real",
+          "no signal is sent"
+        ]
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-08": {
+      "template": "quote",
+      "props": {
+        "line": "REAL LINK, NO SIGNAL"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-09": {
+      "template": "formula",
+      "props": {
+        "eq": "ρB = Tr A (ρAB)",
+        "note": "Bob's state is unchanged"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-10": {
+      "template": "formula",
+      "props": {
+        "eq": "ρB = Tr A (ρAB)",
+        "note": "unchanged by her measurement"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-11": {
+      "template": "board",
+      "props": {
+        "title": "THE INVARIANT",
+        "lines": [
+          "his statistics never change",
+          "so nothing can be read"
+        ]
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-12": {
+      "template": "channel",
+      "props": {
+        "left": "LIST",
+        "right": "LIST",
+        "note": "compared"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-13": {
+      "template": "quote",
+      "props": {
+        "line": "TWO LISTS, ONE PHONE CALL"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-14": {
+      "template": "quote",
+      "props": {
+        "line": "A LINK, NOT A LINE"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "08-15": {
+      "template": "card",
+      "props": {
+        "n": "11",
+        "title": "टेलीपोर्टेशन",
+        "sub": "TELEPORTATION"
+      },
+      "accent": "red",
+      "chapter": 8,
+      "chapterTitle": "संदेश नहीं जाता"
+    },
+    "09-01": {
+      "template": "quote",
+      "props": {
+        "line": "A STATE, NOT MATTER"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-02": {
+      "template": "rig",
+      "props": {
+        "left": "A1",
+        "right": "A2"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-03": {
+      "template": "formula",
+      "props": {
+        "eq": "2 classical bits",
+        "note": "the whole message"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-04": {
+      "template": "channel",
+      "props": {
+        "left": "ALICE",
+        "right": "BOB",
+        "note": "2 bits"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-05": {
+      "template": "board",
+      "props": {
+        "title": "THE FIX",
+        "lines": [
+          "one of four operations",
+          "chosen by her result"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-06": {
+      "template": "quote",
+      "props": {
+        "line": "ALWAYS WITH A MESSAGE"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-07": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1997",
+            "teleportation"
+          ],
+          [
+            "2017",
+            "1203 km"
+          ],
+          [
+            "2022",
+            "Nobel"
+          ]
+        ],
+        "at": 0
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-08": {
+      "template": "board",
+      "props": {
+        "title": "DISTANCE GROWS",
+        "lines": [
+          "lab bench",
+          "fibre and free space",
+          "satellite links"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-09": {
+      "template": "channel",
+      "props": {
+        "left": "STATE",
+        "right": "STATE",
+        "note": "classical"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-10": {
+      "template": "rig",
+      "props": {
+        "left": "A1",
+        "right": "A2"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-11": {
+      "template": "three",
+      "props": {
+        "items": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "note": "four outcomes"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-12": {
+      "template": "board",
+      "props": {
+        "title": "WHY THE BITS",
+        "lines": [
+          "four possible fixes",
+          "she must say which"
+        ]
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-13": {
+      "template": "formula",
+      "props": {
+        "eq": "no-cloning",
+        "note": "the original is consumed"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-14": {
+      "template": "quote",
+      "props": {
+        "line": "A MOVE, NOT A COPY"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "09-15": {
+      "template": "card",
+      "props": {
+        "n": "11",
+        "title": "काम",
+        "sub": "APPLICATIONS"
+      },
+      "accent": "cyan",
+      "chapter": 9,
+      "chapterTitle": "टेलीपोर्टेशन"
+    },
+    "10-01": {
+      "template": "three",
+      "props": {
+        "items": [
+          "CRYPTOGRAPHY",
+          "COMPUTING",
+          "NETWORKS"
+        ],
+        "note": "three areas"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-02": {
+      "template": "board",
+      "props": {
+        "title": "SECRET KEYS",
+        "lines": [
+          "share a key",
+          "know if anyone listened"
+        ]
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-03": {
+      "template": "quote",
+      "props": {
+        "line": "1984 · BB84"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-04": {
+      "template": "board",
+      "props": {
+        "title": "TAMPER EVIDENT",
+        "lines": [
+          "reading disturbs the state",
+          "the key is discarded"
+        ]
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-05": {
+      "template": "quote",
+      "props": {
+        "line": "A RESOURCE, NOT A TRICK"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-06": {
+      "template": "channel",
+      "props": {
+        "left": "NODE",
+        "right": "NODE",
+        "note": "entangled"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-07": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1997",
+            "teleport"
+          ],
+          [
+            "2017",
+            "1203 km"
+          ],
+          [
+            "2022",
+            "Nobel"
+          ]
+        ],
+        "at": 1
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-08": {
+      "template": "rig",
+      "props": {
+        "left": "1,167",
+        "right": "1,167"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-09": {
+      "template": "board",
+      "props": {
+        "title": "KEEP THEM SEPARATE",
+        "lines": [
+          "a key is not a computer",
+          "a network is not a teleporter"
+        ]
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-10": {
+      "template": "board",
+      "props": {
+        "title": "WHY IT IS SAFE",
+        "lines": [
+          "reading changes the state",
+          "the key is thrown away"
+        ]
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-11": {
+      "template": "formula",
+      "props": {
+        "eq": "n qubits → 2^n amplitudes",
+        "note": "entanglement is the fuel"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-12": {
+      "template": "channel",
+      "props": {
+        "left": "NODE",
+        "right": "NODE",
+        "note": "fibre"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-13": {
+      "template": "board",
+      "props": {
+        "title": "THE PROBLEM",
+        "lines": [
+          "loss grows with distance",
+          "no copying allowed"
+        ]
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-14": {
+      "template": "three",
+      "props": {
+        "items": [
+          "FIBRE",
+          "FREE SPACE",
+          "SATELLITE"
+        ],
+        "note": "three routes"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "10-15": {
+      "template": "card",
+      "props": {
+        "n": "12",
+        "title": "तीन स्तर",
+        "sub": "THREE LEVELS"
+      },
+      "accent": "green",
+      "chapter": 10,
+      "chapterTitle": "कहाँ काम आता है"
+    },
+    "11-01": {
+      "template": "levels",
+      "props": {
+        "items": [
+          "MATHS",
+          "EXPERIMENT",
+          "MEANING"
+        ],
+        "note": "keep them apart"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-02": {
+      "template": "formula",
+      "props": {
+        "eq": "|Ψ⟩ ≠ |a⟩ × |b⟩",
+        "note": "level one"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-03": {
+      "template": "quote",
+      "props": {
+        "line": "A DEFINITION, NOT AN OPINION"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-04": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.4
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-05": {
+      "template": "quote",
+      "props": {
+        "line": "MEASUREMENT IS MEASUREMENT"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-06": {
+      "template": "levels",
+      "props": {
+        "items": [
+          "MATHS",
+          "EXPERIMENT",
+          "MEANING"
+        ],
+        "note": "the argument lives here"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-07": {
+      "template": "board",
+      "props": {
+        "title": "VIEW ONE",
+        "lines": [
+          "the world is non-local",
+          "locality was an assumption"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-08": {
+      "template": "board",
+      "props": {
+        "title": "VIEW TWO",
+        "lines": [
+          "a limit on information",
+          "nothing more"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-09": {
+      "template": "quote",
+      "props": {
+        "line": "STILL OPEN"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-10": {
+      "template": "three",
+      "props": {
+        "items": [
+          "COPENHAGEN",
+          "MANY WORLDS",
+          "PILOT WAVE",
+          "QBISM"
+        ],
+        "note": "four readings"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-11": {
+      "template": "quote",
+      "props": {
+        "line": "SHUT UP AND CALCULATE"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-12": {
+      "template": "board",
+      "props": {
+        "title": "MANY WORLDS",
+        "lines": [
+          "every outcome happens",
+          "in its own branch"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-13": {
+      "template": "board",
+      "props": {
+        "title": "PILOT WAVE",
+        "lines": [
+          "a real guiding wave",
+          "explicitly non-local"
+        ]
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-14": {
+      "template": "quote",
+      "props": {
+        "line": "STILL NO EXPERIMENT DECIDES"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "11-15": {
+      "template": "card",
+      "props": {
+        "n": "13",
+        "title": "सार",
+        "sub": "THE RECAP"
+      },
+      "accent": "violet",
+      "chapter": 11,
+      "chapterTitle": "तीन स्तर"
+    },
+    "12-01": {
+      "template": "quote",
+      "props": {
+        "line": "ONE STATE, TWO PLACES"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-02": {
+      "template": "formula",
+      "props": {
+        "eq": "|Ψ⟩AB ≠ |a⟩ × |b⟩",
+        "note": "the definition"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-03": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1935",
+            "EPR"
+          ],
+          [
+            "1964",
+            "Bell"
+          ],
+          [
+            "2015",
+            "all loopholes"
+          ]
+        ],
+        "at": 0
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-04": {
+      "template": "timeline",
+      "props": {
+        "years": [
+          [
+            "1935",
+            "EPR"
+          ],
+          [
+            "1964",
+            "Bell"
+          ],
+          [
+            "2015",
+            "all loopholes"
+          ]
+        ],
+        "at": 1
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-05": {
+      "template": "chart",
+      "props": {
+        "limit": 2.0,
+        "peak": 2.83,
+        "measured": 2.4
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-06": {
+      "template": "three",
+      "props": {
+        "items": [
+          "CLAUSER",
+          "ASPECT",
+          "ZEILINGER"
+        ],
+        "note": "2022"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-07": {
+      "template": "quote",
+      "props": {
+        "line": "STILL NOT FASTER THAN LIGHT"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-08": {
+      "template": "quote",
+      "props": {
+        "line": "REAL LINK, NO SIGNAL"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-09": {
+      "template": "three",
+      "props": {
+        "items": [
+          "SECURE KEYS",
+          "COMPUTERS",
+          "NETWORKS"
+        ],
+        "note": "built on this"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-10": {
+      "template": "quote",
+      "props": {
+        "line": "ONE STATE, NO SEPARATE ACCOUNT"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-11": {
+      "template": "quote",
+      "props": {
+        "line": "NOT A MESSENGER"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-12": {
+      "template": "board",
+      "props": {
+        "title": "EVERYTHING ELSE FOLLOWS",
+        "lines": [
+          "Bell's limit",
+          "the experiments",
+          "the applications"
+        ]
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-13": {
+      "template": "quote",
+      "props": {
+        "line": "THANK YOU"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    },
+    "12-14": {
+      "template": "quote",
+      "props": {
+        "line": "THAT IS ENTANGLEMENT"
+      },
+      "accent": "gold",
+      "chapter": 12,
+      "chapterTitle": "सार"
+    }
+  }
+}

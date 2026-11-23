@@ -1,0 +1,41 @@
+name: notify
+
+on:
+  workflow_run:
+    workflows: [render]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: quantum-entanglement-15min
+
+      - name: Write STATUS.json
+        env:
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+        run: |
+          python3 - <<'PY'
+          import json, os, datetime
+          status = {"run": os.environ["RUN_ID"], "conclusion": os.environ["CONCLUSION"],
+                    "url": os.environ["RUN_URL"],
+                    "finished": datetime.datetime.now(datetime.timezone.utc).isoformat()}
+          open("STATUS.json", "w").write(json.dumps(status, indent=2))
+          print(json.dumps(status))
+          PY
+
+      - name: Commit STATUS.json
+        run: |
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          git add STATUS.json
+          git commit -m "status: ${{ github.event.workflow_run.conclusion }}" || echo "nothing to commit"
+          git push || echo "push failed"

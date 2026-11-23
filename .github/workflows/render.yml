@@ -1,0 +1,163 @@
+name: render
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [quantum-entanglement-15min]
+
+env:
+  TOTAL_FRAMES: 24351
+  SHARDS: 12
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      chunks: ${{ steps.matrix.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: node deps
+        run: npm install --no-audit --no-fund
+
+      - name: python deps
+        run: pip install numpy
+
+      - name: Cache Piper and the Hindi voice
+        uses: actions/cache@v4
+        with:
+          path: .piper
+          key: piper-hi_IN-pratham-2023.11.14-2
+
+      - name: Fetch Piper and the voice
+        run: |
+          mkdir -p .piper
+          if [ ! -x .piper/piper/piper ]; then
+            curl -fsSL -o .piper/piper.tar.gz https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_linux_x86_64.tar.gz
+            tar -xzf .piper/piper.tar.gz -C .piper
+          fi
+          ID=hi_IN-pratham-medium
+          if [ ! -f .piper/$ID.onnx ]; then
+            curl -fsSL -o .piper/$ID.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/hi/hi_IN/pratham/medium/$ID.onnx"
+            curl -fsSL -o .piper/$ID.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/hi/hi_IN/pratham/medium/$ID.onnx.json"
+          fi
+
+      - name: Narration -> measured timings
+        run: |
+          python scripts/hinglish_voice.py --script narration.json --out public/audio \
+            --piper .piper/piper/piper --voice .piper/hi_IN-pratham-medium.onnx \
+            --manifest src/voice.json
+
+      - name: Manifest from the measured audio
+        run: python scripts/make_manifest.py
+
+      - name: Foley
+        run: python scripts/foley.py
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Shard matrix
+        id: matrix
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, math
+          total = int(os.environ["TOTAL_FRAMES"]); shards = int(os.environ["SHARDS"])
+          size = math.ceil(total / shards)
+          chunks = [{"index": i + 1, "start": i * size, "end": min((i + 1) * size - 1, total - 1)}
+                    for i in range(shards)]
+          print("chunks=" + json.dumps(chunks))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film-input
+          retention-days: 7
+          path: |
+            public/audio
+            src/manifest.json
+            src/voice.json
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      max-parallel: 12
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJSON(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: node deps
+        run: npm install --no-audit --no-fund
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: film-input
+
+      - name: Render shard
+        run: |
+          mkdir -p out/chunks
+          npx remotion render src/index.ts Film out/chunks/chunk-${{ matrix.chunk.index }}.mp4 \
+            --frames=${{ matrix.chunk.start }}-${{ matrix.chunk.end }} \
+            --concurrency=4 --log=info
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chunk-${{ matrix.chunk.index }}
+          retention-days: 7
+          path: out/chunks/chunk-${{ matrix.chunk.index }}.mp4
+
+  stitch:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          merge-multiple: true
+          path: out/chunks
+
+      - name: Verify every shard is present
+        run: |
+          for i in $(seq 1 12); do
+            f=out/chunks/chunk-$i.mp4
+            [ -s "$f" ] || { echo "MISSING $f"; exit 2; }
+            echo "$f $(ffprobe -v error -show_entries format=duration -of csv=p=0 $f)"
+          done
+
+      - name: Stitch
+        run: |
+          for f in out/chunks/chunk-*.mp4; do echo "file '$(basename $f)'"; done > out/chunks/list.txt
+          ffmpeg -y -f concat -safe 0 -i out/chunks/list.txt -c copy -movflags +faststart out/video.mp4
+          ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,nb_frames -of default=nw=1 out/video.mp4 | tee out/probe.txt
+          ffmpeg -hide_banner -i out/video.mp4 -af volumedetect -f null - 2>&1 | grep -E "mean_volume|max_volume" | tee -a out/probe.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film
+          retention-days: 14
+          path: |
+            out/video.mp4
+            out/probe.txt

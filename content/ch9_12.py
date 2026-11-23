@@ -1,0 +1,118 @@
+# Chapters 9-12 — teleportation, applications, three levels, recap.
+CH = []
+
+# ---------------------------------------------------------- 9. teleportation
+CH.append(dict(
+    n=9, title="टेलीपोर्टेशन", accent="cyan", shots=[
+        ("टेलीपोर्टेशन का मतलब पदार्थ भेजना नहीं है। यहाँ सिर्फ़ क्वांटम अवस्था जाती है।",
+         "Teleportation|avastha jaati hai, padarth nahi", "quote", dict(line="A STATE, NOT MATTER")),
+        ("ऐलिस अपने दो कणों की संयुक्त नाप करती है। इसे बेल माप कहते हैं।",
+         "Alice Bell maap karti hai|dono kano ki", "rig", dict(left="A1", right="A2")),
+        ("उसका नतीजा दो सामान्य बिट का होता है। बस दो।",
+         "Nateeja do bit ka|bas do", "formula", dict(eq="2 classical bits", note="the whole message")),
+        ("वो नतीजा सामान्य चैनल से बॉब तक जाना पड़ता है।",
+         "Nateeja normal channel se|Bob tak", "channel", dict(left="ALICE", right="BOB", note="2 bits")),
+        ("तभी बॉब अपने कण पर सही सुधार लगा पाता है।",
+         "Tabhi Bob sudhaar lagata hai", "board",
+         dict(title="THE FIX", lines=["one of four operations", "chosen by her result"])),
+        ("यानी अवस्था पहुँचती है, पर संदेश के साथ। बिना उसके कुछ नहीं।",
+         "Avastha pahunchti hai|sandesh ke saath", "quote", dict(line="ALWAYS WITH A MESSAGE")),
+        ("उन्नीस सौ सत्तानवे में पहली बार ये प्रयोग में दिखा।",
+         "1997|pehli baar prayog mein", "timeline",
+         dict(years=[("1997", "teleportation"), ("2017", "1203 km"), ("2022", "Nobel")], at=0)),
+        ("आज ये सैकड़ों किलोमीटर तक हो चुका है।",
+         "Aaj sau kilomitar tak", "board",
+         dict(title="DISTANCE GROWS", lines=["lab bench", "fibre and free space", "satellite links"])),
+        ("लेकिन हर बार सामान्य चैनल चाहिए। ये नियम नहीं टूटता।",
+         "Har baar channel chahiye|niyam nahi tootta", "channel", dict(left="STATE", right="STATE", note="classical")),
+        ("अब देखते हैं ये कहाँ काम आता है।",
+         "Ab dekhte hain|kahan kaam aata hai", "card", dict(n="11", title="काम", sub="APPLICATIONS")),
+    ]))
+
+# ------------------------------------------------------------ 10. applications
+CH.append(dict(
+    n=10, title="कहाँ काम आता है", accent="green", shots=[
+        ("तीन बड़े काम हैं। और तीनों अलग अलग हैं।",
+         "Teen bade kaam|teeno alag", "three",
+         dict(items=["CRYPTOGRAPHY", "COMPUTING", "NETWORKS"], note="three areas")),
+        ("पहला: क्वांटम क्रिप्टोग्राफी। सुरक्षित चाबी बाँटने का तरीका।",
+         "Pehla|quantum cryptography", "board",
+         dict(title="SECRET KEYS", lines=["share a key", "know if anyone listened"])),
+        ("उन्नीस सौ चौरासी में बेनेट और ब्रासार्ड ने पहला तरीका दिया।",
+         "1984|Bennett aur Brassard", "quote", dict(line="1984 · BB84")),
+        ("कोई चोरी से नापे, तो अवस्था बिगड़ जाती है। और पकड़ा जाता है।",
+         "Chori se naape|avastha bigad jaati hai", "board",
+         dict(title="TAMPER EVIDENT", lines=["reading disturbs the state", "the key is discarded"])),
+        ("दूसरा: क्वांटम कंप्यूटर। वहाँ जुड़ाव ईंधन जैसा है।",
+         "Doosra|quantum computer", "quote", dict(line="A RESOURCE, NOT A TRICK")),
+        ("तीसरा: क्वांटम नेटवर्क। जुड़ी अवस्था को दूर तक पहुँचाना।",
+         "Teesra|quantum network", "channel", dict(left="NODE", right="NODE", note="entangled")),
+        ("दो हज़ार सत्रह में मीशियस सैटलाइट ने बारह सौ तीन किलोमीटर तक भेजा।",
+         "2017|Micius, barah sau teen kilometre", "timeline",
+         dict(years=[("1997", "teleport"), ("2017", "1203 km"), ("2022", "Nobel")], at=1)),
+        ("एक सेकंड में उनसठ लाख जोड़े बने। ज़मीन तक एक हज़ार एक सौ सड़सठ पहुँचे।",
+         "Unasath lakh jode|ek hazar ek sau sadsath", "rig", dict(left="1,167", right="1,167")),
+        ("इन तीनों को एक न समझें। हर एक का अपना नियम है।",
+         "Teeno ko ek na samjhein|apna niyam", "board",
+         dict(title="KEEP THEM SEPARATE", lines=["a key is not a computer", "a network is not a teleporter"])),
+        ("अब आख़िरी और सबसे ज़रूरी बात।",
+         "Aakhri aur sabse zaroori baat", "card", dict(n="12", title="तीन स्तर", sub="THREE LEVELS")),
+    ]))
+
+# ---------------------------------------------------------------- 11. levels
+CH.append(dict(
+    n=11, title="तीन स्तर", accent="violet", shots=[
+        ("हर बहस में तीन स्तर होते हैं। इन्हें मिलाना सबसे बड़ी ग़लती है।",
+         "Teen star|milana sabse badi galti", "levels",
+         dict(items=["MATHS", "EXPERIMENT", "MEANING"], note="keep them apart")),
+        ("पहला स्तर: गणित। एक अवस्था जो गुणनफल में नहीं टूटती।",
+         "Pehla|ganit", "formula", dict(eq="|Ψ⟩ ≠ |a⟩ × |b⟩", note="level one")),
+        ("यहाँ कोई बहस नहीं है। ये परिभाषा है।",
+         "Yahan bahas nahi|paribhasha hai", "quote", dict(line="A DEFINITION, NOT AN OPINION")),
+        ("दूसरा स्तर: प्रयोग। नतीजे सीमा तोड़ते हैं, और ये दोहराया जा चुका है।",
+         "Doosra|prayog", "chart", dict(limit=2.0, peak=2.83, measured=2.4)),
+        ("यहाँ भी बहस कम है। माप माप है।",
+         "Yahan bhi bahas kam|maap maap hai", "quote", dict(line="MEASUREMENT IS MEASUREMENT")),
+        ("तीसरा स्तर: मतलब। इसका अर्थ क्या है? यहीं राय बँटती है।",
+         "Teesra|matlab, yahin raay bantti hai", "levels",
+         dict(items=["MATHS", "EXPERIMENT", "MEANING"], note="the argument lives here")),
+        ("कोई कहता है दुनिया ग़ैर-स्थानीय है।",
+         "Koi kehta hai|duniya non-local hai", "board",
+         dict(title="VIEW ONE", lines=["the world is non-local", "locality was an assumption"])),
+        ("कोई कहता है जानकारी की एक सीमा है, बस इतना।",
+         "Koi kehta hai|jankari ki seema", "board",
+         dict(title="VIEW TWO", lines=["a limit on information", "nothing more"]),
+         ),
+        ("कोई कहता है सवाल अभी खुला है। और ये भी ठीक है।",
+         "Koi kehta hai|sawaal khula hai", "quote", dict(line="STILL OPEN")),
+        ("तीनों स्तर अलग रखिए। तभी बात साफ़ रहेगी।",
+         "Teeno alag rakhiye|baat saaf rahegi", "card", dict(n="13", title="सार", sub="THE RECAP")),
+    ]))
+
+# ----------------------------------------------------------------- 12. recap
+CH.append(dict(
+    n=12, title="सार", accent="gold", shots=[
+        ("तो एक लाइन में: एंटैंगलमेंट एक ही अवस्था है, दो जगह।",
+         "Ek line mein|ek avastha, do jagah", "quote", dict(line="ONE STATE, TWO PLACES")),
+        ("गणित में वो गुणनफल में नहीं टूटती। यही उसकी पहचान है।",
+         "Product mein nahi tootti|yahi pehchaan", "formula", dict(eq="|Ψ⟩AB ≠ |a⟩ × |b⟩", note="the definition")),
+        ("उन्नीस सौ पैंतीस में आइंस्टीन ने सवाल उठाया।",
+         "1935|Einstein ne sawaal uthaya", "timeline",
+         dict(years=[("1935", "EPR"), ("1964", "Bell"), ("2015", "all loopholes")], at=0)),
+        ("उन्नीस सौ चौंसठ में बेल ने सीमा दी।",
+         "1964|Bell ne seema di", "timeline",
+         dict(years=[("1935", "EPR"), ("1964", "Bell"), ("2015", "all loopholes")], at=1)),
+        ("और प्रयोगों ने वो सीमा तोड़ दी।",
+         "Prayogon ne seema todi", "chart", dict(limit=2.0, peak=2.83, measured=2.4)),
+        ("दो हज़ार बाईस में इस काम को नोबेल मिला।",
+         "2022|Nobel mila", "three", dict(items=["CLAUSER", "ASPECT", "ZEILINGER"], note="2022")),
+        ("पर संदेश आज भी रोशनी से तेज़ नहीं जाता।",
+         "Sandesh light se tez nahi", "quote", dict(line="STILL NOT FASTER THAN LIGHT")),
+        ("जुड़ाव असली है। संदेश नहीं।",
+         "Judav asli hai|sandesh nahi", "quote", dict(line="REAL LINK, NO SIGNAL")),
+        ("और यही इसकी ताक़त है। इसी से सुरक्षित चाबी और क्वांटम कंप्यूटर बनते हैं।",
+         "Yahi taqat hai|chabi aur computer", "three",
+         dict(items=["SECURE KEYS", "COMPUTERS", "NETWORKS"], note="built on this")),
+        ("यही कहानी है एंटैंगलमेंट की।",
+         "Yahi kahani hai|entanglement ki", "quote", dict(line="THAT IS ENTANGLEMENT")),
+    ]))
