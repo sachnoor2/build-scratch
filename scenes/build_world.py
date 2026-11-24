@@ -17,11 +17,17 @@ from mathutils import Vector
 
 argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
 ap = argparse.ArgumentParser()
+_sl = {}
+try:                                     # the film's own timing decides the world's length
+    import json as _json
+    _sl = _json.load(open("shotlist.json", encoding="utf-8"))
+except Exception:
+    pass
 ap.add_argument("--out", default="scenes/world.blend")
-ap.add_argument("--frames", type=int, default=19750)
-ap.add_argument("--fps", type=int, default=24)
-ap.add_argument("--width", type=int, default=1280)
-ap.add_argument("--height", type=int, default=720)
+ap.add_argument("--frames", type=int, default=int(_sl.get("totalFrames", 19750)))
+ap.add_argument("--fps", type=int, default=int(_sl.get("fps", 24)))
+ap.add_argument("--width", type=int, default=int(_sl.get("width", 960)))
+ap.add_argument("--height", type=int, default=int(_sl.get("height", 540)))
 a = ap.parse_args(argv)
 
 CYAN = (0.10, 0.80, 1.00)
@@ -55,9 +61,8 @@ def mat(name, color, emit=0.0, rough=0.35, metal=0.0, alpha=1.0):
     if "Emission Color" in bsdf.inputs:          # 4.x names
         bsdf.inputs["Emission Color"].default_value = (*color, 1.0)
         bsdf.inputs["Emission Strength"].default_value = emit
-    if alpha < 1.0:
-        bsdf.inputs["Alpha"].default_value = alpha
-        m.blend_method = "BLEND"
+    # NOTE: alpha is ignored on purpose. Transparent surfaces cost far more per sample than
+    # they are worth, and the film has to render inside GitHub's 6-hour job limit.
     return m
 
 
@@ -151,9 +156,9 @@ for j in range(-4, 5):
 
 # drifting dust: cheap, and it gives every lens a sense of depth
 dust = mat("dust", CREAM, emit=2.2)
-for i in range(70):
-    x = -10 + (i * 37 % 210)
-    y = -14 + (i * 53 % 28)
+for i in range(24):
+    x = -10 + (i * 97 % 210)
+    y = -14 + (i * 61 % 28)
     z = -1.0 + (i * 29 % 14) * 0.55
     d = mesh("sphere", f"dust_{i}", (x, y, z), scale=(0.035, 0.035, 0.035), material=dust)
     d["base_scale"] = (0.035, 0.035, 0.035)
@@ -241,17 +246,16 @@ for fc in photon.animation_data.action.fcurves:
 O = ORIGIN["lattice"]
 node = mat("node", CYAN, emit=3.0)
 strut = mat("strut", CREAM, emit=0.6, alpha=0.5)
-for ix in range(-3, 4):
-    for iy in range(-2, 3):
-        for iz in range(0, 3):
+for ix in range(-2, 3):
+    for iy in range(-1, 2):
+        for iz in range(0, 2):
             p = O + Vector((ix * 2.3, iy * 2.3, iz * 2.3 - 1.0))
             n = mesh("cube", f"lat_{ix}_{iy}_{iz}", p, scale=(0.16, 0.16, 0.16), material=node)
             n["base_scale"] = (0.16, 0.16, 0.16)
             key_pulse(n, lo=0.6, hi=1.4, period=54 + (ix + iy + iz) % 4 * 12)
-for ix in range(-3, 4):
-    for iy in range(-2, 3):
-        for iz in (0, 1, 2):
-            if iz < 2:
+for ix in range(-2, 3):
+    for iy in range(-1, 2):
+        for iz in (0, 1):
                 mesh("cube", f"st_{ix}_{iy}_{iz}", O + Vector((ix * 2.3, iy * 2.3, iz * 2.3 + 0.15)),
                      scale=(0.03, 0.03, 1.15), material=strut)
 
@@ -301,7 +305,6 @@ for i, s in enumerate(SETS):
     O = ORIGIN[s]
     add_light(f"key_{s}", O + Vector((-8, -10, 12)), 2200, (1.0, 0.96, 0.9), size=9, target=O)
     add_light(f"rim_{s}", O + Vector((10, 9, 7)), 1400, (0.45, 0.7, 1.0), size=8, target=O)
-    add_light(f"fill_{s}", O + Vector((0, 12, 2)), 700, (0.7, 0.55, 1.0), size=10, target=O)
 
 world = bpy.data.worlds.new("World")
 world.use_nodes = True
@@ -334,28 +337,21 @@ scene.camera = bpy.data.objects["cam-pair-wide"]
 # --------------------------------------------------------------------------- render defaults
 scene.render.engine = "CYCLES"
 scene.cycles.device = "CPU"
-scene.cycles.samples = 24
+scene.cycles.samples = 8
 scene.cycles.use_denoising = False
+scene.cycles.max_bounces = 1
+scene.cycles.diffuse_bounces = 1
+scene.cycles.glossy_bounces = 1
+scene.cycles.transmission_bounces = 0
+scene.cycles.transparent_max_bounces = 0
 scene.render.resolution_x = a.width
 scene.render.resolution_y = a.height
 scene.render.resolution_percentage = 100
 scene.render.film_transparent = False
 scene.view_settings.view_transform = "Filmic" if "Filmic" in [v.name for v in scene.view_settings.bl_rna.properties["view_transform"].enum_items] else "Standard"
 
-# bloom: emissive cores need a glare pass or they read as flat discs
-scene.use_nodes = True
-tree = scene.node_tree
-for n in list(tree.nodes):
-    tree.nodes.remove(n)
-rl = tree.nodes.new("CompositorNodeRLayers")
-glare = tree.nodes.new("CompositorNodeGlare")
-glare.glare_type = "FOG_GLOW"
-glare.quality = "HIGH"
-glare.threshold = 0.85
-glare.size = 7
-comp = tree.nodes.new("CompositorNodeComposite")
-tree.links.new(rl.outputs["Image"], glare.inputs["Image"])
-tree.links.new(glare.outputs["Image"], comp.inputs["Image"])
+# no compositor: the glare pass costs a full-frame buffer operation per sample
+scene.use_nodes = False
 
 bpy.ops.wm.save_as_mainfile(filepath=a.out)
 print(f"wrote {a.out}: {a.frames} frames, {len(SETS)} sets, {len(CAMS)} cameras, "

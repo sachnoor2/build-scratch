@@ -1,0 +1,31 @@
+name: bench
+
+# Measures seconds-per-frame on a real runner. plan_shards.py needs this number, and guessing it
+# is how a shard silently overruns GitHub's 6-hour job limit.
+on:
+  workflow_dispatch:
+
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Blender
+        run: sudo apt-get update && sudo apt-get install -y blender
+      - name: Shotlist and world
+        run: |
+          python3 scripts/make_shotlist.py
+          blender -b -P scenes/build_world.py -- --out scenes/world.blend
+      - name: Time 24 frames, wide and macro
+        run: |
+          for cam in cam-pair-wide cam-pair-macro cam-rig-wide cam-chart; do
+            s=$(date +%s)
+            blender -b scenes/world.blend -P scenes/render.py -- \
+              --camera $cam --start 0 --end 5 --out public/out --samples 8 > /dev/null 2>&1
+            e=$(date +%s)
+            echo "$cam: 6 frames in $((e-s))s -> $(( (e-s) )) / 6 = $(python3 -c "print(round(($e-$s)/6,2))") s/frame"
+          done

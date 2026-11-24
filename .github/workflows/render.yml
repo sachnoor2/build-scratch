@@ -45,6 +45,8 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: voice
+      - name: Shotlist from the measured voice
+        run: python3 scripts/make_shotlist.py
       - id: plan
         run: echo "shards=$(python3 scripts/plan_shards.py --seconds-per-frame ${{ inputs.seconds_per_frame }} --json)" >> "$GITHUB_OUTPUT"
 
@@ -54,11 +56,15 @@ jobs:
     strategy:
       matrix:
         shard: ${{ fromJSON(needs.plan.outputs.shards) }}
-      max-parallel: 4
+      # raised from 4: the 6-hour job limit is the real constraint, and at 4 in parallel the
+      # wall clock for a 13-minute film runs past a day. Each job is still sized to ~60 min.
+      max-parallel: 12
     steps:
       - uses: actions/checkout@v4
       - name: Blender
         run: sudo apt-get update && sudo apt-get install -y blender
+      - name: Build world
+        run: blender -b -P scenes/build_world.py -- --out scenes/world.blend
       - name: Render shard
         run: python3 scripts/render_shard.py --start ${{ matrix.shard.start }} --end ${{ matrix.shard.end }}
       - uses: actions/upload-artifact@v4
