@@ -43,7 +43,7 @@ const Dust: React.FC<{t: number; n?: number; color?: string}> = ({t, n = 18, col
 const T: React.FC<{x: number; y: number; size?: number; color?: string; anchor?: 'start' | 'middle' | 'end'; weight?: number; children: string}> = ({
   x, y, size = 44, color = C.cream, anchor = 'middle', weight = 800, children,
 }) => (
-  <text x={x} y={y} fill={color} fontSize={size} fontFamily='Helvetica, Arial, "DejaVu Sans", sans-serif'
+  <text x={x} y={y} fill={color} fontSize={size} fontFamily='Helvetica, Arial, "DejaVu Sans", "Noto Sans Devanagari", "Lohit Devanagari", sans-serif'
     fontWeight={weight} letterSpacing={1} textAnchor={anchor}>
     {children}
   </text>
@@ -148,7 +148,7 @@ const Formula: React.FC<{s: ShotData; t: number; dur: number}> = ({s, t, dur}) =
       <rect x={W / 2 - 420} y={330} width={840} height={260} rx={28} fill="#0d1730" stroke={accent}
         strokeWidth={4} opacity={0.4 + 0.6 * a} />
       <text x={W / 2} y={492} fill={accent} fontSize={size} textAnchor="middle"
-        fontFamily='Helvetica, Arial, "DejaVu Sans", sans-serif' fontWeight={800} letterSpacing={1} {...squeeze}>
+        fontFamily='Helvetica, Arial, "DejaVu Sans", "Noto Sans Devanagari", "Lohit Devanagari", sans-serif' fontWeight={800} letterSpacing={1} {...squeeze}>
         {eq}
       </text>
       <T x={W / 2} y={660} size={38} color="#9fb2e0">{String(s.props.note ?? '')}</T>

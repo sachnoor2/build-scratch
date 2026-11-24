@@ -113,6 +113,16 @@ jobs:
         with:
           name: film-input
 
+      - name: Devanagari fonts
+        run: |
+          # Chapter titles are Devanagari; without a font that covers them the
+          # headless browser draws empty boxes.
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-lohit-deva || sudo apt-get install -y -qq fonts-noto-core
+          fc-cache -f > /dev/null
+          fc-list | grep -i -E "devanagari|lohit deva" | head -5
+          fc-list | grep -qi -E "devanagari|lohit deva" || { echo "NO DEVANAGARI FONT — chapter titles would render as empty boxes"; exit 3; }
+
       - name: Render shard
         run: |
           mkdir -p out/chunks

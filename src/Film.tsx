@@ -50,7 +50,7 @@ const Caption: React.FC<{text: string; opacity: number}> = ({text, opacity}) => 
     <div
       style={{
         opacity,
-        fontFamily: 'Helvetica, Arial, "DejaVu Sans", sans-serif',
+        fontFamily: 'Helvetica, Arial, "DejaVu Sans", "Noto Sans Devanagari", "Lohit Devanagari", sans-serif',
         fontSize: 54,
         fontWeight: 900,
         letterSpacing: -1,
