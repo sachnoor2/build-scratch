@@ -2,18 +2,18 @@
   "fps": 24,
   "width": 1920,
   "height": 1080,
-  "title": "Quantum Entanglement — ek hi avastha, do kan",
+  "title": "Quantum Entanglement — do kan, ek hi avastha",
   "engine": "piper",
   "voice": "hi_IN-pratham-medium",
   "lang": "hi",
-  "lengthScale": 1.0,
-  "pad": 0.6,
+  "lengthScale": 0.8333,
+  "pad": 0.45,
   "minSeconds": 3.0,
   "scenes": [
     {
       "id": "01-01",
-      "text": "दो कण। एक ही क्वांटम अवस्था। इन्हें अलग अलग समझाया नहीं जा सकता।",
-      "caption": "Do kan|ek hi avastha",
+      "text": "दो कण। एक का जवाब ऊपर, दूसरे का नीचे। और यही एंटैंगलमेंट नहीं है।",
+      "caption": "Do kan|jawab hamesha ulta",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -25,8 +25,8 @@
     },
     {
       "id": "01-02",
-      "text": "यही एंटैंगलमेंट है। एक जुड़ी हुई अवस्था, जो दो जगह रहती है।",
-      "caption": "Yahi entanglement hai|ek judi avastha",
+      "text": "यह सिर्फ़ मिलता हुआ नतीजा है। असली चीज़ इससे कहीं ज़्यादा अजीब है।",
+      "caption": "Sirf juda nateeja|entanglement nahi",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -34,16 +34,16 @@
     },
     {
       "id": "01-03",
-      "text": "ध्यान दें, ये सिर्फ़ मिलते जुलते नतीजे नहीं हैं। यहाँ गणित की बनावट बदलती है।",
-      "caption": "Sirf milte nateeje nahi|ganit ki banawat badalti hai",
+      "text": "मिलते नतीजे किसी भी जोड़ी में हो सकते हैं, बिना किसी क्वांटम जादू के।",
+      "caption": "Milte nateeje|kaafi nahi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "01-04",
-      "text": "एक कण को नापो, तो दूसरे के बारे में आप ज़्यादा बता सकते हैं।",
-      "caption": "Ek ko naapo|doosre ke baare mein zyada pata",
+      "text": "एक कण को नापो, दूसरे का हाल तुरंत पता चलता है। फिर भी यह काफ़ी नहीं।",
+      "caption": "Ek naapo|doosre ka pata",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -55,8 +55,8 @@
     },
     {
       "id": "01-05",
-      "text": "लेकिन दो गोलियाँ भी उल्टी हो सकती हैं। हर उल्टा जोड़ा एंटैंगल नहीं होता।",
-      "caption": "Do goliyan bhi ulti ho sakti hain|har joda entangled nahi",
+      "text": "क्योंकि दो गोलियाँ भी उल्टी हो सकती हैं। जवाब पहले से जेब में हो सकता है।",
+      "caption": "Goli ki tarah|jawab pehle se",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -68,8 +68,8 @@
     },
     {
       "id": "01-06",
-      "text": "असली फ़र्क़ यह है: क्या जवाब पहले से कणों में लिखा हुआ है?",
-      "caption": "Asli farq|jawab pehle se likha hai?",
+      "text": "असली सवाल: जवाब कण के अंदर पहले से लिखा था, या नहीं?",
+      "caption": "Jawab pehle se likha tha?",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -77,16 +77,16 @@
     },
     {
       "id": "01-07",
-      "text": "अगर हाँ, तो ये सामान्य जानकारी है। अगर नहीं, तो ये क्वांटम है।",
-      "caption": "Haan to normal|nahi to quantum",
+      "text": "पहला जवाब सामान्य, दूसरा क्वांटम। और इन दोनों में फ़र्क़ करना नामुमकिन लगता था।",
+      "caption": "Do jawab|normal ya quantum",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "01-08",
-      "text": "इसी सवाल ने भौतिकी को सौ साल तक उलझाया।",
-      "caption": "Isi sawaal ne physics ko uljhaya",
+      "text": "इसी सवाल ने भौतिकी को तीस साल तक उलझाए रखा।",
+      "caption": "Teen dashak|uljhan",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -98,8 +98,8 @@
     },
     {
       "id": "01-09",
-      "text": "जुड़ाव और सामान्य संबंध में फ़र्क़ है। दो घड़ियाँ भी एक साथ चल सकती हैं।",
-      "caption": "Judav aur normal sambandh|do ghariyan bhi",
+      "text": "जुड़ाव और सामान्य संबंध एक चीज़ नहीं। दो घड़ियाँ भी एक साथ चलती हैं।",
+      "caption": "Judav aur sambandh|alag cheez",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -111,8 +111,8 @@
     },
     {
       "id": "01-10",
-      "text": "घड़ियों की जानकारी अलग अलग है। जुड़े कणों की नहीं।",
-      "caption": "Ghariyon ki jankari alag|jude kano ki nahi",
+      "text": "घड़ियों की जानकारी अलग-अलग लिखी होती है। जुड़े कणों की नहीं।",
+      "caption": "Ghadi alag|kan alag",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -120,16 +120,16 @@
     },
     {
       "id": "01-11",
-      "text": "इसे ऐसे समझिए: दो कमरे, एक ही ताले की दो चाबियाँ नहीं। एक ही चीज़, दो कमरों में।",
-      "caption": "Ek hi cheez|do kamron mein",
+      "text": "एक ही चीज़, दो कमरों में। एक को नापें, दूसरे का हाल उसी से तय।",
+      "caption": "Ek cheez|do kamre",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "01-12",
-      "text": "यही वजह है कि इसे सामान्य जानकारी से नहीं समझाया जा सकता।",
-      "caption": "Normal jankari se nahi|samjhaya ja sakta",
+      "text": "यह सामान्य जानकारी से नहीं समझाया जा सकता। यहीं से कहानी शुरू होती है।",
+      "caption": "Normal jankari|kaam nahi aati",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -141,8 +141,8 @@
     },
     {
       "id": "01-13",
-      "text": "चलिए, शुरुआत गणित से करते हैं। यहीं असली बात छिपी है।",
-      "caption": "Shuruaat ganit se|asli baat yahin hai",
+      "text": "पहले गणित। क्योंकि यहाँ बात एहसास की नहीं, ढाँचे की है।",
+      "caption": "Shuruaat ganit se",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -154,8 +154,8 @@
     },
     {
       "id": "02-01",
-      "text": "किसी भी जोड़ी की अवस्था को गणित में एक चीज़ से लिखा जाता है।",
-      "caption": "Jodi ki avastha|ek cheez se likhi jaati hai",
+      "text": "पूरी जोड़ी की एक ही अवस्था होती है। दो अलग अवस्थाओं से नहीं लिखी जाती।",
+      "caption": "Jodi ki avastha|ek",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -163,16 +163,16 @@
     },
     {
       "id": "02-02",
-      "text": "अगर वो अवस्था दो अलग अवस्थाओं के गुणनफल से बन जाए, तो जोड़ी अलग अलग है।",
-      "caption": "Product se ban jaaye|to jodi alag alag",
+      "text": "अगर जोड़ी दो अलग टुकड़ों के गुणनफल से लिखी जा सके, तो वे अलग-अलग हैं।",
+      "caption": "Product bane|to alag alag",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "02-03",
-      "text": "और अगर ऐसा कोई गुणनफल न मिले, तो अवस्था एंटैंगल है।",
-      "caption": "Koi product na mile|to entangled",
+      "text": "और अगर कोई गुणनफल न मिले, तभी वह एंटैंगल है।",
+      "caption": "Product na mile|entangled",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -184,8 +184,8 @@
     },
     {
       "id": "02-04",
-      "text": "ये कोई दार्शनिक बहस नहीं है। ये एक साफ़ परीक्षण है।",
-      "caption": "Darshanik bahas nahi|saaf test",
+      "text": "यह दर्शन नहीं, एक साफ़ परीक्षा है। और परीक्षा का नतीजा आगे आया।",
+      "caption": "Darshan nahi|saaf test",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -197,8 +197,8 @@
     },
     {
       "id": "02-05",
-      "text": "सबसे मशहूर उदाहरण है सिंगलेट अवस्था। दो कण, उल्टे स्पिन, एक अवस्था।",
-      "caption": "Singlet|do kan, ulte spin",
+      "text": "सबसे मशहूर उदाहरण: सिंगलेट। दो कण, हर दिशा में उल्टे स्पिन।",
+      "caption": "Singlet|har disha mein ulta",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -206,16 +206,16 @@
     },
     {
       "id": "02-06",
-      "text": "इसमें हर दिशा में उल्टापन मिलता है, केवल एक दिशा में नहीं।",
-      "caption": "Har disha mein ultapan|sirf ek mein nahi",
+      "text": "उल्टापन सिर्फ़ एक दिशा में नहीं, हर दिशा में। यहीं सामान्य कहानी टूटती है।",
+      "caption": "Har disha|sirf ek nahi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "02-07",
-      "text": "इसीलिए सामान्य 'पहले से तय जवाब' वाली कहानी यहाँ फ़िट नहीं बैठती।",
-      "caption": "Pehle se tay jawab|kahani fit nahi baithti",
+      "text": "पहले से तय जवाब हर दिशा में उल्टापन नहीं दे सकते। कहानी यहाँ फिट नहीं बैठती।",
+      "caption": "Pehle se tay|fit nahi baithta",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -227,8 +227,8 @@
     },
     {
       "id": "02-08",
-      "text": "गणित कहता है: जोड़ी का कोई भी हिस्सा अपनी पूरी कहानी अकेले नहीं रखता।",
-      "caption": "Koi hissa apni poori kahani|akele nahi rakhta",
+      "text": "कोई भी हिस्सा अपनी पूरी कहानी अकेले नहीं रखता।",
+      "caption": "Koi hissa|akele nahi",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -240,8 +240,8 @@
     },
     {
       "id": "02-09",
-      "text": "यही बात आइंस्टीन को हज़म नहीं हुई।",
-      "caption": "Yahi baat Einstein ko hazam nahi hui",
+      "text": "यही बात आइंस्टाइन को हज़म नहीं हुई।",
+      "caption": "Einstein ko hazam nahi hui",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -249,16 +249,16 @@
     },
     {
       "id": "02-10",
-      "text": "ऐसी चार मशहूर अवस्थाएँ हैं। इन्हें बेल अवस्थाएँ कहते हैं।",
-      "caption": "Chaar mashhoor avasthayen|Bell states",
+      "text": "ऐसी चार मशहूर अवस्थाएँ हैं, जिन्हें बेल अवस्थाएँ कहते हैं।",
+      "caption": "Chaar Bell states",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "02-11",
-      "text": "ऐसी जोड़ी बनाने का आम तरीका है: एक फोटॉन को क्रिस्टल में तोड़ना।",
-      "caption": "Jodi banane ka tareeka|crystal mein todna",
+      "text": "ऐसी जोड़ी बनाने का तरीका है: क्रिस्टल में एक फ़ोटॉन तोड़ना।",
+      "caption": "Jodi banane ka tareeka",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -270,8 +270,8 @@
     },
     {
       "id": "02-12",
-      "text": "इस प्रक्रिया को स्पॉन्टेनियस पैरामेट्रिक डाउन कन्वर्ज़न कहते हैं।",
-      "caption": "SPDC|ek photon se do",
+      "text": "एक फ़ोटॉन से दो, और दोनों की अवस्थाएँ आपस में बँधी हुई।",
+      "caption": "Ek photon se do",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -283,8 +283,8 @@
     },
     {
       "id": "02-13",
-      "text": "अब नाप की बात। कोण बदलो, तो जुड़ाव का पैटर्न भी बदलता है।",
-      "caption": "Kon badlo|pattern badalta hai",
+      "text": "कोण बदलो, पैटर्न बदलता है। यही मापने की कुंजी है।",
+      "caption": "Kon badlo|pattern badle",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -292,16 +292,16 @@
     },
     {
       "id": "02-14",
-      "text": "यही पैटर्न बेल की सीमा और क्वांटम के फ़र्क़ को मापता है।",
-      "caption": "Yahi pattern|seema aur quantum ka farq",
+      "text": "सामान्य कहानी की एक सीमा है, और क्वांटम उससे ऊपर जाता है।",
+      "caption": "Seema aur quantum|farq",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "02-15",
-      "text": "उन्नीस सौ पैंतीस में तीन भौतिकविदों ने इस पर सवाल उठाया।",
-      "caption": "1935|teen physicists ne sawaal uthaya",
+      "text": "उन्नीस सौ पैंतीस। तीन भौतिकविदों ने यह सवाल उठाया।",
+      "caption": "1935|teen physicists",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -313,8 +313,8 @@
     },
     {
       "id": "03-01",
-      "text": "आइंस्टीन, पोडोल्स्की और रोसेन। तीन नाम, एक पेपर, एक सवाल।",
-      "caption": "Einstein, Podolsky, Rosen|teen naam, ek sawaal",
+      "text": "आइंस्टाइन, पोडोल्स्की, रोज़न। तीन नाम, एक चुनौती।",
+      "caption": "EPR|teen naam",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -326,8 +326,8 @@
     },
     {
       "id": "03-02",
-      "text": "सवाल था: क्या क्वांटम सिद्धांत हक़ीक़त का पूरा ब्यौरा देता है?",
-      "caption": "Kya theory poori tasveer deti hai?",
+      "text": "सवाल सीधा था: क्या क्वांटम सिद्धांत पूरी तस्वीर देता है?",
+      "caption": "Theory poori tasveer deti hai?",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -335,16 +335,16 @@
     },
     {
       "id": "03-03",
-      "text": "उनका तर्क था कि अगर दूर का कण तुरंत बदल जाए, तो कुछ गड़बड़ है।",
-      "caption": "Door ka kan turant badle|to kuch gadbad hai",
+      "text": "दूर के कण का हाल तुरंत बदले, तो कुछ तो गड़बड़ है।",
+      "caption": "Door ka kan turant badle",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "03-04",
-      "text": "उन्होंने कहा: कण अपना जवाब पहले से लेकर चलते होंगे। छुपे हुए निर्देश।",
-      "caption": "Chhupe nirdesh|hidden values",
+      "text": "इनका जवाब: कणों में छुपे निर्देश पहले से मौजूद हैं।",
+      "caption": "Chhupe nirdesh",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -356,8 +356,8 @@
     },
     {
       "id": "03-05",
-      "text": "इस विचार को स्थानीय छुपी हुई चर वाला सिद्धांत कहते हैं।",
-      "caption": "Local hidden variable theory",
+      "text": "हर कण एक चुपचाप मिली संख्या लेकर चलता है।",
+      "caption": "Local hidden variable",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -369,8 +369,8 @@
     },
     {
       "id": "03-06",
-      "text": "इसका मतलब: दूर की घटना यहाँ के नतीजे को प्रभावित नहीं करती।",
-      "caption": "Door ki ghatna|yahan ka nateeja nahi badalti",
+      "text": "और दूर की घटना यहाँ का नतीजा नहीं बदल सकती।",
+      "caption": "Door ki ghatna|nateeja nahi",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -378,16 +378,16 @@
     },
     {
       "id": "03-07",
-      "text": "बोहर ने जवाब दिया, पर ये बहस शब्दों में ही चलती रही।",
-      "caption": "Bohr ne jawab diya|bahas shabdon mein chali",
+      "text": "बोर ने जवाब दिया, पर बहस शब्दों में ही चलती रही।",
+      "caption": "Bohr ka jawab|shabdon mein",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "03-08",
-      "text": "किसी के पास कोई परीक्षण नहीं था। सवाल खुला रह गया।",
-      "caption": "Koi test nahi tha|sawaal khula rah gaya",
+      "text": "कोई परीक्षा नहीं थी। सवाल खुला रह गया।",
+      "caption": "Test nahi tha|sawaal khula",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -400,7 +400,7 @@
     {
       "id": "03-09",
       "text": "उन्नीस सौ चौंसठ तक यही हाल रहा।",
-      "caption": "1964 tak yahi haal raha",
+      "caption": "1964 tak|yahi haal",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -412,8 +412,8 @@
     },
     {
       "id": "03-10",
-      "text": "EPR ने 'भौतिक वास्तविकता' की एक शर्त दी। अगर बिना छेड़े नतीजा पता चले, तो वो असली है।",
-      "caption": "EPR ki shart|bina chhede nateeja pata chale",
+      "text": "इनकी शर्त: दूर के कण को छुए बिना उसका जवाब पता चल जाए।",
+      "caption": "EPR ki shart",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -421,16 +421,16 @@
     },
     {
       "id": "03-11",
-      "text": "उनका तर्क: दूर के कण का जवाब बिना छेड़े पता चल जाता है। तो वो पहले से तय होगा।",
-      "caption": "Door ka jawab|pehle se tay hoga",
+      "text": "अगर दूर का जवाब पहले से तय है, तो उसे छुपा हुआ मानना पड़ेगा।",
+      "caption": "Jawab pehle se tay",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "03-12",
-      "text": "इससे दो बातें निकलती हैं: स्थानीयता, और पहले से तय जवाब।",
-      "caption": "Do baatein|locality aur pre-set values",
+      "text": "दो मान्यताएँ: locality, और पहले से तय मूल्य।",
+      "caption": "Do manyataen",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -442,8 +442,8 @@
     },
     {
       "id": "03-13",
-      "text": "बोहर ने कहा कि दोनों कण एक ही अवस्था हैं, इसलिए सवाल ही ग़लत है।",
-      "caption": "Bohr|dono ek hi avastha hain",
+      "text": "बोर का जवाब: ये दोनों एक ही अवस्था के हिस्से हैं।",
+      "caption": "Dono ek avastha",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -455,8 +455,8 @@
     },
     {
       "id": "03-14",
-      "text": "लेकिन ये जवाब जाँचा नहीं जा सकता था। इसीलिए बहस अटक गई।",
-      "caption": "Jawab jaancha nahi ja sakta|bahas atak gayi",
+      "text": "यह जाँचा नहीं जा सकता, और बहस वहीं अटक गई।",
+      "caption": "Jaancha nahi ja sakta",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -464,16 +464,16 @@
     },
     {
       "id": "03-15",
-      "text": "फिर एक आदमी ने इसे एक असमानता में बदल दिया।",
-      "caption": "Phir ek aadmi ne ise inequality banaya",
+      "text": "फिर एक आदमी ने पूरी बहस को एक असमानता में बदल दिया।",
+      "caption": "Ek inequality banaayi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "04-01",
-      "text": "जॉन बेल ने सवाल पूछा: छुपे निर्देश हों, तो नतीजे कैसे बँटेंगे?",
-      "caption": "John Bell|chhupe nirdesh ho to nateeje kaise",
+      "text": "जॉन बेल। और उनका नतीजा उल्टा निकला, ठीक उसके विपरीत जो EPR चाहते थे।",
+      "caption": "John Bell|ulta nateeja",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -485,8 +485,8 @@
     },
     {
       "id": "04-02",
-      "text": "उन्होंने चार नापों का जोड़ा हुआ अंक निकाला। हर स्थानीय सिद्धांत के लिए एक सीमा।",
-      "caption": "Chaar naapon ka joda|local theory ki limit",
+      "text": "हर सामान्य सिद्धांत को एक सीमा माननी पड़ती है: S दो से ज़्यादा नहीं।",
+      "caption": "Local theory ki limit",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -498,8 +498,8 @@
     },
     {
       "id": "04-03",
-      "text": "ये सीमा दो है। कोई भी स्थानीय, पहले से तय जवाब वाला सिद्धांत दो से ऊपर नहीं जा सकता।",
-      "caption": "Limit do hai|do se upar nahi",
+      "text": "सीमा दो। इसके ऊपर कोई छुपा निर्देश वाला सिद्धांत नहीं जा सकता।",
+      "caption": "Limit do",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -507,16 +507,16 @@
     },
     {
       "id": "04-04",
-      "text": "लेकिन क्वांटम गणित कहता है कि अंक दो दशमलव आठ दो आठ तक पहुँचेगा।",
-      "caption": "Quantum|do dashamlav aath do aath",
+      "text": "क्वांटम कहता है: दो दशमलव आठ दो आठ।",
+      "caption": "Quantum|2.828",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "04-05",
-      "text": "यानी क्वांटम नतीजा सीमा के पार जाता है। यहीं फ़ैसला होगा।",
-      "caption": "Quantum limit ke paar|yahin faisla",
+      "text": "यानी क्वांटम सीमा के पार जाता है। यहीं फ़ैसला होता है।",
+      "caption": "Seema ke paar|faisla",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -528,8 +528,8 @@
     },
     {
       "id": "04-06",
-      "text": "अब सिर्फ़ एक काम बचा था। प्रयोग करके देखना।",
-      "caption": "Ab sirf prayog|experiment karna",
+      "text": "अब बहस नहीं, सिर्फ़ प्रयोग बाकी था।",
+      "caption": "Ab sirf prayog",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -541,8 +541,8 @@
     },
     {
       "id": "04-07",
-      "text": "बेल ने ये भी साफ़ किया कि सीमा किन मान्यताओं पर टिकी है।",
-      "caption": "Limit kin manyataon par tiki hai",
+      "text": "यह सीमा किन मान्यताओं पर टिकी है, यह जानना ज़रूरी है।",
+      "caption": "Limit kin manyataon par",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -550,16 +550,16 @@
     },
     {
       "id": "04-08",
-      "text": "अगर कोई मान्यता टूटे, तो सीमा भी टूट सकती है। यही आगे की कहानी है।",
-      "caption": "Ek manyata toote|limit bhi toot sakti",
+      "text": "एक मान्यता टूटी, तो सीमा भी टूट सकती है।",
+      "caption": "Manyata toote|limit toote",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "04-09",
-      "text": "उन्नीस सौ बहत्तर में पहला असली परीक्षण हुआ।",
-      "caption": "1972|pehla asli test",
+      "text": "उन्नीस सौ बहत्तर। पहला असली परीक्षण।",
+      "caption": "1972|pehla test",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -571,8 +571,8 @@
     },
     {
       "id": "04-10",
-      "text": "बेल ने चार सेटिंग चुनीं: दो ऐलिस के लिए, दो बॉब के लिए।",
-      "caption": "Chaar setting|do Alice, do Bob",
+      "text": "चार सेटिंग: दो ऐलिस के लिए, दो बॉब के लिए।",
+      "caption": "Chaar setting",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -584,8 +584,8 @@
     },
     {
       "id": "04-11",
-      "text": "हर जोड़ी नापो, और चारों का एक जोड़ा हुआ अंक निकालो।",
-      "caption": "Har jodi naapo|chaaron ka ek ank",
+      "text": "हर जोड़ी को नापो, और चारों का एक जोड़ा हुआ अंक निकालो।",
+      "caption": "Chaar naap|ek ank",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -593,16 +593,16 @@
     },
     {
       "id": "04-12",
-      "text": "स्थानीय सिद्धांत कहते हैं ये अंक दो से ज़्यादा नहीं हो सकता।",
-      "caption": "S do se zyada nahi|local theory",
+      "text": "सामान्य सिद्धांत कहता है: अंक दो से ज़्यादा नहीं।",
+      "caption": "S do se zyada nahi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "04-13",
-      "text": "क्वांटम कहता है ये दो दशमलव आठ दो आठ तक जा सकता है।",
-      "caption": "Quantum do dashamlav aath do aath",
+      "text": "क्वांटम कहता है: दो दशमलव आठ दो आठ तक।",
+      "caption": "Quantum 2.828",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -614,8 +614,8 @@
     },
     {
       "id": "04-14",
-      "text": "इस ऊपरी सीमा को सिरेल्सन बाउंड कहते हैं। इससे ऊपर क्वांटम भी नहीं जा सकता।",
-      "caption": "Tsirelson bound|isse upar quantum bhi nahi",
+      "text": "और इससे ऊपर क्वांटम भी नहीं जा सकता।",
+      "caption": "Tsirelson bound",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -627,8 +627,8 @@
     },
     {
       "id": "04-15",
-      "text": "बेल का काम यही था: बहस को एक अंक में बदल देना।",
-      "caption": "Bahas ko ek ank mein|badal dena",
+      "text": "बेल ने पूरी बहस को एक अंक में बदल दिया।",
+      "caption": "Bahas se ank",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -636,15 +636,15 @@
     },
     {
       "id": "04-16",
-      "text": "नतीजा सीमा के पार निकला। लेकिन सवाल अभी पूरा खत्म नहीं हुआ था।",
-      "caption": "Nateeja limit ke paar|sawaal khatm nahi",
+      "text": "अब सिर्फ़ यह देखना था कि प्रयोग क्या कहता है।",
+      "caption": "Ab prayog kya kehta hai",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "05-01",
-      "text": "पहला असली परीक्षण उन्नीस सौ बहत्तर में हुआ। फ्रीडमैन और क्लॉज़र ने किया।",
+      "text": "उन्नीस सौ बहत्तर। फ्रीडमैन और क्लॉज़र।",
       "caption": "1972|Freedman aur Clauser",
       "joinOut": {
         "kind": "push",
@@ -657,8 +657,8 @@
     },
     {
       "id": "05-02",
-      "text": "उन्होंने कैल्शियम के परमाणुओं से जोड़ी बनाई और दोनों तरफ़ नापी।",
-      "caption": "Calcium se jodi|dono taraf naapi",
+      "text": "कैल्शियम से जोड़ी बनाई, और दोनों तरफ़ नापा।",
+      "caption": "Calcium se jodi",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -670,8 +670,8 @@
     },
     {
       "id": "05-03",
-      "text": "डेटा जुटाने में करीब दो सौ घंटे लगे।",
-      "caption": "Data jutmne mein|do sau ghante",
+      "text": "डेटा जुटाने में दो सौ घंटे लगे।",
+      "caption": "Do sau ghante",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -679,16 +679,16 @@
     },
     {
       "id": "05-04",
-      "text": "नतीजा सीमा के पार था। क्वांटम सही निकला।",
-      "caption": "Nateeja limit ke paar|quantum sahi",
+      "text": "नतीजा सीमा के पार। यानी क्वांटम सही।",
+      "caption": "Nateeja limit ke paar",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "05-05",
-      "text": "लेकिन एक छेद बचा। सेटिंग पहले से तय थी, तो कणों को पता हो सकता था।",
-      "caption": "Ek chhed bacha|setting pehle se tay thi",
+      "text": "पर एक छेद बचा: सेटिंग पहले से तय थी।",
+      "caption": "Ek chhed|setting pehle se",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -700,8 +700,8 @@
     },
     {
       "id": "05-06",
-      "text": "उन्नीस सौ बयासी में ऐस्पे ने ये छेद बंद किया।",
-      "caption": "1982|Aspect ne chhed band kiya",
+      "text": "उन्नीस सौ बयासी। एस्पे ने वह छेद बंद किया।",
+      "caption": "1982|Aspect",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -713,8 +713,8 @@
     },
     {
       "id": "05-07",
-      "text": "उन्होंने सेटिंग उसके बाद बदली, जब जोड़ी स्रोत से निकल चुकी थी।",
-      "caption": "Setting baad mein badli|jodi nikal chuki thi",
+      "text": "सेटिंग बाद में बदली, जब जोड़ी निकल चुकी थी।",
+      "caption": "Setting baad mein",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -722,7 +722,7 @@
     },
     {
       "id": "05-08",
-      "text": "दूरी छह मीटर, वक़्त बीस नैनोसेकंड। इतने में ही सेटिंग बदलनी थी।",
+      "text": "छह मीटर, बीस नैनोसेकंड। इतने में ही फ़ैसला।",
       "caption": "Chhe meter|bees nanosecond",
       "joinOut": {
         "kind": "flash"
@@ -730,8 +730,8 @@
     },
     {
       "id": "05-09",
-      "text": "नतीजा वही निकला। क्वांटम जीता, स्थानीय सिद्धांत हारा।",
-      "caption": "Wahi nateeja|local theory haari",
+      "text": "नतीजा वही रहा। छुपे निर्देश वाला सिद्धांत हार गया।",
+      "caption": "Local theory haari",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -743,8 +743,8 @@
     },
     {
       "id": "05-10",
-      "text": "फोटॉन की ध्रुवीकरण नापी जाती है। यानी उसका कोण।",
-      "caption": "Photon ka polarization|uska kon",
+      "text": "माप कैसे होती है? फ़ोटॉन का ध्रुवीकरण, यानी उसका कोण।",
+      "caption": "Photon ka polarization",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -756,8 +756,8 @@
     },
     {
       "id": "05-11",
-      "text": "दोनों तरफ़ के क्लिक मिलाकर गिने जाते हैं। इसे कोइन्सिडेंस कहते हैं।",
-      "caption": "Dono taraf ke click|coincidence",
+      "text": "दोनों तरफ़ के क्लिक मिलाए जाते हैं, coincidence।",
+      "caption": "Coincidence",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -765,16 +765,16 @@
     },
     {
       "id": "05-12",
-      "text": "उन्नीस सौ बहत्तर का नतीजा छह सिग्मा था। यानी साफ़, पर इतना बड़ा नहीं।",
-      "caption": "1972 ka nateeja|chhe sigma",
+      "text": "बहत्तर का नतीजा छह सिग्मा दूर था।",
+      "caption": "1972|chhe sigma",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "05-13",
-      "text": "उन्नीस सौ बयासी में ऐस्पे का नतीजा कई दर्जन सिग्मा दूर था।",
-      "caption": "1982|darjan sigma door",
+      "text": "बयासी में दरजन सिग्मा।",
+      "caption": "1982|darjan sigma",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -786,8 +786,8 @@
     },
     {
       "id": "05-14",
-      "text": "इसीलिए ऐस्पे का प्रयोग इतिहास में गिना जाता है।",
-      "caption": "Isliye Aspect|itihas mein gina jaata hai",
+      "text": "इसीलिए एस्पे इतिहास में गिने जाते हैं।",
+      "caption": "Aspect|itihas mein",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -799,8 +799,8 @@
     },
     {
       "id": "05-15",
-      "text": "लेकिन एक और छेद बचा था। वो छेद और भी शातिर था।",
-      "caption": "Ek aur chhed|aur bhi shatir",
+      "text": "पर एक और छेद बचा, और वह ज़्यादा शातिर था।",
+      "caption": "Ek aur chhed",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -808,16 +808,16 @@
     },
     {
       "id": "06-01",
-      "text": "तीन बड़े छेद थे। हर एक को बंद करना ज़रूरी था।",
-      "caption": "Teen bade chhed|sab band karna zaroori",
+      "text": "तीन बड़े छेद। तीनों बंद करना ज़रूरी था।",
+      "caption": "Teen bade chhed",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "06-02",
-      "text": "पहला: सेटिंग बाद में बदलनी चाहिए, वरना कणों को पता हो सकता है।",
-      "caption": "Pehla|setting baad mein badle",
+      "text": "पहला: सेटिंग बाद में बदले, ताकि पहले से तय न हो सके।",
+      "caption": "Pehla|locality",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -829,8 +829,8 @@
     },
     {
       "id": "06-03",
-      "text": "दूसरा: हर फोटॉन पकड़ा नहीं जाता। तो नमूना पूरा नहीं होता।",
-      "caption": "Doosra|har photon pakda nahi jaata",
+      "text": "दूसरा: हर फ़ोटॉन पकड़ा नहीं जाता।",
+      "caption": "Doosra|detection",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -842,8 +842,8 @@
     },
     {
       "id": "06-04",
-      "text": "अगर सौ में से दो ही पकड़े जाएँ, तो नतीजा भरोसे के लायक नहीं।",
-      "caption": "Sau mein do|nateeja bharose ka nahi",
+      "text": "अगर सौ में दो ही पकड़ें, तो नतीजा पूरी आबादी का नहीं।",
+      "caption": "Sau mein do|fair sampling",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -851,16 +851,16 @@
     },
     {
       "id": "06-05",
-      "text": "तीसरा: सेटिंग चुनने वाला खुद प्रभावित हो सकता है। इसे फ्री चॉइस छेद कहते हैं।",
-      "caption": "Teesra|setting chunne wala prabhavit ho sakta hai",
+      "text": "तीसरा: सेटिंग चुनने वाला खुद प्रभावित हो।",
+      "caption": "Teesra|free choice",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "06-06",
-      "text": "दो हज़ार पंद्रह में पहली बार बड़े छेद एक साथ बंद हुए।",
-      "caption": "2015|bade chhed ek saath band",
+      "text": "दो हज़ार पंद्रह। बड़े छेद एक साथ बंद हुए।",
+      "caption": "2015|chhed band",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -872,8 +872,8 @@
     },
     {
       "id": "06-07",
-      "text": "उस परीक्षण में सीमा टूटी, और कोई आसान बचाव नहीं बचा।",
-      "caption": "Limit tooti|koi bachav nahi bacha",
+      "text": "सीमा टूटी, और कोई बचाव नहीं बचा।",
+      "caption": "Limit tooti",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -886,7 +886,7 @@
     {
       "id": "06-08",
       "text": "आज तक हर बड़ा परीक्षण वही कहता है।",
-      "caption": "Aaj tak har bada test|wahi kehta hai",
+      "caption": "Har bada test|wahi",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -894,16 +894,16 @@
     },
     {
       "id": "06-09",
-      "text": "इसीलिए ये अब बहस नहीं, माप है।",
-      "caption": "Ab bahas nahi|maap hai",
+      "text": "अब यह बहस नहीं, माप है।",
+      "caption": "Bahas nahi|maap",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "06-10",
-      "text": "छेद का मतलब है: एक और कहानी बच सकती है जो नतीजा समझा दे।",
-      "caption": "Chhed ka matlab|ek aur kahani bach sakti hai",
+      "text": "छेद का मतलब यह नहीं कि नतीजा गलत है। मतलब है एक और कहानी बच सकती थी।",
+      "caption": "Chhed ka matlab",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -915,8 +915,8 @@
     },
     {
       "id": "06-11",
-      "text": "स्थानीयता का छेद: सेटिंग बदलने की खबर कण तक पहुँच सकती है।",
-      "caption": "Locality ka chhed|khbar pahunch sakti hai",
+      "text": "पहला छेद: क्या जानकारी पहले ही पहुँच सकती थी?",
+      "caption": "Locality ka chhed",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -928,8 +928,8 @@
     },
     {
       "id": "06-12",
-      "text": "डिटेक्शन का छेद: जो पकड़े गए, वो सबके नुमाइंदे नहीं हो सकते।",
-      "caption": "Detection ka chhed|numainde nahi ho sakte",
+      "text": "दूसरा छेद: क्या पकड़े गए फ़ोटॉन पूरी जोड़ी के नुमाइंदे हैं?",
+      "caption": "Detection ka chhed",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -937,16 +937,16 @@
     },
     {
       "id": "06-13",
-      "text": "दो हज़ार पंद्रह में तीन अलग प्रयोगों ने ये छेद बंद किए।",
-      "caption": "2015|teen alag prayog",
+      "text": "दो हज़ार पंद्रह में तीन अलग प्रयोग।",
+      "caption": "2015|teen prayog",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "06-14",
-      "text": "तब से ये नतीजा और मज़बूत हुआ है, कमज़ोर नहीं।",
-      "caption": "Nateeja mazboot hua|kamzor nahi",
+      "text": "नतीजा मज़बूत हुआ, कमज़ोर नहीं।",
+      "caption": "Nateeja mazboot",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -958,8 +958,8 @@
     },
     {
       "id": "06-15",
-      "text": "इस काम को दो हज़ार बाईस में नोबेल मिला।",
-      "caption": "2022 mein Nobel",
+      "text": "और सात साल बाद, नोबेल।",
+      "caption": "2022 Nobel",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -971,7 +971,7 @@
     },
     {
       "id": "07-01",
-      "text": "दो हज़ार बाईस। भौतिकी का नोबेल तीन लोगों को मिला।",
+      "text": "दो हज़ार बाईस। तीन लोगों को भौतिकी का नोबेल।",
       "caption": "2022|teen logon ko Nobel",
       "joinOut": {
         "kind": "squeeze",
@@ -980,16 +980,16 @@
     },
     {
       "id": "07-02",
-      "text": "क्लॉज़र, ऐस्पे और ज़ाइलिंगर।",
-      "caption": "Clauser · Aspect · Zeilinger",
+      "text": "क्लॉज़र, एस्पे, ज़ाइलिंगर।",
+      "caption": "Clauser Aspect Zeilinger",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "07-03",
-      "text": "क्लॉज़र ने पहला व्यावहारिक परीक्षण बनाया।",
-      "caption": "Clauser|pehla practical test",
+      "text": "क्लॉज़र ने बेल के विचार से पहला व्यावहारिक प्रयोग बनाया।",
+      "caption": "Clauser|pehla test",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1001,8 +1001,8 @@
     },
     {
       "id": "07-04",
-      "text": "ऐस्पे ने सेटिंग का छेद बंद किया।",
-      "caption": "Aspect|setting ka chhed band",
+      "text": "एस्पे ने सेटिंग का छेद बंद किया।",
+      "caption": "Aspect|chhed band",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1014,8 +1014,8 @@
     },
     {
       "id": "07-05",
-      "text": "ज़ाइलिंगर ने टेलीपोर्टेशन और क्वांटम नेटवर्क की राह खोली।",
-      "caption": "Zeilinger|teleportation aur network",
+      "text": "ज़ाइलिंगर ने टेलीपोर्टेशन और नेटवर्क की राह खोली।",
+      "caption": "Zeilinger|teleportation",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1023,16 +1023,16 @@
     },
     {
       "id": "07-06",
-      "text": "पर ध्यान रखें: नोबेल प्रयोगों के लिए था, किसी नई मशीन के लिए नहीं।",
-      "caption": "Nobel prayogon ke liye|machine ke liye nahi",
+      "text": "नोबेल प्रयोगों के लिए मिला, किसी मशीन के लिए नहीं।",
+      "caption": "Prayogon ke liye|machine ke liye nahi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "07-07",
-      "text": "और क्लॉज़र के बाद भी छेद बचे थे। इतिहास एक दिन में पूरा नहीं हुआ।",
-      "caption": "Clauser ke baad bhi chhed|ek din mein nahi",
+      "text": "और हाँ, क्लॉज़र के बाद भी छेद बचे थे। विज्ञान एक दिन में नहीं बंद होता।",
+      "caption": "Clauser ke baad bhi chhed",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1044,8 +1044,8 @@
     },
     {
       "id": "07-08",
-      "text": "नोबेल का हवाला साफ़ था: जुड़े फोटॉनों के प्रयोग, और बेल की असमानता का उल्लंघन।",
-      "caption": "Nobel ka hawaala|entangled photons, Bell violation",
+      "text": "नोबेल का हवाला साफ़ है: जुड़े फ़ोटॉन, और बेल असमानता का उल्लंघन।",
+      "caption": "Nobel ka hawaala",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1057,8 +1057,8 @@
     },
     {
       "id": "07-09",
-      "text": "साथ में ये भी लिखा था: क्वांटम सूचना विज्ञान की शुरुआत।",
-      "caption": "Quantum information science|shuruaat",
+      "text": "यहीं से कहानी का दूसरा हिस्सा शुरू होता है।",
+      "caption": "Doosra hissa",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1066,16 +1066,16 @@
     },
     {
       "id": "07-10",
-      "text": "ज़ाइलिंगर के समूह ने टेलीपोर्टेशन दिखाया, और लंबी दूरी के नेटवर्क की नींव रखी।",
-      "caption": "Zeilinger|teleportation aur network",
+      "text": "क्वांटम सूचना विज्ञान, यहीं से शुरू।",
+      "caption": "Quantum information",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "07-11",
-      "text": "लेकिन नोबेल किसी मशीन का सर्टिफिकेट नहीं है।",
-      "caption": "Nobel machine ka certificate nahi",
+      "text": "नोबेल किसी मशीन का सर्टिफ़िकेट नहीं है।",
+      "caption": "Machine ka certificate nahi",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1087,8 +1087,8 @@
     },
     {
       "id": "07-12",
-      "text": "अब सबसे ज़रूरी बात, जो अक्सर ग़लत बताई जाती है।",
-      "caption": "Sabse zaroori baat|aksar galat bataayi jaati hai",
+      "text": "अब सबसे ज़रूरी बात, जो अक्सर गलत बताई जाती है।",
+      "caption": "Sabse zaroori baat",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1100,8 +1100,8 @@
     },
     {
       "id": "08-01",
-      "text": "एंटैंगलमेंट से आप एक बिट भी नहीं भेज सकते। ये सबसे ज़रूरी बात है।",
-      "caption": "Ek bit bhi nahi|sabse zaroori baat",
+      "text": "इससे आप एक बिट भी नहीं भेज सकते। एक बिट भी नहीं।",
+      "caption": "Ek bit bhi nahi",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1109,16 +1109,16 @@
     },
     {
       "id": "08-02",
-      "text": "बॉब अपने कण पर कुछ नहीं देखता। उसका नतीजा बेतरतीब लगता है।",
-      "caption": "Bob ko kuch nahi dikhta|nateeja random",
+      "text": "ऐलिस नापती है। बॉब को कुछ नहीं दिखता, उसके नतीजे वैसे ही रैंडम रहते हैं।",
+      "caption": "Bob ko kuch nahi dikhta",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "08-03",
-      "text": "वो नहीं जान सकता कि ऐलिस ने नापा भी या नहीं।",
-      "caption": "Pata nahi chalta|naapa ya nahi",
+      "text": "बॉब यह भी नहीं बता सकता कि ऐलिस ने नापा या नहीं।",
+      "caption": "Pata nahi chalta",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1130,8 +1130,8 @@
     },
     {
       "id": "08-04",
-      "text": "जवाब जानने के लिए ऐलिस को अपना नतीजा भेजना पड़ता है। सामान्य चैनल से।",
-      "caption": "Alice ko result bhejna padta hai|normal channel",
+      "text": "इसलिए ऐलिस को अपना नतीजा सामान्य चैनल से भेजना पड़ता है।",
+      "caption": "Normal channel se bhejna padta hai",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1143,8 +1143,8 @@
     },
     {
       "id": "08-05",
-      "text": "तभी दोनों नतीजे मिलाकर देख सकते हैं।",
-      "caption": "Tabhi milakar dekh sakte hain",
+      "text": "तभी दोनों मिलाकर देख सकते हैं।",
+      "caption": "Tabhi milakar dekh sakte",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1152,15 +1152,15 @@
     },
     {
       "id": "08-06",
-      "text": "यानी जानकारी रोशनी से तेज़ नहीं जाती।",
-      "caption": "Jankari light se tez nahi",
+      "text": "यानी जानकारी प्रकाश से तेज़ नहीं जाती।",
+      "caption": "Light se tez nahi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "08-07",
-      "text": "इसीलिए ये सापेक्षता से नहीं टकराता।",
+      "text": "और इसीलिए यह सापेक्षता से नहीं टकराता।",
       "caption": "Relativity se nahi takrata",
       "joinOut": {
         "kind": "push",
@@ -1174,7 +1174,7 @@
     {
       "id": "08-08",
       "text": "जुड़ाव असली है। संदेश नहीं।",
-      "caption": "Judav asli hai|sandesh nahi",
+      "caption": "Judav asli|sandesh nahi",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1186,8 +1186,8 @@
     },
     {
       "id": "08-09",
-      "text": "इस नियम का नाम है नो-कम्युनिकेशन।",
-      "caption": "Naam hai no-communication",
+      "text": "गणित इसे साफ़ कहता है: बॉब की अवस्था बदलती ही नहीं।",
+      "caption": "Bob ki avastha|badalti nahi",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1195,16 +1195,16 @@
     },
     {
       "id": "08-10",
-      "text": "गणित में इसे ऐसे लिखते हैं: बॉब की अलग अवस्था वही रहती है।",
-      "caption": "Bob ki alag avastha|wahi rehti hai",
+      "text": "ऐलिस चाहे कुछ भी नापे, बॉब की अलग अवस्था वही रहती है।",
+      "caption": "Kuch bhi naapo|wahi rehti",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "08-11",
-      "text": "ऐलिस कुछ भी नापे, बॉब के आँकड़े वैसे ही रहते हैं।",
-      "caption": "Alice kuch bhi naape|Bob ke aankde waise",
+      "text": "यही नियम है: बिना नतीजा भेजे, कुछ नहीं पढ़ा जा सकता।",
+      "caption": "Bina nateeja bheje|kuch nahi",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1216,8 +1216,8 @@
     },
     {
       "id": "08-12",
-      "text": "तभी दोनों अपनी सूचियाँ मिलाते हैं, और जुड़ाव दिखता है।",
-      "caption": "Suchi milate hain|tab judav dikhta hai",
+      "text": "दो सूचियाँ मिलाओ, तब जुड़ाव दिखता है।",
+      "caption": "Suchi milate hain",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1229,8 +1229,8 @@
     },
     {
       "id": "08-13",
-      "text": "ये दो सूचियाँ मिलाना ही वो सामान्य कदम है जो ज़रूरी है।",
-      "caption": "Do suchiyan milana|normal kadam",
+      "text": "और दो सूचियाँ मिलाना एक सामान्य, धीमा कदम है।",
+      "caption": "Do suchiyan milana",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1239,15 +1239,15 @@
     {
       "id": "08-14",
       "text": "इसीलिए कहा जाता है: जुड़ाव संदेश नहीं है।",
-      "caption": "Judav sandesh nahi|isliye kaha jaata",
+      "caption": "Judav sandesh nahi",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "08-15",
-      "text": "फिर भी इस जुड़ाव से काम निकलता है। टेलीपोर्टेशन से शुरू करते हैं।",
-      "caption": "Phir bhi kaam nikalta hai|teleportation",
+      "text": "फिर भी इससे काम निकलता है। अगला कदम: टेलीपोर्टेशन।",
+      "caption": "Phir bhi kaam|teleportation",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1259,8 +1259,8 @@
     },
     {
       "id": "09-01",
-      "text": "टेलीपोर्टेशन का मतलब पदार्थ भेजना नहीं है। यहाँ सिर्फ़ क्वांटम अवस्था जाती है।",
-      "caption": "Teleportation|avastha jaati hai, padarth nahi",
+      "text": "टेलीपोर्टेशन में अवस्था जाती है, पदार्थ नहीं।",
+      "caption": "Avastha jaati hai|padarth nahi",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1272,8 +1272,8 @@
     },
     {
       "id": "09-02",
-      "text": "ऐलिस अपने दो कणों की संयुक्त नाप करती है। इसे बेल माप कहते हैं।",
-      "caption": "Alice Bell maap karti hai|dono kano ki",
+      "text": "ऐलिस दोनों कणों की बेल माप करती है।",
+      "caption": "Bell maap|dono kan",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1281,16 +1281,16 @@
     },
     {
       "id": "09-03",
-      "text": "उसका नतीजा दो सामान्य बिट का होता है। बस दो।",
-      "caption": "Nateeja do bit ka|bas do",
+      "text": "और उसे सिर्फ़ दो बिट भेजने होते हैं। दो।",
+      "caption": "Do bit|bas do",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "09-04",
-      "text": "वो नतीजा सामान्य चैनल से बॉब तक जाना पड़ता है।",
-      "caption": "Nateeja normal channel se|Bob tak",
+      "text": "वे दो बिट सामान्य चैनल से जाते हैं।",
+      "caption": "Do bit|normal channel",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1302,8 +1302,8 @@
     },
     {
       "id": "09-05",
-      "text": "तभी बॉब अपने कण पर सही सुधार लगा पाता है।",
-      "caption": "Tabhi Bob sudhaar lagata hai",
+      "text": "तभी बॉब अपने कण पर सुधार लगा सकता है।",
+      "caption": "Tabhi sudhaar",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1315,8 +1315,8 @@
     },
     {
       "id": "09-06",
-      "text": "यानी अवस्था पहुँचती है, पर संदेश के साथ। बिना उसके कुछ नहीं।",
-      "caption": "Avastha pahunchti hai|sandesh ke saath",
+      "text": "यानी अवस्था पहुँचती है, पर एक संदेश के साथ।",
+      "caption": "Avastha|sandesh ke saath",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1324,15 +1324,15 @@
     },
     {
       "id": "09-07",
-      "text": "उन्नीस सौ सत्तानवे में पहली बार ये प्रयोग में दिखा।",
-      "caption": "1997|pehli baar prayog mein",
+      "text": "उन्नीस सौ सत्तानवे। पहली बार प्रयोग में।",
+      "caption": "1997|pehla prayog",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "09-08",
-      "text": "आज ये सैकड़ों किलोमीटर तक हो चुका है।",
+      "text": "और आज यह सैकड़ों किलोमीटर तक जाता है।",
       "caption": "Aaj sau kilomitar tak",
       "joinOut": {
         "kind": "push",
@@ -1345,8 +1345,8 @@
     },
     {
       "id": "09-09",
-      "text": "लेकिन हर बार सामान्य चैनल चाहिए। ये नियम नहीं टूटता।",
-      "caption": "Har baar channel chahiye|niyam nahi tootta",
+      "text": "पर हर बार चैनल चाहिए। नियम नहीं टूटता।",
+      "caption": "Har baar channel chahiye",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1358,8 +1358,8 @@
     },
     {
       "id": "09-10",
-      "text": "बेल माप का मतलब है: दो कणों को आपस में मिलाकर नापना।",
-      "caption": "Bell maap|dono ko milakar naapna",
+      "text": "बेल माप का मतलब: दोनों कणों को साथ नापना।",
+      "caption": "Dono ko milakar naapna",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1367,7 +1367,7 @@
     },
     {
       "id": "09-11",
-      "text": "उसके चार में से एक नतीजा आता है। हर नतीजा दो बिट कहता है।",
+      "text": "चार नतीजे संभव हैं। इसीलिए दो बिट।",
       "caption": "Chaar mein se ek|do bit",
       "joinOut": {
         "kind": "flash"
@@ -1375,8 +1375,8 @@
     },
     {
       "id": "09-12",
-      "text": "बॉब को वही दो बिट चाहिए, वरना उसे पता नहीं कौन सा सुधार लगाना है।",
-      "caption": "Do bit chahiye|warna pata nahi",
+      "text": "दो बिट क्यों? क्योंकि बॉब को बताना पड़ता है कि कौन सा सुधार लगाना है।",
+      "caption": "Do bit kyun",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1388,8 +1388,8 @@
     },
     {
       "id": "09-13",
-      "text": "मूल कण की अवस्था मिट जाती है। इसे क्लोनिंग नहीं किया जा सकता।",
-      "caption": "Mool avastha mit jaati hai|cloning nahi",
+      "text": "और मूल अवस्था मिट जाती है। क्लोन नहीं बनता।",
+      "caption": "Mool avastha mit jaati",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1401,8 +1401,8 @@
     },
     {
       "id": "09-14",
-      "text": "यानी टेलीपोर्टेशन नकल नहीं है। एक अवस्था एक जगह से दूसरी जगह जाती है।",
-      "caption": "Teleportation nakal nahi|avastha ek jagah se doosri",
+      "text": "टेलीपोर्टेशन नकल नहीं है। अवस्था एक जगह से दूसरी जगह जाती है।",
+      "caption": "Nakal nahi",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1410,16 +1410,16 @@
     },
     {
       "id": "09-15",
-      "text": "अब देखते हैं ये कहाँ काम आता है।",
-      "caption": "Ab dekhte hain|kahan kaam aata hai",
+      "text": "अब देखते हैं यह कहाँ काम आता है।",
+      "caption": "Kahan kaam aata hai",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "10-01",
-      "text": "तीन बड़े काम हैं। और तीनों अलग अलग हैं।",
-      "caption": "Teen bade kaam|teeno alag",
+      "text": "तीन बड़े क्षेत्र, और तीनों अलग।",
+      "caption": "Teen kaam|teeno alag",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1431,8 +1431,8 @@
     },
     {
       "id": "10-02",
-      "text": "पहला: क्वांटम क्रिप्टोग्राफी। सुरक्षित चाबी बाँटने का तरीका।",
-      "caption": "Pehla|quantum cryptography",
+      "text": "पहला: क्वांटम क्रिप्टोग्राफ़ी।",
+      "caption": "Quantum cryptography",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1444,8 +1444,8 @@
     },
     {
       "id": "10-03",
-      "text": "उन्नीस सौ चौरासी में बेनेट और ब्रासार्ड ने पहला तरीका दिया।",
-      "caption": "1984|Bennett aur Brassard",
+      "text": "उन्नीस सौ चौरासी। बेनेट और ब्रासार्ड।",
+      "caption": "1984|Bennett Brassard",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1453,16 +1453,16 @@
     },
     {
       "id": "10-04",
-      "text": "कोई चोरी से नापे, तो अवस्था बिगड़ जाती है। और पकड़ा जाता है।",
-      "caption": "Chori se naape|avastha bigad jaati hai",
+      "text": "कोई चोरी से नापे, तो अवस्था बिगड़ जाती है, और वह पकड़ा जाता है।",
+      "caption": "Chori pakdi jaati hai",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "10-05",
-      "text": "दूसरा: क्वांटम कंप्यूटर। वहाँ जुड़ाव ईंधन जैसा है।",
-      "caption": "Doosra|quantum computer",
+      "text": "दूसरा: क्वांटम कंप्यूटर।",
+      "caption": "Quantum computer",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1474,8 +1474,8 @@
     },
     {
       "id": "10-06",
-      "text": "तीसरा: क्वांटम नेटवर्क। जुड़ी अवस्था को दूर तक पहुँचाना।",
-      "caption": "Teesra|quantum network",
+      "text": "तीसरा: क्वांटम नेटवर्क।",
+      "caption": "Quantum network",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1487,8 +1487,8 @@
     },
     {
       "id": "10-07",
-      "text": "दो हज़ार सत्रह में मीशियस सैटलाइट ने बारह सौ तीन किलोमीटर तक भेजा।",
-      "caption": "2017|Micius, barah sau teen kilometre",
+      "text": "दो हज़ार सत्रह। मिसियस उपग्रह, बारह सौ किलोमीटर।",
+      "caption": "2017|Micius 1203 km",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1496,16 +1496,16 @@
     },
     {
       "id": "10-08",
-      "text": "एक सेकंड में उनसठ लाख जोड़े बने। ज़मीन तक एक हज़ार एक सौ सड़सठ पहुँचे।",
-      "caption": "Unasath lakh jode|ek hazar ek sau sadsath",
+      "text": "इतने जोड़े कि गिनना मुश्किल हो जाए।",
+      "caption": "Jode ginna mushkil",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "10-09",
-      "text": "इन तीनों को एक न समझें। हर एक का अपना नियम है।",
-      "caption": "Teeno ko ek na samjhein|apna niyam",
+      "text": "तीनों को एक न समझें। हर एक के अपने नियम हैं।",
+      "caption": "Teeno ko ek na samjhein",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1517,8 +1517,8 @@
     },
     {
       "id": "10-10",
-      "text": "चाबी बाँटने में फ़ायदा ये है: चोरी पकड़ में आ जाती है।",
-      "caption": "Chabi baantne mein fayda|chori pakdi jaati hai",
+      "text": "चाबी बाँटने में फ़ायदा साफ़ है: चोरी पकड़ी जाती है।",
+      "caption": "Chabi baantne mein fayda",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1530,8 +1530,8 @@
     },
     {
       "id": "10-11",
-      "text": "क्वांटम कंप्यूटर में जुड़ाव कई क्यूबिट को एक साथ जोड़ता है।",
-      "caption": "Quantum computer|kai qubit ek saath",
+      "text": "कंप्यूटर में जुड़ाव ईंधन है: n क्यूबिट, दो की घात n आयाम।",
+      "caption": "n qubit|2^n",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1539,16 +1539,16 @@
     },
     {
       "id": "10-12",
-      "text": "नेटवर्क में जुड़ाव को दूर तक भेजना पड़ता है। इसमें फोटॉन सबसे अच्छे हैं।",
-      "caption": "Network mein door tak|photon sabse achhe",
+      "text": "नेटवर्क में फ़ोटॉन सबसे अच्छा वाहक है।",
+      "caption": "Photon sabse achha",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "10-13",
-      "text": "रिपीटर की ज़रूरत पड़ती है, क्योंकि फाइबर में फोटॉन खोते हैं।",
-      "caption": "Repeater ki zaroorat|photon khote hain",
+      "text": "पर फ़ोटॉन खोते हैं, तो रिपीटर चाहिए।",
+      "caption": "Repeater ki zaroorat",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1560,8 +1560,8 @@
     },
     {
       "id": "10-14",
-      "text": "इसीलिए सैटलाइट और फाइबर, दोनों रास्ते चल रहे हैं।",
-      "caption": "Satellite aur fibre|dono raaste",
+      "text": "इसलिए दो रास्ते: सैटेलाइट और फ़ाइबर।",
+      "caption": "Satellite aur fibre",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1573,8 +1573,8 @@
     },
     {
       "id": "10-15",
-      "text": "अब आख़िरी और सबसे ज़रूरी बात।",
-      "caption": "Aakhri aur sabse zaroori baat",
+      "text": "आख़िरी और सबसे ज़रूरी बात।",
+      "caption": "Sabse zaroori baat",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1582,15 +1582,15 @@
     },
     {
       "id": "11-01",
-      "text": "हर बहस में तीन स्तर होते हैं। इन्हें मिलाना सबसे बड़ी ग़लती है।",
-      "caption": "Teen star|milana sabse badi galti",
+      "text": "तीन स्तर। इन्हें मिलाना सबसे बड़ी गलती है।",
+      "caption": "Teen star|milana galti",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "11-02",
-      "text": "पहला स्तर: गणित। एक अवस्था जो गुणनफल में नहीं टूटती।",
+      "text": "पहला स्तर: गणित।",
       "caption": "Pehla|ganit",
       "joinOut": {
         "kind": "push",
@@ -1603,8 +1603,8 @@
     },
     {
       "id": "11-03",
-      "text": "यहाँ कोई बहस नहीं है। ये परिभाषा है।",
-      "caption": "Yahan bahas nahi|paribhasha hai",
+      "text": "यहाँ कोई बहस नहीं, यह परिभाषा है।",
+      "caption": "Yahan bahas nahi",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1616,7 +1616,7 @@
     },
     {
       "id": "11-04",
-      "text": "दूसरा स्तर: प्रयोग। नतीजे सीमा तोड़ते हैं, और ये दोहराया जा चुका है।",
+      "text": "दूसरा स्तर: प्रयोग।",
       "caption": "Doosra|prayog",
       "joinOut": {
         "kind": "squeeze",
@@ -1625,16 +1625,16 @@
     },
     {
       "id": "11-05",
-      "text": "यहाँ भी बहस कम है। माप माप है।",
-      "caption": "Yahan bhi bahas kam|maap maap hai",
+      "text": "यहाँ भी बहस कम, माप ज़्यादा।",
+      "caption": "Yahan maap",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "11-06",
-      "text": "तीसरा स्तर: मतलब। इसका अर्थ क्या है? यहीं राय बँटती है।",
-      "caption": "Teesra|matlab, yahin raay bantti hai",
+      "text": "तीसरा स्तर: मतलब। और यहीं राय बँटती है।",
+      "caption": "Teesra|matlab",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1646,8 +1646,8 @@
     },
     {
       "id": "11-07",
-      "text": "कोई कहता है दुनिया ग़ैर-स्थानीय है।",
-      "caption": "Koi kehta hai|duniya non-local hai",
+      "text": "कोई कहता है: दुनिया non-local है।",
+      "caption": "Koi kehta hai|non-local",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1659,8 +1659,8 @@
     },
     {
       "id": "11-08",
-      "text": "कोई कहता है जानकारी की एक सीमा है, बस इतना।",
-      "caption": "Koi kehta hai|jankari ki seema",
+      "text": "कोई कहता है: यह जानकारी की सीमा है।",
+      "caption": "Jankari ki seema",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1668,16 +1668,16 @@
     },
     {
       "id": "11-09",
-      "text": "कोई कहता है सवाल अभी खुला है। और ये भी ठीक है।",
-      "caption": "Koi kehta hai|sawaal khula hai",
+      "text": "कोई कहता है: सवाल अभी खुला है।",
+      "caption": "Sawaal khula hai",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "11-10",
-      "text": "इस तीसरे स्तर पर चार बड़े विचार हैं। चारों गंभीर हैं।",
-      "caption": "Chaar bade vichar|chaaron serious",
+      "text": "चार बड़े पढ़ने के तरीके, और चारों गंभीर।",
+      "caption": "Chaar vichar",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1689,8 +1689,8 @@
     },
     {
       "id": "11-11",
-      "text": "कुछ भौतिकविद् कहते हैं: माप से अवस्था बदलती है, बस इतना जानना काफ़ी है।",
-      "caption": "Maap se avastha badalti|bas itna kaafi",
+      "text": "माप से अवस्था बदलती है, बस इतना सबको मानना है।",
+      "caption": "Itna sab maante hain",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1702,8 +1702,8 @@
     },
     {
       "id": "11-12",
-      "text": "कुछ कहते हैं: हर नतीजा किसी दुनिया में सच होता है।",
-      "caption": "Har nateeja|kisi duniya mein sach",
+      "text": "एक रास्ता: हर नतीजा किसी दुनिया में सच है।",
+      "caption": "Many worlds",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1711,16 +1711,16 @@
     },
     {
       "id": "11-13",
-      "text": "कुछ कहते हैं: छुपी हुई अवस्था है, पर वो ग़ैर-स्थानीय है।",
-      "caption": "Chhupi avastha hai|par non-local",
+      "text": "दूसरा: एक छुपी अवस्था है, पर वह भी non-local।",
+      "caption": "Pilot wave",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "11-14",
-      "text": "फ़िलहाल कोई प्रयोग इनमें से किसी एक को चुन नहीं पाया है।",
-      "caption": "Koi prayog chun nahi paya|abhi tak",
+      "text": "आज तक कोई प्रयोग इनमें से एक नहीं चुन पाया।",
+      "caption": "Koi prayog chun nahi paya",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1732,8 +1732,8 @@
     },
     {
       "id": "11-15",
-      "text": "तीनों स्तर अलग रखिए। तभी बात साफ़ रहेगी।",
-      "caption": "Teeno alag rakhiye|baat saaf rahegi",
+      "text": "तीनों स्तर अलग रखिए, बात साफ़ रहेगी।",
+      "caption": "Teeno alag rakhiye",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1745,8 +1745,8 @@
     },
     {
       "id": "12-01",
-      "text": "तो एक लाइन में: एंटैंगलमेंट एक ही अवस्था है, दो जगह।",
-      "caption": "Ek line mein|ek avastha, do jagah",
+      "text": "एक लाइन में: एक अवस्था, दो जगह।",
+      "caption": "Ek line|ek avastha do jagah",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1754,16 +1754,16 @@
     },
     {
       "id": "12-02",
-      "text": "गणित में वो गुणनफल में नहीं टूटती। यही उसकी पहचान है।",
-      "caption": "Product mein nahi tootti|yahi pehchaan",
+      "text": "वह अवस्था जो दो अलग टुकड़ों में नहीं टूटती।",
+      "caption": "Product mein nahi tootti",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "12-03",
-      "text": "उन्नीस सौ पैंतीस में आइंस्टीन ने सवाल उठाया।",
-      "caption": "1935|Einstein ne sawaal uthaya",
+      "text": "उन्नीस सौ पैंतीस: आइंस्टाइन ने सवाल उठाया।",
+      "caption": "1935|sawaal",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1775,8 +1775,8 @@
     },
     {
       "id": "12-04",
-      "text": "उन्नीस सौ चौंसठ में बेल ने सीमा दी।",
-      "caption": "1964|Bell ne seema di",
+      "text": "उन्नीस सौ चौंसठ: बेल ने सीमा दी।",
+      "caption": "1964|Bell ki seema",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1788,8 +1788,8 @@
     },
     {
       "id": "12-05",
-      "text": "और प्रयोगों ने वो सीमा तोड़ दी।",
-      "caption": "Prayogon ne seema todi",
+      "text": "प्रयोगों ने वह सीमा तोड़ दी।",
+      "caption": "Seema tooti",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1797,15 +1797,15 @@
     },
     {
       "id": "12-06",
-      "text": "दो हज़ार बाईस में इस काम को नोबेल मिला।",
-      "caption": "2022|Nobel mila",
+      "text": "दो हज़ार बाईस: नोबेल।",
+      "caption": "2022|Nobel",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "12-07",
-      "text": "पर संदेश आज भी रोशनी से तेज़ नहीं जाता।",
+      "text": "और फिर भी: संदेश प्रकाश से तेज़ नहीं।",
       "caption": "Sandesh light se tez nahi",
       "joinOut": {
         "kind": "push",
@@ -1819,7 +1819,7 @@
     {
       "id": "12-08",
       "text": "जुड़ाव असली है। संदेश नहीं।",
-      "caption": "Judav asli hai|sandesh nahi",
+      "caption": "Judav asli|sandesh nahi",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1831,8 +1831,8 @@
     },
     {
       "id": "12-09",
-      "text": "और यही इसकी ताक़त है। इसी से सुरक्षित चाबी और क्वांटम कंप्यूटर बनते हैं।",
-      "caption": "Yahi taqat hai|chabi aur computer",
+      "text": "इसी पर आज की चाबी और कंप्यूटर टिके हैं।",
+      "caption": "Chabi aur computer",
       "joinOut": {
         "kind": "squeeze",
         "dir": -1
@@ -1840,16 +1840,16 @@
     },
     {
       "id": "12-10",
-      "text": "अगर एक वाक्य याद रखना हो, तो यही: अवस्था एक है, ब्यौरा अलग नहीं होता।",
-      "caption": "Ek vaakya|avastha ek hai",
+      "text": "एक वाक्य: अवस्था एक है, टुकड़े नहीं।",
+      "caption": "Ek vaakya",
       "joinOut": {
         "kind": "flash"
       }
     },
     {
       "id": "12-11",
-      "text": "और अगर एक ग़लतफ़हमी मिटानी हो: ये संदेश भेजने का ज़रिया नहीं है।",
-      "caption": "Ek galatfehmi|sandesh ka zariya nahi",
+      "text": "एक ग़लतफ़हमी: यह संदेश भेजने का ज़रिया है।",
+      "caption": "Ek galatfehmi",
       "joinOut": {
         "kind": "push",
         "anchor": {
@@ -1861,8 +1861,8 @@
     },
     {
       "id": "12-12",
-      "text": "बाक़ी सब इसी एक बात से निकलता है।",
-      "caption": "Baaki sab isi se nikalta hai",
+      "text": "बाक़ी सब इसी से निकलता है।",
+      "caption": "Baaki sab isi se",
       "joinOut": {
         "kind": "portal",
         "anchor": {
@@ -1883,8 +1883,8 @@
     },
     {
       "id": "12-14",
-      "text": "यही कहानी है एंटैंगलमेंट की।",
-      "caption": "Yahi kahani hai|entanglement ki",
+      "text": "यही कहानी है, और यह अभी खत्म नहीं हुई।",
+      "caption": "Yahi kahani hai",
       "joinOut": {
         "kind": "push",
         "anchor": {
