@@ -135,13 +135,22 @@ const Formula: React.FC<{s: ShotData; t: number; dur: number}> = ({s, t, dur}) =
   const a = ramp(t, dur * 0.08, dur * 0.4);
   const accent = ACCENT[s.accent] ?? C.cyan;
   const eq = String(s.props.eq ?? '');
-  const size = eq.length > 26 ? 62 : 84;
+  // Size the formula to the box, not to a character-count guess: the box is
+  // 840 wide, so a long equation at a fixed size spills past the border.
+  const INNER = 760;
+  const eqLen = Math.max(1, eq.length);
+  const size = Math.max(40, Math.min(84, Math.floor(INNER / (0.6 * eqLen))));
+  const estWidth = 0.6 * eqLen * size;
+  const squeeze = estWidth > INNER ? {textLength: INNER, lengthAdjust: 'spacingAndGlyphs' as const} : {};
   return (
     <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
       <Dust t={t} color={accent} n={12} />
       <rect x={W / 2 - 420} y={330} width={840} height={260} rx={28} fill="#0d1730" stroke={accent}
         strokeWidth={4} opacity={0.4 + 0.6 * a} />
-      <T x={W / 2} y={492} size={size} color={accent}>{eq}</T>
+      <text x={W / 2} y={492} fill={accent} fontSize={size} textAnchor="middle"
+        fontFamily='Helvetica, Arial, "DejaVu Sans", sans-serif' fontWeight={800} letterSpacing={1} {...squeeze}>
+        {eq}
+      </text>
       <T x={W / 2} y={660} size={38} color="#9fb2e0">{String(s.props.note ?? '')}</T>
     </svg>
   );

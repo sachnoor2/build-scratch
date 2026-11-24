@@ -155,10 +155,31 @@ jobs:
 
       - name: Stitch
         run: |
-          for f in out/chunks/chunk-*.mp4; do echo "file '$(basename $f)'"; done > out/chunks/list.txt
+          # Numeric order, never shell glob order: chunk-10.mp4 sorts before
+          # chunk-2.mp4, which silently scrambles the film's running order.
+          n=$(ls out/chunks/chunk-*.mp4 | wc -l)
+          for i in $(seq 1 "$n"); do echo "file 'chunk-$i.mp4'"; done > out/chunks/list.txt
+          echo "concat order:"; cat out/chunks/list.txt
           ffmpeg -y -f concat -safe 0 -i out/chunks/list.txt -c copy -movflags +faststart out/video.mp4
           ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,nb_frames -of default=nw=1 out/video.mp4 | tee out/probe.txt
           ffmpeg -hide_banner -i out/video.mp4 -af volumedetect -f null - 2>&1 | grep -E "mean_volume|max_volume" | tee -a out/probe.txt
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: film-input
+
+      - name: Frame count must match the manifest
+        run: |
+          python - <<'PY'
+          import json, subprocess, sys
+          want = json.load(open("src/manifest.json", encoding="utf-8"))["totalFrames"]
+          got = int(subprocess.check_output([
+              "ffprobe", "-v", "error", "-select_streams", "v:0", "-count_frames",
+              "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0", "out/video.mp4"]).strip())
+          print(f"manifest frames {want}, stitched frames {got}")
+          if got != want:
+              sys.exit(f"FRAME COUNT MISMATCH: stitched {got} != manifest {want}")
+          PY
 
       - uses: actions/upload-artifact@v4
         with:
