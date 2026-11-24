@@ -1,16 +1,19 @@
 name: render
 
 on:
+  push:
+    branches: [render-run]
   workflow_dispatch:
     inputs:
       seconds_per_frame:
-        description: "Measured seconds per frame from the benchmark"
-        required: true
-        default: "4.0"
+        description: "Optional. Leave empty to benchmark on the runner."
+        required: false
+        default: ""
 
 jobs:
   voice:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,26 +41,56 @@ jobs:
   plan:
     needs: voice
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     outputs:
       shards: ${{ steps.plan.outputs.shards }}
+      spf: ${{ steps.spf.outputs.spf }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - uses: actions/download-artifact@v4
         with:
           name: voice
       - name: Shotlist from the measured voice
         run: python3 scripts/make_shotlist.py
+      - name: Blender
+        run: sudo apt-get update && sudo apt-get install -y blender
+      - name: Build world
+        run: blender -b -P scenes/build_world.py -- --out scenes/world.blend
+      # Measure the cost here rather than trusting a typed-in number. plan_shards sizes every
+      # shard to ~60 minutes from this, which is what keeps each job inside GitHub's 6-hour
+      # limit even when the machine is slow.
+      - name: Benchmark seconds per frame
+        id: spf
+        run: |
+          s=$(date +%s)
+          blender -b scenes/world.blend -P scenes/render.py -- \
+            --camera cam-pair-wide --start 0 --end 5 --out public/out --samples 8 > /dev/null 2>&1
+          e=$(date +%s)
+          python3 scripts/record_bench.py --start "$s" --end "$e" --frames 6
+          echo "spf=$(python3 -c "import json;print(json.load(open('bench.json'))['secondsPerFrame'])")" >> "$GITHUB_OUTPUT"
       - id: plan
-        run: echo "shards=$(python3 scripts/plan_shards.py --seconds-per-frame ${{ inputs.seconds_per_frame }} --json)" >> "$GITHUB_OUTPUT"
+        run: |
+          SPF="${{ inputs.seconds_per_frame }}"
+          if [ -z "$SPF" ]; then
+            SPF=$(python3 -c "import json;print(json.load(open('bench.json'))['secondsPerFrame'])")
+          fi
+          echo "sizing shards at ${SPF}s/frame"
+          echo "shards=$(python3 scripts/plan_shards.py --seconds-per-frame "$SPF" --json)" >> "$GITHUB_OUTPUT"
 
   render:
     needs: plan
     runs-on: ubuntu-latest
+    # The 6-hour ceiling applies per job. plan_shards sizes each shard to ~60 min, so this is a
+    # backstop rather than the operating limit.
+    timeout-minutes: 350
     strategy:
       matrix:
         shard: ${{ fromJSON(needs.plan.outputs.shards) }}
-      # raised from 4: the 6-hour job limit is the real constraint, and at 4 in parallel the
-      # wall clock for a 13-minute film runs past a day. Each job is still sized to ~60 min.
+      # raised from 4: at 4 in parallel the wall clock for a 13-minute film runs past a day.
+      # Each job is still sized to ~60 minutes of work.
       max-parallel: 12
     steps:
       - uses: actions/checkout@v4
@@ -77,12 +110,16 @@ jobs:
   assemble:
     needs: [voice, render]
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - uses: actions/download-artifact@v4
         with:
           pattern: frames-*
