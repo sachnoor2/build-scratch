@@ -4,3 +4,7 @@ public/audio
 .piper
 models
 src/voice.json
+
+# python bytecode caches (regenerated; not source)
+__pycache__/
+*.pyc
