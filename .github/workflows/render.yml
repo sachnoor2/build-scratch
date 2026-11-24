@@ -2,13 +2,8 @@ name: render
 
 on:
   push:
-    branches: [render-run]
+    branches: [quantum-3d-blender]
   workflow_dispatch:
-    inputs:
-      seconds_per_frame:
-        description: "Optional. Leave empty to benchmark on the runner."
-        required: false
-        default: ""
 
 jobs:
   voice:
@@ -27,10 +22,11 @@ jobs:
           ID=hi_IN-pratham-medium
           curl -fsSL -o $ID.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/hi/hi_IN/pratham/medium/$ID.onnx"
           curl -fsSL -o $ID.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/hi/hi_IN/pratham/medium/$ID.onnx.json"
-      - name: Narration
+      - name: Narration at 1.2x, natural accent
         run: |
           pip install -q imageio-ffmpeg
-          python scripts/hinglish_voice.py --script narration.json --out public/audio --piper .piper/piper/piper --voice .piper/hi_IN-pratham-medium.onnx
+          python scripts/hinglish_voice.py --script narration.json --out public/audio \
+            --piper .piper/piper/piper --voice .piper/hi_IN-pratham-medium.onnx
       - uses: actions/upload-artifact@v4
         with:
           name: voice
@@ -44,7 +40,6 @@ jobs:
     timeout-minutes: 120
     outputs:
       shards: ${{ steps.plan.outputs.shards }}
-      spf: ${{ steps.spf.outputs.spf }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -59,57 +54,58 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y blender
       - name: Build world
         run: blender -b -P scenes/build_world.py -- --out scenes/world.blend
-      # Measure the cost here rather than trusting a typed-in number. plan_shards sizes every
-      # shard to ~60 minutes from this, which is what keeps each job inside GitHub's 6-hour
-      # limit even when the machine is slow.
+      # Measure, never guess. plan_shards sizes every shard to ~60 minutes from this number,
+      # which is what keeps each job far inside GitHub's 6-hour limit.
       - name: Benchmark seconds per frame
-        id: spf
         run: |
           s=$(date +%s)
           blender -b scenes/world.blend -P scenes/render.py -- \
             --camera cam-pair-wide --start 0 --end 5 --out public/out --samples 8 > /dev/null 2>&1
           e=$(date +%s)
           python3 scripts/record_bench.py --start "$s" --end "$e" --frames 6
-          python3 scripts/read_bench.py >> "$GITHUB_OUTPUT"
       - id: plan
         run: |
-          SPF="${{ inputs.seconds_per_frame }}"
-          if [ -z "$SPF" ]; then
-            SPF=$(python3 -c "import json;print(json.load(open('bench.json'))['secondsPerFrame'])")
-          fi
+          SPF=$(python3 -c "import json;print(json.load(open('bench.json'))['secondsPerFrame'])")
           echo "sizing shards at ${SPF}s/frame"
           echo "shards=$(python3 scripts/plan_shards.py --seconds-per-frame "$SPF" --json)" >> "$GITHUB_OUTPUT"
 
   render:
     needs: plan
-    # Gated on the commit message. 19,750 PNG frames is ~10 GB of artifacts against a 500 MB
-    # quota, so the full film only renders when the push says [render]; otherwise this pipeline
-    # runs voice + plan + benchmark, which is what tells us the real per-frame cost.
+    # Gated on the commit message so a documentation push does not start a 100+ hour render.
     if: contains(github.event.head_commit.message, '[render]')
     runs-on: ubuntu-latest
-    # The 6-hour ceiling applies per job. plan_shards sizes each shard to ~60 min, so this is a
-    # backstop rather than the operating limit.
     timeout-minutes: 350
     strategy:
       matrix:
         shard: ${{ fromJSON(needs.plan.outputs.shards) }}
-      # raised from 4: at 4 in parallel the wall clock for a 13-minute film runs past a day.
-      # Each job is still sized to ~60 minutes of work.
       max-parallel: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Blender
-        run: sudo apt-get update && sudo apt-get install -y blender
+      - name: Blender and ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y blender ffmpeg
       - name: Build world
         run: blender -b -P scenes/build_world.py -- --out scenes/world.blend
       - name: Render shard
         run: python3 scripts/render_shard.py --start ${{ matrix.shard.start }} --end ${{ matrix.shard.end }}
+      # Frames travel as ONE mp4 per shard. 19,700 PNGs is ~10 GB against a 500 MB quota;
+      # 138 shard videos are a few hundred MB and carry the same picture.
+      - name: Encode shard
+        run: |
+          FPS=$(python3 -c "import json;print(json.load(open('brief.json'))['fps'])")
+          START=${{ matrix.shard.start }}
+          COUNT=$(( ${{ matrix.shard.end }} - ${{ matrix.shard.start }} + 1 ))
+          ffmpeg -y -framerate "$FPS" -start_number "$START" -i public/out/frame_%06d.png \
+            -frames:v "$COUNT" -c:v libx264 -crf 18 -pix_fmt yuv420p \
+            public/out/shard_${{ matrix.shard.index }}.mp4
+          rm -f public/out/frame_*.png
+          ls -la public/out/
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: frames-${{ matrix.shard.index }}
-          path: public/out/frame_*.png
-          if-no-files-found: warn
+          name: shard-${{ matrix.shard.index }}
+          path: public/out/shard_${{ matrix.shard.index }}.mp4
+          if-no-files-found: error
+          retention-days: 7
 
   assemble:
     needs: [voice, render]
@@ -124,9 +120,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - uses: actions/download-artifact@v4
         with:
-          pattern: frames-*
+          pattern: shard-*
           merge-multiple: true
           path: public/out
       - uses: actions/download-artifact@v4
@@ -135,7 +133,10 @@ jobs:
       - name: Install
         run: if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
       - run: npx tsc --noEmit
-      - run: python3 scripts/stitch.py
+      - name: Verify coverage and stitch
+        run: python3 scripts/stitch.py
+      - name: Composite captions and audio
+        run: npx remotion render src/index.ts Video out/video.mp4 --concurrency=3 --log=error
       - run: python3 scripts/qa.py
       - uses: actions/upload-artifact@v4
         with:

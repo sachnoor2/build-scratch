@@ -1,13 +1,14 @@
 {
-  "title": "Ye Tires Aapko Kabhi Crush Nahi Karenge",
+  "title": "Quantum Entanglement — do kan, ek hi avastha",
   "genre": "explainer",
   "language": "hinglish",
-  "orientation": "vertical",
-  "width": 720,
-  "height": 1280,
-  "fps": 30,
-  "targetSeconds": 42,
+  "orientation": "landscape",
+  "width": 960,
+  "height": 540,
+  "fps": 24,
+  "targetSeconds": 821,
   "voice": "piper:hi_IN-pratham-medium",
-  "style": "zack-d-films",
-  "notes": "Decisions live here so later turns do not re-derive them."
+  "narratorSpeed": 1.2,
+  "style": "abstract-3d",
+  "notes": "Single source of truth. Scripts read this file; nothing hardcodes width, height or fps. Landscape 16:9 because the film is 13+ minutes, not a vertical short. 960x540 is the cost ceiling: measured 25.2 s/frame on a 4-core runner at 1280x720-equivalent cost would triple the shard count."
 }

@@ -17,17 +17,18 @@ from mathutils import Vector
 
 argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
 ap = argparse.ArgumentParser()
-_sl = {}
-try:                                     # the film's own timing decides the world's length
+_sl, _br = {}, {}
+try:                                     # brief.json owns size/fps; the shotlist owns length
     import json as _json
     _sl = _json.load(open("shotlist.json", encoding="utf-8"))
+    _br = _json.load(open("brief.json", encoding="utf-8"))
 except Exception:
     pass
 ap.add_argument("--out", default="scenes/world.blend")
 ap.add_argument("--frames", type=int, default=int(_sl.get("totalFrames", 19750)))
-ap.add_argument("--fps", type=int, default=int(_sl.get("fps", 24)))
-ap.add_argument("--width", type=int, default=int(_sl.get("width", 960)))
-ap.add_argument("--height", type=int, default=int(_sl.get("height", 540)))
+ap.add_argument("--fps", type=int, default=int(_br.get("fps", _sl.get("fps", 24))))
+ap.add_argument("--width", type=int, default=int(_br.get("width", 960)))
+ap.add_argument("--height", type=int, default=int(_br.get("height", 540)))
 a = ap.parse_args(argv)
 
 CYAN = (0.10, 0.80, 1.00)

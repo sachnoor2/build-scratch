@@ -17,7 +17,8 @@ CAMS = {"pair": ["cam-pair-wide", "cam-pair-macro"],
         "chart": ["cam-chart", "cam-chart-macro"]}
 
 man = json.load(open("src/manifest.json", encoding="utf-8"))
-fps = man["fps"]
+brief = json.load(open("brief.json", encoding="utf-8"))
+fps = brief.get("fps", man["fps"])          # brief.json is the single source of truth
 shots, at = [], 0
 for i, s in enumerate(man["scenes"]):
     ch = int(s["id"].split("-")[0])
@@ -33,7 +34,8 @@ for i, s in enumerate(man["scenes"]):
                   "cameraIn": "push-in@1.0", "cameraOut": "push-in@1.0"})
     at += s["frames"]
 
-json.dump({"fps": fps, "width": 960, "height": 540, "world": "scenes/world.blend",
+json.dump({"fps": fps, "width": brief["width"], "height": brief["height"],
+           "world": "scenes/world.blend",
            "totalFrames": at, "sets": sorted(set(SET_OF_CHAPTER.values())), "shots": shots},
           open("shotlist.json", "w", encoding="utf-8"), indent=1)
 print(f"shotlist: {len(shots)} shots, {at} frames = {at/fps:.1f}s")
