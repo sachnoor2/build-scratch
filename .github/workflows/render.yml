@@ -82,6 +82,10 @@ jobs:
 
   render:
     needs: plan
+    # Gated: the full render only runs when RENDER_GO exists in the repo. 19,750 PNG frames is
+    # ~10 GB of artifacts against a 500 MB quota, so the frame hand-off has to become per-shard
+    # video before this is switched on for the whole film.
+    if: ${{ hashFiles('RENDER_GO') != '' }}
     runs-on: ubuntu-latest
     # The 6-hour ceiling applies per job. plan_shards sizes each shard to ~60 min, so this is a
     # backstop rather than the operating limit.
