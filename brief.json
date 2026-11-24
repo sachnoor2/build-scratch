@@ -1,0 +1,13 @@
+{
+  "title": "Ye Tires Aapko Kabhi Crush Nahi Karenge",
+  "genre": "explainer",
+  "language": "hinglish",
+  "orientation": "vertical",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "targetSeconds": 42,
+  "voice": "piper:hi_IN-pratham-medium",
+  "style": "zack-d-films",
+  "notes": "Decisions live here so later turns do not re-derive them."
+}

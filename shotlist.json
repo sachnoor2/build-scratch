@@ -1,0 +1,229 @@
+{
+  "fps": 30,
+  "width": 720,
+  "height": 1280,
+  "world": "scenes/world.blend",
+  "totalFrames": 0,
+  "sets": [
+    "workshop",
+    "roadside",
+    "inside-tyre"
+  ],
+  "shots": [
+    {
+      "id": "01-hook",
+      "start": 0,
+      "end": 95,
+      "camera": "cam-macro",
+      "set": "inside-tyre",
+      "sim": "softbody",
+      "character": "hand",
+      "stateIn": "tire rolling, tread flexing",
+      "stateOut": "tire slams down, tread flattens",
+      "motion": [
+        "tread deformation",
+        "dust"
+      ],
+      "samples": 32,
+      "cameraIn": "push-in@1.0",
+      "cameraOut": "push-in@1.0"
+    },
+    {
+      "id": "02-hook-reaction",
+      "start": 96,
+      "end": 155,
+      "camera": "cam-action",
+      "set": "roadside",
+      "sim": "particles",
+      "character": "rider-flinch",
+      "stateIn": "rider mid-air",
+      "stateOut": "rider lands, gravel scatters",
+      "motion": [
+        "rider",
+        "gravel particles"
+      ],
+      "samples": 32,
+      "cameraIn": "push-in@1.0",
+      "cameraOut": "whip-left@1.2"
+    },
+    {
+      "id": "03-setup",
+      "start": 156,
+      "end": 227,
+      "camera": "cam-wide",
+      "set": "roadside",
+      "sim": "rigidbody",
+      "character": "rider-standing",
+      "stateIn": "bike on its side",
+      "stateOut": "rider upright, bike lifted",
+      "motion": [
+        "bike settle",
+        "dust"
+      ],
+      "samples": 32,
+      "cameraIn": "whip-left@1.2",
+      "cameraOut": "settle@0.4"
+    },
+    {
+      "id": "04-setup-detail",
+      "start": 228,
+      "end": 275,
+      "camera": "cam-macro",
+      "set": "roadside",
+      "sim": "none",
+      "character": "hand",
+      "stateIn": "hand on tire",
+      "stateOut": "hand presses, tire does not give",
+      "motion": [
+        "hand press",
+        "tread detail"
+      ],
+      "samples": 32,
+      "cameraIn": "settle@0.4",
+      "cameraOut": "push-in@1.0"
+    },
+    {
+      "id": "05-value",
+      "start": 276,
+      "end": 347,
+      "camera": "cam-action",
+      "set": "inside-tyre",
+      "sim": "softbody",
+      "character": "none",
+      "stateIn": "cavity filled with air",
+      "stateOut": "cavity filled with solid blocks",
+      "motion": [
+        "air escape",
+        "blocks settle"
+      ],
+      "samples": 32,
+      "cameraIn": "push-in@1.0",
+      "cameraOut": "orbit-left@0.8"
+    },
+    {
+      "id": "06-value-two",
+      "start": 348,
+      "end": 407,
+      "camera": "cam-macro",
+      "set": "inside-tyre",
+      "sim": "rigidbody",
+      "character": "none",
+      "stateIn": "blocks loose",
+      "stateOut": "blocks lock under load",
+      "motion": [
+        "block interlock"
+      ],
+      "samples": 32,
+      "cameraIn": "orbit-left@0.8",
+      "cameraOut": "push-in@1.0"
+    },
+    {
+      "id": "07-proof",
+      "start": 408,
+      "end": 455,
+      "camera": "cam-macro",
+      "set": "workshop",
+      "sim": "softbody",
+      "character": "hand",
+      "stateIn": "press pushing on a test block",
+      "stateOut": "block deforms and springs back",
+      "motion": [
+        "press stroke",
+        "block recovery"
+      ],
+      "samples": 32,
+      "cameraIn": "push-in@1.0",
+      "cameraOut": "tilt-down@0.7"
+    },
+    {
+      "id": "08-proof-two",
+      "start": 456,
+      "end": 503,
+      "camera": "cam-action",
+      "set": "workshop",
+      "sim": "fluid",
+      "character": "none",
+      "stateIn": "punctured cell",
+      "stateOut": "sealant flows and cures",
+      "motion": [
+        "sealant flow"
+      ],
+      "samples": 32,
+      "cameraIn": "tilt-down@0.7",
+      "cameraOut": "track-right@1.0"
+    },
+    {
+      "id": "09-escalation",
+      "start": 504,
+      "end": 575,
+      "camera": "cam-wide",
+      "set": "workshop",
+      "sim": "smoke",
+      "character": "none",
+      "stateIn": "hot metal on block",
+      "stateOut": "block smoulders, does not melt",
+      "motion": [
+        "smoke plume",
+        "heat shimmer"
+      ],
+      "samples": 32,
+      "cameraIn": "track-right@1.0",
+      "cameraOut": "push-in@1.2"
+    },
+    {
+      "id": "10-twist",
+      "start": 576,
+      "end": 671,
+      "camera": "cam-macro",
+      "set": "inside-tyre",
+      "sim": "softbody",
+      "character": "none",
+      "stateIn": "blocks under full load",
+      "stateOut": "blocks shear, then recover",
+      "motion": [
+        "shear",
+        "recovery",
+        "sparks"
+      ],
+      "samples": 32,
+      "cameraIn": "push-in@1.2",
+      "cameraOut": "pull-out@0.9"
+    },
+    {
+      "id": "11-resolution",
+      "start": 672,
+      "end": 755,
+      "camera": "cam-wide",
+      "set": "roadside",
+      "sim": "particles",
+      "character": "rider-riding",
+      "stateIn": "rider back on the bike",
+      "stateOut": "rider rides off, dust trail",
+      "motion": [
+        "ride-off",
+        "dust trail"
+      ],
+      "samples": 32,
+      "cameraIn": "pull-out@0.9",
+      "cameraOut": "track-right@0.8"
+    },
+    {
+      "id": "12-recap",
+      "start": 756,
+      "end": 815,
+      "camera": "cam-action",
+      "set": "roadside",
+      "sim": "none",
+      "character": "rider-standing",
+      "stateIn": "rider beside the tire",
+      "stateOut": "one line of narration, hold",
+      "motion": [
+        "breathing",
+        "tire settle"
+      ],
+      "samples": 32,
+      "cameraIn": "track-right@0.8",
+      "cameraOut": "hold@0.0"
+    }
+  ]
+}

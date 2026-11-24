@@ -1,0 +1,16 @@
+node_modules/
+out/
+public/audio/
+public/out/
+*.log
+.piper/
+*.onnx
+*.bin
+.DS_Store
+__pycache__/
+*.pyc
+.piper/
+public/audio/
+public/out/
+node_modules/
+out/

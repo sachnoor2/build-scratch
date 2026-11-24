@@ -1,0 +1,883 @@
+{
+  "fps": 24,
+  "pad": 0.45,
+  "minSeconds": 3.0,
+  "lengthScale": 0.8333,
+  "scenes": [
+    {
+      "id": "01-01",
+      "text": "दो कण। एक का जवाब ऊपर, दूसरे का नीचे। और यही एंटैंगलमेंट नहीं है।",
+      "caption": "Do kan jawab hamesha ulta"
+    },
+    {
+      "id": "01-02",
+      "text": "यह सिर्फ़ मिलता हुआ नतीजा है। असली चीज़ इससे कहीं ज़्यादा अजीब है।",
+      "caption": "Sirf juda nateeja entanglement nahi"
+    },
+    {
+      "id": "01-03",
+      "text": "मिलते नतीजे किसी भी जोड़ी में हो सकते हैं, बिना किसी क्वांटम जादू के।",
+      "caption": "Milte nateeje kaafi nahi"
+    },
+    {
+      "id": "01-04",
+      "text": "एक कण को नापो, दूसरे का हाल तुरंत पता चलता है। फिर भी यह काफ़ी नहीं।",
+      "caption": "Ek naapo doosre ka pata"
+    },
+    {
+      "id": "01-05",
+      "text": "क्योंकि दो गोलियाँ भी उल्टी हो सकती हैं। जवाब पहले से जेब में हो सकता है।",
+      "caption": "Goli ki tarah jawab pehle se"
+    },
+    {
+      "id": "01-06",
+      "text": "असली सवाल: जवाब कण के अंदर पहले से लिखा था, या नहीं?",
+      "caption": "Jawab pehle se likha tha?"
+    },
+    {
+      "id": "01-07",
+      "text": "पहला जवाब सामान्य, दूसरा क्वांटम। और इन दोनों में फ़र्क़ करना नामुमकिन लगता था।",
+      "caption": "Do jawab normal ya quantum"
+    },
+    {
+      "id": "01-08",
+      "text": "इसी सवाल ने भौतिकी को तीस साल तक उलझाए रखा।",
+      "caption": "Teen dashak uljhan"
+    },
+    {
+      "id": "01-09",
+      "text": "जुड़ाव और सामान्य संबंध एक चीज़ नहीं। दो घड़ियाँ भी एक साथ चलती हैं।",
+      "caption": "Judav aur sambandh alag cheez"
+    },
+    {
+      "id": "01-10",
+      "text": "घड़ियों की जानकारी अलग-अलग लिखी होती है। जुड़े कणों की नहीं।",
+      "caption": "Ghadi alag kan alag"
+    },
+    {
+      "id": "01-11",
+      "text": "एक ही चीज़, दो कमरों में। एक को नापें, दूसरे का हाल उसी से तय।",
+      "caption": "Ek cheez do kamre"
+    },
+    {
+      "id": "01-12",
+      "text": "यह सामान्य जानकारी से नहीं समझाया जा सकता। यहीं से कहानी शुरू होती है।",
+      "caption": "Normal jankari kaam nahi aati"
+    },
+    {
+      "id": "01-13",
+      "text": "पहले गणित। क्योंकि यहाँ बात एहसास की नहीं, ढाँचे की है।",
+      "caption": "Shuruaat ganit se"
+    },
+    {
+      "id": "02-01",
+      "text": "पूरी जोड़ी की एक ही अवस्था होती है। दो अलग अवस्थाओं से नहीं लिखी जाती।",
+      "caption": "Jodi ki avastha ek"
+    },
+    {
+      "id": "02-02",
+      "text": "अगर जोड़ी दो अलग टुकड़ों के गुणनफल से लिखी जा सके, तो वे अलग-अलग हैं।",
+      "caption": "Product bane to alag alag"
+    },
+    {
+      "id": "02-03",
+      "text": "और अगर कोई गुणनफल न मिले, तभी वह एंटैंगल है।",
+      "caption": "Product na mile entangled"
+    },
+    {
+      "id": "02-04",
+      "text": "यह दर्शन नहीं, एक साफ़ परीक्षा है। और परीक्षा का नतीजा आगे आया।",
+      "caption": "Darshan nahi saaf test"
+    },
+    {
+      "id": "02-05",
+      "text": "सबसे मशहूर उदाहरण: सिंगलेट। दो कण, हर दिशा में उल्टे स्पिन।",
+      "caption": "Singlet har disha mein ulta"
+    },
+    {
+      "id": "02-06",
+      "text": "उल्टापन सिर्फ़ एक दिशा में नहीं, हर दिशा में। यहीं सामान्य कहानी टूटती है।",
+      "caption": "Har disha sirf ek nahi"
+    },
+    {
+      "id": "02-07",
+      "text": "पहले से तय जवाब हर दिशा में उल्टापन नहीं दे सकते। कहानी यहाँ फिट नहीं बैठती।",
+      "caption": "Pehle se tay fit nahi baithta"
+    },
+    {
+      "id": "02-08",
+      "text": "कोई भी हिस्सा अपनी पूरी कहानी अकेले नहीं रखता।",
+      "caption": "Koi hissa akele nahi"
+    },
+    {
+      "id": "02-09",
+      "text": "यही बात आइंस्टाइन को हज़म नहीं हुई।",
+      "caption": "Einstein ko hazam nahi hui"
+    },
+    {
+      "id": "02-10",
+      "text": "ऐसी चार मशहूर अवस्थाएँ हैं, जिन्हें बेल अवस्थाएँ कहते हैं।",
+      "caption": "Chaar Bell states"
+    },
+    {
+      "id": "02-11",
+      "text": "ऐसी जोड़ी बनाने का तरीका है: क्रिस्टल में एक फ़ोटॉन तोड़ना।",
+      "caption": "Jodi banane ka tareeka"
+    },
+    {
+      "id": "02-12",
+      "text": "एक फ़ोटॉन से दो, और दोनों की अवस्थाएँ आपस में बँधी हुई।",
+      "caption": "Ek photon se do"
+    },
+    {
+      "id": "02-13",
+      "text": "कोण बदलो, पैटर्न बदलता है। यही मापने की कुंजी है।",
+      "caption": "Kon badlo pattern badle"
+    },
+    {
+      "id": "02-14",
+      "text": "सामान्य कहानी की एक सीमा है, और क्वांटम उससे ऊपर जाता है।",
+      "caption": "Seema aur quantum farq"
+    },
+    {
+      "id": "02-15",
+      "text": "उन्नीस सौ पैंतीस। तीन भौतिकविदों ने यह सवाल उठाया।",
+      "caption": "1935 teen physicists"
+    },
+    {
+      "id": "03-01",
+      "text": "आइंस्टाइन, पोडोल्स्की, रोज़न। तीन नाम, एक चुनौती।",
+      "caption": "EPR teen naam"
+    },
+    {
+      "id": "03-02",
+      "text": "सवाल सीधा था: क्या क्वांटम सिद्धांत पूरी तस्वीर देता है?",
+      "caption": "Theory poori tasveer deti hai?"
+    },
+    {
+      "id": "03-03",
+      "text": "दूर के कण का हाल तुरंत बदले, तो कुछ तो गड़बड़ है।",
+      "caption": "Door ka kan turant badle"
+    },
+    {
+      "id": "03-04",
+      "text": "इनका जवाब: कणों में छुपे निर्देश पहले से मौजूद हैं।",
+      "caption": "Chhupe nirdesh"
+    },
+    {
+      "id": "03-05",
+      "text": "हर कण एक चुपचाप मिली संख्या लेकर चलता है।",
+      "caption": "Local hidden variable"
+    },
+    {
+      "id": "03-06",
+      "text": "और दूर की घटना यहाँ का नतीजा नहीं बदल सकती।",
+      "caption": "Door ki ghatna nateeja nahi"
+    },
+    {
+      "id": "03-07",
+      "text": "बोर ने जवाब दिया, पर बहस शब्दों में ही चलती रही।",
+      "caption": "Bohr ka jawab shabdon mein"
+    },
+    {
+      "id": "03-08",
+      "text": "कोई परीक्षा नहीं थी। सवाल खुला रह गया।",
+      "caption": "Test nahi tha sawaal khula"
+    },
+    {
+      "id": "03-09",
+      "text": "उन्नीस सौ चौंसठ तक यही हाल रहा।",
+      "caption": "1964 tak yahi haal"
+    },
+    {
+      "id": "03-10",
+      "text": "इनकी शर्त: दूर के कण को छुए बिना उसका जवाब पता चल जाए।",
+      "caption": "EPR ki shart"
+    },
+    {
+      "id": "03-11",
+      "text": "अगर दूर का जवाब पहले से तय है, तो उसे छुपा हुआ मानना पड़ेगा।",
+      "caption": "Jawab pehle se tay"
+    },
+    {
+      "id": "03-12",
+      "text": "दो मान्यताएँ: locality, और पहले से तय मूल्य।",
+      "caption": "Do manyataen"
+    },
+    {
+      "id": "03-13",
+      "text": "बोर का जवाब: ये दोनों एक ही अवस्था के हिस्से हैं।",
+      "caption": "Dono ek avastha"
+    },
+    {
+      "id": "03-14",
+      "text": "यह जाँचा नहीं जा सकता, और बहस वहीं अटक गई।",
+      "caption": "Jaancha nahi ja sakta"
+    },
+    {
+      "id": "03-15",
+      "text": "फिर एक आदमी ने पूरी बहस को एक असमानता में बदल दिया।",
+      "caption": "Ek inequality banaayi"
+    },
+    {
+      "id": "04-01",
+      "text": "जॉन बेल। और उनका नतीजा उल्टा निकला, ठीक उसके विपरीत जो EPR चाहते थे।",
+      "caption": "John Bell ulta nateeja"
+    },
+    {
+      "id": "04-02",
+      "text": "हर सामान्य सिद्धांत को एक सीमा माननी पड़ती है: S दो से ज़्यादा नहीं।",
+      "caption": "Local theory ki limit"
+    },
+    {
+      "id": "04-03",
+      "text": "सीमा दो। इसके ऊपर कोई छुपा निर्देश वाला सिद्धांत नहीं जा सकता।",
+      "caption": "Limit do"
+    },
+    {
+      "id": "04-04",
+      "text": "क्वांटम कहता है: दो दशमलव आठ दो आठ।",
+      "caption": "Quantum 2.828"
+    },
+    {
+      "id": "04-05",
+      "text": "यानी क्वांटम सीमा के पार जाता है। यहीं फ़ैसला होता है।",
+      "caption": "Seema ke paar faisla"
+    },
+    {
+      "id": "04-06",
+      "text": "अब बहस नहीं, सिर्फ़ प्रयोग बाकी था।",
+      "caption": "Ab sirf prayog"
+    },
+    {
+      "id": "04-07",
+      "text": "यह सीमा किन मान्यताओं पर टिकी है, यह जानना ज़रूरी है।",
+      "caption": "Limit kin manyataon par"
+    },
+    {
+      "id": "04-08",
+      "text": "एक मान्यता टूटी, तो सीमा भी टूट सकती है।",
+      "caption": "Manyata toote limit toote"
+    },
+    {
+      "id": "04-09",
+      "text": "उन्नीस सौ बहत्तर। पहला असली परीक्षण।",
+      "caption": "1972 pehla test"
+    },
+    {
+      "id": "04-10",
+      "text": "चार सेटिंग: दो ऐलिस के लिए, दो बॉब के लिए।",
+      "caption": "Chaar setting"
+    },
+    {
+      "id": "04-11",
+      "text": "हर जोड़ी को नापो, और चारों का एक जोड़ा हुआ अंक निकालो।",
+      "caption": "Chaar naap ek ank"
+    },
+    {
+      "id": "04-12",
+      "text": "सामान्य सिद्धांत कहता है: अंक दो से ज़्यादा नहीं।",
+      "caption": "S do se zyada nahi"
+    },
+    {
+      "id": "04-13",
+      "text": "क्वांटम कहता है: दो दशमलव आठ दो आठ तक।",
+      "caption": "Quantum 2.828"
+    },
+    {
+      "id": "04-14",
+      "text": "और इससे ऊपर क्वांटम भी नहीं जा सकता।",
+      "caption": "Tsirelson bound"
+    },
+    {
+      "id": "04-15",
+      "text": "बेल ने पूरी बहस को एक अंक में बदल दिया।",
+      "caption": "Bahas se ank"
+    },
+    {
+      "id": "04-16",
+      "text": "अब सिर्फ़ यह देखना था कि प्रयोग क्या कहता है।",
+      "caption": "Ab prayog kya kehta hai"
+    },
+    {
+      "id": "05-01",
+      "text": "उन्नीस सौ बहत्तर। फ्रीडमैन और क्लॉज़र।",
+      "caption": "1972 Freedman aur Clauser"
+    },
+    {
+      "id": "05-02",
+      "text": "कैल्शियम से जोड़ी बनाई, और दोनों तरफ़ नापा।",
+      "caption": "Calcium se jodi"
+    },
+    {
+      "id": "05-03",
+      "text": "डेटा जुटाने में दो सौ घंटे लगे।",
+      "caption": "Do sau ghante"
+    },
+    {
+      "id": "05-04",
+      "text": "नतीजा सीमा के पार। यानी क्वांटम सही।",
+      "caption": "Nateeja limit ke paar"
+    },
+    {
+      "id": "05-05",
+      "text": "पर एक छेद बचा: सेटिंग पहले से तय थी।",
+      "caption": "Ek chhed setting pehle se"
+    },
+    {
+      "id": "05-06",
+      "text": "उन्नीस सौ बयासी। एस्पे ने वह छेद बंद किया।",
+      "caption": "1982 Aspect"
+    },
+    {
+      "id": "05-07",
+      "text": "सेटिंग बाद में बदली, जब जोड़ी निकल चुकी थी।",
+      "caption": "Setting baad mein"
+    },
+    {
+      "id": "05-08",
+      "text": "छह मीटर, बीस नैनोसेकंड। इतने में ही फ़ैसला।",
+      "caption": "Chhe meter bees nanosecond"
+    },
+    {
+      "id": "05-09",
+      "text": "नतीजा वही रहा। छुपे निर्देश वाला सिद्धांत हार गया।",
+      "caption": "Local theory haari"
+    },
+    {
+      "id": "05-10",
+      "text": "माप कैसे होती है? फ़ोटॉन का ध्रुवीकरण, यानी उसका कोण।",
+      "caption": "Photon ka polarization"
+    },
+    {
+      "id": "05-11",
+      "text": "दोनों तरफ़ के क्लिक मिलाए जाते हैं, coincidence।",
+      "caption": "Coincidence"
+    },
+    {
+      "id": "05-12",
+      "text": "बहत्तर का नतीजा छह सिग्मा दूर था।",
+      "caption": "1972 chhe sigma"
+    },
+    {
+      "id": "05-13",
+      "text": "बयासी में दरजन सिग्मा।",
+      "caption": "1982 darjan sigma"
+    },
+    {
+      "id": "05-14",
+      "text": "इसीलिए एस्पे इतिहास में गिने जाते हैं।",
+      "caption": "Aspect itihas mein"
+    },
+    {
+      "id": "05-15",
+      "text": "पर एक और छेद बचा, और वह ज़्यादा शातिर था।",
+      "caption": "Ek aur chhed"
+    },
+    {
+      "id": "06-01",
+      "text": "तीन बड़े छेद। तीनों बंद करना ज़रूरी था।",
+      "caption": "Teen bade chhed"
+    },
+    {
+      "id": "06-02",
+      "text": "पहला: सेटिंग बाद में बदले, ताकि पहले से तय न हो सके।",
+      "caption": "Pehla locality"
+    },
+    {
+      "id": "06-03",
+      "text": "दूसरा: हर फ़ोटॉन पकड़ा नहीं जाता।",
+      "caption": "Doosra detection"
+    },
+    {
+      "id": "06-04",
+      "text": "अगर सौ में दो ही पकड़ें, तो नतीजा पूरी आबादी का नहीं।",
+      "caption": "Sau mein do fair sampling"
+    },
+    {
+      "id": "06-05",
+      "text": "तीसरा: सेटिंग चुनने वाला खुद प्रभावित हो।",
+      "caption": "Teesra free choice"
+    },
+    {
+      "id": "06-06",
+      "text": "दो हज़ार पंद्रह। बड़े छेद एक साथ बंद हुए।",
+      "caption": "2015 chhed band"
+    },
+    {
+      "id": "06-07",
+      "text": "सीमा टूटी, और कोई बचाव नहीं बचा।",
+      "caption": "Limit tooti"
+    },
+    {
+      "id": "06-08",
+      "text": "आज तक हर बड़ा परीक्षण वही कहता है।",
+      "caption": "Har bada test wahi"
+    },
+    {
+      "id": "06-09",
+      "text": "अब यह बहस नहीं, माप है।",
+      "caption": "Bahas nahi maap"
+    },
+    {
+      "id": "06-10",
+      "text": "छेद का मतलब यह नहीं कि नतीजा गलत है। मतलब है एक और कहानी बच सकती थी।",
+      "caption": "Chhed ka matlab"
+    },
+    {
+      "id": "06-11",
+      "text": "पहला छेद: क्या जानकारी पहले ही पहुँच सकती थी?",
+      "caption": "Locality ka chhed"
+    },
+    {
+      "id": "06-12",
+      "text": "दूसरा छेद: क्या पकड़े गए फ़ोटॉन पूरी जोड़ी के नुमाइंदे हैं?",
+      "caption": "Detection ka chhed"
+    },
+    {
+      "id": "06-13",
+      "text": "दो हज़ार पंद्रह में तीन अलग प्रयोग।",
+      "caption": "2015 teen prayog"
+    },
+    {
+      "id": "06-14",
+      "text": "नतीजा मज़बूत हुआ, कमज़ोर नहीं।",
+      "caption": "Nateeja mazboot"
+    },
+    {
+      "id": "06-15",
+      "text": "और सात साल बाद, नोबेल।",
+      "caption": "2022 Nobel"
+    },
+    {
+      "id": "07-01",
+      "text": "दो हज़ार बाईस। तीन लोगों को भौतिकी का नोबेल।",
+      "caption": "2022 teen logon ko Nobel"
+    },
+    {
+      "id": "07-02",
+      "text": "क्लॉज़र, एस्पे, ज़ाइलिंगर।",
+      "caption": "Clauser Aspect Zeilinger"
+    },
+    {
+      "id": "07-03",
+      "text": "क्लॉज़र ने बेल के विचार से पहला व्यावहारिक प्रयोग बनाया।",
+      "caption": "Clauser pehla test"
+    },
+    {
+      "id": "07-04",
+      "text": "एस्पे ने सेटिंग का छेद बंद किया।",
+      "caption": "Aspect chhed band"
+    },
+    {
+      "id": "07-05",
+      "text": "ज़ाइलिंगर ने टेलीपोर्टेशन और नेटवर्क की राह खोली।",
+      "caption": "Zeilinger teleportation"
+    },
+    {
+      "id": "07-06",
+      "text": "नोबेल प्रयोगों के लिए मिला, किसी मशीन के लिए नहीं।",
+      "caption": "Prayogon ke liye machine ke liye nahi"
+    },
+    {
+      "id": "07-07",
+      "text": "और हाँ, क्लॉज़र के बाद भी छेद बचे थे। विज्ञान एक दिन में नहीं बंद होता।",
+      "caption": "Clauser ke baad bhi chhed"
+    },
+    {
+      "id": "07-08",
+      "text": "नोबेल का हवाला साफ़ है: जुड़े फ़ोटॉन, और बेल असमानता का उल्लंघन।",
+      "caption": "Nobel ka hawaala"
+    },
+    {
+      "id": "07-09",
+      "text": "यहीं से कहानी का दूसरा हिस्सा शुरू होता है।",
+      "caption": "Doosra hissa"
+    },
+    {
+      "id": "07-10",
+      "text": "क्वांटम सूचना विज्ञान, यहीं से शुरू।",
+      "caption": "Quantum information"
+    },
+    {
+      "id": "07-11",
+      "text": "नोबेल किसी मशीन का सर्टिफ़िकेट नहीं है।",
+      "caption": "Machine ka certificate nahi"
+    },
+    {
+      "id": "07-12",
+      "text": "अब सबसे ज़रूरी बात, जो अक्सर गलत बताई जाती है।",
+      "caption": "Sabse zaroori baat"
+    },
+    {
+      "id": "08-01",
+      "text": "इससे आप एक बिट भी नहीं भेज सकते। एक बिट भी नहीं।",
+      "caption": "Ek bit bhi nahi"
+    },
+    {
+      "id": "08-02",
+      "text": "ऐलिस नापती है। बॉब को कुछ नहीं दिखता, उसके नतीजे वैसे ही रैंडम रहते हैं।",
+      "caption": "Bob ko kuch nahi dikhta"
+    },
+    {
+      "id": "08-03",
+      "text": "बॉब यह भी नहीं बता सकता कि ऐलिस ने नापा या नहीं।",
+      "caption": "Pata nahi chalta"
+    },
+    {
+      "id": "08-04",
+      "text": "इसलिए ऐलिस को अपना नतीजा सामान्य चैनल से भेजना पड़ता है।",
+      "caption": "Normal channel se bhejna padta hai"
+    },
+    {
+      "id": "08-05",
+      "text": "तभी दोनों मिलाकर देख सकते हैं।",
+      "caption": "Tabhi milakar dekh sakte"
+    },
+    {
+      "id": "08-06",
+      "text": "यानी जानकारी प्रकाश से तेज़ नहीं जाती।",
+      "caption": "Light se tez nahi"
+    },
+    {
+      "id": "08-07",
+      "text": "और इसीलिए यह सापेक्षता से नहीं टकराता।",
+      "caption": "Relativity se nahi takrata"
+    },
+    {
+      "id": "08-08",
+      "text": "जुड़ाव असली है। संदेश नहीं।",
+      "caption": "Judav asli sandesh nahi"
+    },
+    {
+      "id": "08-09",
+      "text": "गणित इसे साफ़ कहता है: बॉब की अवस्था बदलती ही नहीं।",
+      "caption": "Bob ki avastha badalti nahi"
+    },
+    {
+      "id": "08-10",
+      "text": "ऐलिस चाहे कुछ भी नापे, बॉब की अलग अवस्था वही रहती है।",
+      "caption": "Kuch bhi naapo wahi rehti"
+    },
+    {
+      "id": "08-11",
+      "text": "यही नियम है: बिना नतीजा भेजे, कुछ नहीं पढ़ा जा सकता।",
+      "caption": "Bina nateeja bheje kuch nahi"
+    },
+    {
+      "id": "08-12",
+      "text": "दो सूचियाँ मिलाओ, तब जुड़ाव दिखता है।",
+      "caption": "Suchi milate hain"
+    },
+    {
+      "id": "08-13",
+      "text": "और दो सूचियाँ मिलाना एक सामान्य, धीमा कदम है।",
+      "caption": "Do suchiyan milana"
+    },
+    {
+      "id": "08-14",
+      "text": "इसीलिए कहा जाता है: जुड़ाव संदेश नहीं है।",
+      "caption": "Judav sandesh nahi"
+    },
+    {
+      "id": "08-15",
+      "text": "फिर भी इससे काम निकलता है। अगला कदम: टेलीपोर्टेशन।",
+      "caption": "Phir bhi kaam teleportation"
+    },
+    {
+      "id": "09-01",
+      "text": "टेलीपोर्टेशन में अवस्था जाती है, पदार्थ नहीं।",
+      "caption": "Avastha jaati hai padarth nahi"
+    },
+    {
+      "id": "09-02",
+      "text": "ऐलिस दोनों कणों की बेल माप करती है।",
+      "caption": "Bell maap dono kan"
+    },
+    {
+      "id": "09-03",
+      "text": "और उसे सिर्फ़ दो बिट भेजने होते हैं। दो।",
+      "caption": "Do bit bas do"
+    },
+    {
+      "id": "09-04",
+      "text": "वे दो बिट सामान्य चैनल से जाते हैं।",
+      "caption": "Do bit normal channel"
+    },
+    {
+      "id": "09-05",
+      "text": "तभी बॉब अपने कण पर सुधार लगा सकता है।",
+      "caption": "Tabhi sudhaar"
+    },
+    {
+      "id": "09-06",
+      "text": "यानी अवस्था पहुँचती है, पर एक संदेश के साथ।",
+      "caption": "Avastha sandesh ke saath"
+    },
+    {
+      "id": "09-07",
+      "text": "उन्नीस सौ सत्तानवे। पहली बार प्रयोग में।",
+      "caption": "1997 pehla prayog"
+    },
+    {
+      "id": "09-08",
+      "text": "और आज यह सैकड़ों किलोमीटर तक जाता है।",
+      "caption": "Aaj sau kilomitar tak"
+    },
+    {
+      "id": "09-09",
+      "text": "पर हर बार चैनल चाहिए। नियम नहीं टूटता।",
+      "caption": "Har baar channel chahiye"
+    },
+    {
+      "id": "09-10",
+      "text": "बेल माप का मतलब: दोनों कणों को साथ नापना।",
+      "caption": "Dono ko milakar naapna"
+    },
+    {
+      "id": "09-11",
+      "text": "चार नतीजे संभव हैं। इसीलिए दो बिट।",
+      "caption": "Chaar mein se ek do bit"
+    },
+    {
+      "id": "09-12",
+      "text": "दो बिट क्यों? क्योंकि बॉब को बताना पड़ता है कि कौन सा सुधार लगाना है।",
+      "caption": "Do bit kyun"
+    },
+    {
+      "id": "09-13",
+      "text": "और मूल अवस्था मिट जाती है। क्लोन नहीं बनता।",
+      "caption": "Mool avastha mit jaati"
+    },
+    {
+      "id": "09-14",
+      "text": "टेलीपोर्टेशन नकल नहीं है। अवस्था एक जगह से दूसरी जगह जाती है।",
+      "caption": "Nakal nahi"
+    },
+    {
+      "id": "09-15",
+      "text": "अब देखते हैं यह कहाँ काम आता है।",
+      "caption": "Kahan kaam aata hai"
+    },
+    {
+      "id": "10-01",
+      "text": "तीन बड़े क्षेत्र, और तीनों अलग।",
+      "caption": "Teen kaam teeno alag"
+    },
+    {
+      "id": "10-02",
+      "text": "पहला: क्वांटम क्रिप्टोग्राफ़ी।",
+      "caption": "Quantum cryptography"
+    },
+    {
+      "id": "10-03",
+      "text": "उन्नीस सौ चौरासी। बेनेट और ब्रासार्ड।",
+      "caption": "1984 Bennett Brassard"
+    },
+    {
+      "id": "10-04",
+      "text": "कोई चोरी से नापे, तो अवस्था बिगड़ जाती है, और वह पकड़ा जाता है।",
+      "caption": "Chori pakdi jaati hai"
+    },
+    {
+      "id": "10-05",
+      "text": "दूसरा: क्वांटम कंप्यूटर।",
+      "caption": "Quantum computer"
+    },
+    {
+      "id": "10-06",
+      "text": "तीसरा: क्वांटम नेटवर्क।",
+      "caption": "Quantum network"
+    },
+    {
+      "id": "10-07",
+      "text": "दो हज़ार सत्रह। मिसियस उपग्रह, बारह सौ किलोमीटर।",
+      "caption": "2017 Micius 1203 km"
+    },
+    {
+      "id": "10-08",
+      "text": "इतने जोड़े कि गिनना मुश्किल हो जाए।",
+      "caption": "Jode ginna mushkil"
+    },
+    {
+      "id": "10-09",
+      "text": "तीनों को एक न समझें। हर एक के अपने नियम हैं।",
+      "caption": "Teeno ko ek na samjhein"
+    },
+    {
+      "id": "10-10",
+      "text": "चाबी बाँटने में फ़ायदा साफ़ है: चोरी पकड़ी जाती है।",
+      "caption": "Chabi baantne mein fayda"
+    },
+    {
+      "id": "10-11",
+      "text": "कंप्यूटर में जुड़ाव ईंधन है: n क्यूबिट, दो की घात n आयाम।",
+      "caption": "n qubit 2^n"
+    },
+    {
+      "id": "10-12",
+      "text": "नेटवर्क में फ़ोटॉन सबसे अच्छा वाहक है।",
+      "caption": "Photon sabse achha"
+    },
+    {
+      "id": "10-13",
+      "text": "पर फ़ोटॉन खोते हैं, तो रिपीटर चाहिए।",
+      "caption": "Repeater ki zaroorat"
+    },
+    {
+      "id": "10-14",
+      "text": "इसलिए दो रास्ते: सैटेलाइट और फ़ाइबर।",
+      "caption": "Satellite aur fibre"
+    },
+    {
+      "id": "10-15",
+      "text": "आख़िरी और सबसे ज़रूरी बात।",
+      "caption": "Sabse zaroori baat"
+    },
+    {
+      "id": "11-01",
+      "text": "तीन स्तर। इन्हें मिलाना सबसे बड़ी गलती है।",
+      "caption": "Teen star milana galti"
+    },
+    {
+      "id": "11-02",
+      "text": "पहला स्तर: गणित।",
+      "caption": "Pehla ganit"
+    },
+    {
+      "id": "11-03",
+      "text": "यहाँ कोई बहस नहीं, यह परिभाषा है।",
+      "caption": "Yahan bahas nahi"
+    },
+    {
+      "id": "11-04",
+      "text": "दूसरा स्तर: प्रयोग।",
+      "caption": "Doosra prayog"
+    },
+    {
+      "id": "11-05",
+      "text": "यहाँ भी बहस कम, माप ज़्यादा।",
+      "caption": "Yahan maap"
+    },
+    {
+      "id": "11-06",
+      "text": "तीसरा स्तर: मतलब। और यहीं राय बँटती है।",
+      "caption": "Teesra matlab"
+    },
+    {
+      "id": "11-07",
+      "text": "कोई कहता है: दुनिया non-local है।",
+      "caption": "Koi kehta hai non-local"
+    },
+    {
+      "id": "11-08",
+      "text": "कोई कहता है: यह जानकारी की सीमा है।",
+      "caption": "Jankari ki seema"
+    },
+    {
+      "id": "11-09",
+      "text": "कोई कहता है: सवाल अभी खुला है।",
+      "caption": "Sawaal khula hai"
+    },
+    {
+      "id": "11-10",
+      "text": "चार बड़े पढ़ने के तरीके, और चारों गंभीर।",
+      "caption": "Chaar vichar"
+    },
+    {
+      "id": "11-11",
+      "text": "माप से अवस्था बदलती है, बस इतना सबको मानना है।",
+      "caption": "Itna sab maante hain"
+    },
+    {
+      "id": "11-12",
+      "text": "एक रास्ता: हर नतीजा किसी दुनिया में सच है।",
+      "caption": "Many worlds"
+    },
+    {
+      "id": "11-13",
+      "text": "दूसरा: एक छुपी अवस्था है, पर वह भी non-local।",
+      "caption": "Pilot wave"
+    },
+    {
+      "id": "11-14",
+      "text": "आज तक कोई प्रयोग इनमें से एक नहीं चुन पाया।",
+      "caption": "Koi prayog chun nahi paya"
+    },
+    {
+      "id": "11-15",
+      "text": "तीनों स्तर अलग रखिए, बात साफ़ रहेगी।",
+      "caption": "Teeno alag rakhiye"
+    },
+    {
+      "id": "12-01",
+      "text": "एक लाइन में: एक अवस्था, दो जगह।",
+      "caption": "Ek line ek avastha do jagah"
+    },
+    {
+      "id": "12-02",
+      "text": "वह अवस्था जो दो अलग टुकड़ों में नहीं टूटती।",
+      "caption": "Product mein nahi tootti"
+    },
+    {
+      "id": "12-03",
+      "text": "उन्नीस सौ पैंतीस: आइंस्टाइन ने सवाल उठाया।",
+      "caption": "1935 sawaal"
+    },
+    {
+      "id": "12-04",
+      "text": "उन्नीस सौ चौंसठ: बेल ने सीमा दी।",
+      "caption": "1964 Bell ki seema"
+    },
+    {
+      "id": "12-05",
+      "text": "प्रयोगों ने वह सीमा तोड़ दी।",
+      "caption": "Seema tooti"
+    },
+    {
+      "id": "12-06",
+      "text": "दो हज़ार बाईस: नोबेल।",
+      "caption": "2022 Nobel"
+    },
+    {
+      "id": "12-07",
+      "text": "और फिर भी: संदेश प्रकाश से तेज़ नहीं।",
+      "caption": "Sandesh light se tez nahi"
+    },
+    {
+      "id": "12-08",
+      "text": "जुड़ाव असली है। संदेश नहीं।",
+      "caption": "Judav asli sandesh nahi"
+    },
+    {
+      "id": "12-09",
+      "text": "इसी पर आज की चाबी और कंप्यूटर टिके हैं।",
+      "caption": "Chabi aur computer"
+    },
+    {
+      "id": "12-10",
+      "text": "एक वाक्य: अवस्था एक है, टुकड़े नहीं।",
+      "caption": "Ek vaakya"
+    },
+    {
+      "id": "12-11",
+      "text": "एक ग़लतफ़हमी: यह संदेश भेजने का ज़रिया है।",
+      "caption": "Ek galatfehmi"
+    },
+    {
+      "id": "12-12",
+      "text": "बाक़ी सब इसी से निकलता है।",
+      "caption": "Baaki sab isi se"
+    },
+    {
+      "id": "12-13",
+      "text": "धन्यवाद।",
+      "caption": "Dhanyavaad"
+    },
+    {
+      "id": "12-14",
+      "text": "यही कहानी है, और यह अभी खत्म नहीं हुई।",
+      "caption": "Yahi kahani hai"
+    }
+  ]
+}

@@ -1,0 +1,1235 @@
+{
+  "fps": 24,
+  "pad": 0.45,
+  "engine": "piper+warm-chain",
+  "voice": "hi_IN-pratham-medium.onnx",
+  "music": false,
+  "totalFrames": 19750,
+  "scenes": [
+    {
+      "id": "01-01",
+      "seconds": 7.452,
+      "frames": 190,
+      "caption": "Do kan jawab hamesha ulta",
+      "lexicon": []
+    },
+    {
+      "id": "01-02",
+      "seconds": 5.613,
+      "frames": 146,
+      "caption": "Sirf juda nateeja entanglement nahi",
+      "lexicon": []
+    },
+    {
+      "id": "01-03",
+      "seconds": 5.468,
+      "frames": 142,
+      "caption": "Milte nateeje kaafi nahi",
+      "lexicon": []
+    },
+    {
+      "id": "01-04",
+      "seconds": 6.704,
+      "frames": 172,
+      "caption": "Ek naapo doosre ka pata",
+      "lexicon": []
+    },
+    {
+      "id": "01-05",
+      "seconds": 5.868,
+      "frames": 152,
+      "caption": "Goli ki tarah jawab pehle se",
+      "lexicon": []
+    },
+    {
+      "id": "01-06",
+      "seconds": 4.214,
+      "frames": 112,
+      "caption": "Jawab pehle se likha tha?",
+      "lexicon": []
+    },
+    {
+      "id": "01-07",
+      "seconds": 6.704,
+      "frames": 172,
+      "caption": "Do jawab normal ya quantum",
+      "lexicon": []
+    },
+    {
+      "id": "01-08",
+      "seconds": 3.856,
+      "frames": 103,
+      "caption": "Teen dashak uljhan",
+      "lexicon": []
+    },
+    {
+      "id": "01-09",
+      "seconds": 6.402,
+      "frames": 164,
+      "caption": "Judav aur sambandh alag cheez",
+      "lexicon": []
+    },
+    {
+      "id": "01-10",
+      "seconds": 5.576,
+      "frames": 145,
+      "caption": "Ghadi alag kan alag",
+      "lexicon": []
+    },
+    {
+      "id": "01-11",
+      "seconds": 6.402,
+      "frames": 164,
+      "caption": "Ek cheez do kamre",
+      "lexicon": []
+    },
+    {
+      "id": "01-12",
+      "seconds": 6.134,
+      "frames": 158,
+      "caption": "Normal jankari kaam nahi aati",
+      "lexicon": []
+    },
+    {
+      "id": "01-13",
+      "seconds": 5.646,
+      "frames": 146,
+      "caption": "Shuruaat ganit se",
+      "lexicon": []
+    },
+    {
+      "id": "02-01",
+      "seconds": 5.855,
+      "frames": 151,
+      "caption": "Jodi ki avastha ek",
+      "lexicon": []
+    },
+    {
+      "id": "02-02",
+      "seconds": 5.551,
+      "frames": 144,
+      "caption": "Product bane to alag alag",
+      "lexicon": []
+    },
+    {
+      "id": "02-03",
+      "seconds": 4.274,
+      "frames": 113,
+      "caption": "Product na mile entangled",
+      "lexicon": []
+    },
+    {
+      "id": "02-04",
+      "seconds": 6.054,
+      "frames": 156,
+      "caption": "Darshan nahi saaf test",
+      "lexicon": []
+    },
+    {
+      "id": "02-05",
+      "seconds": 5.623,
+      "frames": 146,
+      "caption": "Singlet har disha mein ulta",
+      "lexicon": []
+    },
+    {
+      "id": "02-06",
+      "seconds": 6.402,
+      "frames": 164,
+      "caption": "Har disha sirf ek nahi",
+      "lexicon": []
+    },
+    {
+      "id": "02-07",
+      "seconds": 6.309,
+      "frames": 162,
+      "caption": "Pehle se tay fit nahi baithta",
+      "lexicon": []
+    },
+    {
+      "id": "02-08",
+      "seconds": 3.75,
+      "frames": 101,
+      "caption": "Koi hissa akele nahi",
+      "lexicon": []
+    },
+    {
+      "id": "02-09",
+      "seconds": 3.415,
+      "frames": 93,
+      "caption": "Einstein ko hazam nahi hui",
+      "lexicon": []
+    },
+    {
+      "id": "02-10",
+      "seconds": 4.888,
+      "frames": 128,
+      "caption": "Chaar Bell states",
+      "lexicon": []
+    },
+    {
+      "id": "02-11",
+      "seconds": 4.586,
+      "frames": 121,
+      "caption": "Jodi banane ka tareeka",
+      "lexicon": []
+    },
+    {
+      "id": "02-12",
+      "seconds": 4.772,
+      "frames": 125,
+      "caption": "Ek photon se do",
+      "lexicon": []
+    },
+    {
+      "id": "02-13",
+      "seconds": 5.334,
+      "frames": 139,
+      "caption": "Kon badlo pattern badle",
+      "lexicon": []
+    },
+    {
+      "id": "02-14",
+      "seconds": 5.097,
+      "frames": 133,
+      "caption": "Seema aur quantum farq",
+      "lexicon": []
+    },
+    {
+      "id": "02-15",
+      "seconds": 4.963,
+      "frames": 130,
+      "caption": "1935 teen physicists",
+      "lexicon": []
+    },
+    {
+      "id": "03-01",
+      "seconds": 5.785,
+      "frames": 150,
+      "caption": "EPR teen naam",
+      "lexicon": []
+    },
+    {
+      "id": "03-02",
+      "seconds": 4.436,
+      "frames": 117,
+      "caption": "Theory poori tasveer deti hai?",
+      "lexicon": []
+    },
+    {
+      "id": "03-03",
+      "seconds": 4.446,
+      "frames": 118,
+      "caption": "Door ka kan turant badle",
+      "lexicon": []
+    },
+    {
+      "id": "03-04",
+      "seconds": 4.029,
+      "frames": 107,
+      "caption": "Chhupe nirdesh",
+      "lexicon": []
+    },
+    {
+      "id": "03-05",
+      "seconds": 4.018,
+      "frames": 107,
+      "caption": "Local hidden variable",
+      "lexicon": []
+    },
+    {
+      "id": "03-06",
+      "seconds": 3.647,
+      "frames": 98,
+      "caption": "Door ki ghatna nateeja nahi",
+      "lexicon": []
+    },
+    {
+      "id": "03-07",
+      "seconds": 4.181,
+      "frames": 111,
+      "caption": "Bohr ka jawab shabdon mein",
+      "lexicon": []
+    },
+    {
+      "id": "03-08",
+      "seconds": 4.16,
+      "frames": 111,
+      "caption": "Test nahi tha sawaal khula",
+      "lexicon": []
+    },
+    {
+      "id": "03-09",
+      "seconds": 3.123,
+      "frames": 86,
+      "caption": "1964 tak yahi haal",
+      "lexicon": []
+    },
+    {
+      "id": "03-10",
+      "seconds": 4.655,
+      "frames": 123,
+      "caption": "EPR ki shart",
+      "lexicon": []
+    },
+    {
+      "id": "03-11",
+      "seconds": 5.004,
+      "frames": 131,
+      "caption": "Jawab pehle se tay",
+      "lexicon": []
+    },
+    {
+      "id": "03-12",
+      "seconds": 3.995,
+      "frames": 107,
+      "caption": "Do manyataen",
+      "lexicon": []
+    },
+    {
+      "id": "03-13",
+      "seconds": 3.925,
+      "frames": 105,
+      "caption": "Dono ek avastha",
+      "lexicon": []
+    },
+    {
+      "id": "03-14",
+      "seconds": 4.134,
+      "frames": 110,
+      "caption": "Jaancha nahi ja sakta",
+      "lexicon": []
+    },
+    {
+      "id": "03-15",
+      "seconds": 4.181,
+      "frames": 111,
+      "caption": "Ek inequality banaayi",
+      "lexicon": []
+    },
+    {
+      "id": "04-01",
+      "seconds": 6.807,
+      "frames": 174,
+      "caption": "John Bell ulta nateeja",
+      "lexicon": []
+    },
+    {
+      "id": "04-02",
+      "seconds": 5.086,
+      "frames": 133,
+      "caption": "Local theory ki limit",
+      "lexicon": []
+    },
+    {
+      "id": "04-03",
+      "seconds": 5.739,
+      "frames": 149,
+      "caption": "Limit do",
+      "lexicon": []
+    },
+    {
+      "id": "04-04",
+      "seconds": 3.75,
+      "frames": 101,
+      "caption": "Quantum 2.828",
+      "lexicon": []
+    },
+    {
+      "id": "04-05",
+      "seconds": 5.334,
+      "frames": 139,
+      "caption": "Seema ke paar faisla",
+      "lexicon": []
+    },
+    {
+      "id": "04-06",
+      "seconds": 3.796,
+      "frames": 102,
+      "caption": "Ab sirf prayog",
+      "lexicon": []
+    },
+    {
+      "id": "04-07",
+      "seconds": 4.702,
+      "frames": 124,
+      "caption": "Limit kin manyataon par",
+      "lexicon": []
+    },
+    {
+      "id": "04-08",
+      "seconds": 3.889,
+      "frames": 104,
+      "caption": "Manyata toote limit toote",
+      "lexicon": []
+    },
+    {
+      "id": "04-09",
+      "seconds": 4.114,
+      "frames": 110,
+      "caption": "1972 pehla test",
+      "lexicon": []
+    },
+    {
+      "id": "04-10",
+      "seconds": 3.843,
+      "frames": 103,
+      "caption": "Chaar setting",
+      "lexicon": []
+    },
+    {
+      "id": "04-11",
+      "seconds": 4.692,
+      "frames": 123,
+      "caption": "Chaar naap ek ank",
+      "lexicon": []
+    },
+    {
+      "id": "04-12",
+      "seconds": 3.879,
+      "frames": 104,
+      "caption": "S do se zyada nahi",
+      "lexicon": []
+    },
+    {
+      "id": "04-13",
+      "seconds": 3.959,
+      "frames": 106,
+      "caption": "Quantum 2.828",
+      "lexicon": []
+    },
+    {
+      "id": "04-14",
+      "seconds": 3.182,
+      "frames": 87,
+      "caption": "Tsirelson bound",
+      "lexicon": []
+    },
+    {
+      "id": "04-15",
+      "seconds": 3.541,
+      "frames": 96,
+      "caption": "Bahas se ank",
+      "lexicon": []
+    },
+    {
+      "id": "04-16",
+      "seconds": 3.902,
+      "frames": 104,
+      "caption": "Ab prayog kya kehta hai",
+      "lexicon": []
+    },
+    {
+      "id": "05-01",
+      "seconds": 4.173,
+      "frames": 111,
+      "caption": "1972 Freedman aur Clauser",
+      "lexicon": []
+    },
+    {
+      "id": "05-02",
+      "seconds": 3.809,
+      "frames": 102,
+      "caption": "Calcium se jodi",
+      "lexicon": []
+    },
+    {
+      "id": "05-03",
+      "seconds": 3.136,
+      "frames": 86,
+      "caption": "Do sau ghante",
+      "lexicon": []
+    },
+    {
+      "id": "05-04",
+      "seconds": 4.22,
+      "frames": 112,
+      "caption": "Nateeja limit ke paar",
+      "lexicon": []
+    },
+    {
+      "id": "05-05",
+      "seconds": 3.239,
+      "frames": 89,
+      "caption": "Ek chhed setting pehle se",
+      "lexicon": []
+    },
+    {
+      "id": "05-06",
+      "seconds": 4.568,
+      "frames": 120,
+      "caption": "1982 Aspect",
+      "lexicon": []
+    },
+    {
+      "id": "05-07",
+      "seconds": 3.82,
+      "frames": 102,
+      "caption": "Setting baad mein",
+      "lexicon": []
+    },
+    {
+      "id": "05-08",
+      "seconds": 4.916,
+      "frames": 129,
+      "caption": "Chhe meter bees nanosecond",
+      "lexicon": []
+    },
+    {
+      "id": "05-09",
+      "seconds": 4.986,
+      "frames": 130,
+      "caption": "Local theory haari",
+      "lexicon": []
+    },
+    {
+      "id": "05-10",
+      "seconds": 5.473,
+      "frames": 142,
+      "caption": "Photon ka polarization",
+      "lexicon": []
+    },
+    {
+      "id": "05-11",
+      "seconds": 3.959,
+      "frames": 106,
+      "caption": "Coincidence",
+      "lexicon": []
+    },
+    {
+      "id": "05-12",
+      "seconds": 3.182,
+      "frames": 87,
+      "caption": "1972 chhe sigma",
+      "lexicon": []
+    },
+    {
+      "id": "05-13",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "1982 darjan sigma",
+      "lexicon": []
+    },
+    {
+      "id": "05-14",
+      "seconds": 3.448,
+      "frames": 94,
+      "caption": "Aspect itihas mein",
+      "lexicon": []
+    },
+    {
+      "id": "05-15",
+      "seconds": 3.833,
+      "frames": 103,
+      "caption": "Ek aur chhed",
+      "lexicon": []
+    },
+    {
+      "id": "06-01",
+      "seconds": 4.346,
+      "frames": 115,
+      "caption": "Teen bade chhed",
+      "lexicon": []
+    },
+    {
+      "id": "06-02",
+      "seconds": 4.413,
+      "frames": 117,
+      "caption": "Pehla locality",
+      "lexicon": []
+    },
+    {
+      "id": "06-03",
+      "seconds": 3.378,
+      "frames": 92,
+      "caption": "Doosra detection",
+      "lexicon": []
+    },
+    {
+      "id": "06-04",
+      "seconds": 4.446,
+      "frames": 118,
+      "caption": "Sau mein do fair sampling",
+      "lexicon": []
+    },
+    {
+      "id": "06-05",
+      "seconds": 3.299,
+      "frames": 90,
+      "caption": "Teesra free choice",
+      "lexicon": []
+    },
+    {
+      "id": "06-06",
+      "seconds": 4.764,
+      "frames": 125,
+      "caption": "2015 chhed band",
+      "lexicon": []
+    },
+    {
+      "id": "06-07",
+      "seconds": 3.587,
+      "frames": 97,
+      "caption": "Limit tooti",
+      "lexicon": []
+    },
+    {
+      "id": "06-08",
+      "seconds": 3.494,
+      "frames": 95,
+      "caption": "Har bada test wahi",
+      "lexicon": []
+    },
+    {
+      "id": "06-09",
+      "seconds": 3.077,
+      "frames": 85,
+      "caption": "Bahas nahi maap",
+      "lexicon": []
+    },
+    {
+      "id": "06-10",
+      "seconds": 6.356,
+      "frames": 163,
+      "caption": "Chhed ka matlab",
+      "lexicon": []
+    },
+    {
+      "id": "06-11",
+      "seconds": 3.657,
+      "frames": 99,
+      "caption": "Locality ka chhed",
+      "lexicon": []
+    },
+    {
+      "id": "06-12",
+      "seconds": 4.158,
+      "frames": 111,
+      "caption": "Detection ka chhed",
+      "lexicon": []
+    },
+    {
+      "id": "06-13",
+      "seconds": 3.113,
+      "frames": 86,
+      "caption": "2015 teen prayog",
+      "lexicon": []
+    },
+    {
+      "id": "06-14",
+      "seconds": 3.182,
+      "frames": 87,
+      "caption": "Nateeja mazboot",
+      "lexicon": []
+    },
+    {
+      "id": "06-15",
+      "seconds": 3.03,
+      "frames": 84,
+      "caption": "2022 Nobel",
+      "lexicon": []
+    },
+    {
+      "id": "07-01",
+      "seconds": 4.624,
+      "frames": 122,
+      "caption": "2022 teen logon ko Nobel",
+      "lexicon": []
+    },
+    {
+      "id": "07-02",
+      "seconds": 3.402,
+      "frames": 92,
+      "caption": "Clauser Aspect Zeilinger",
+      "lexicon": []
+    },
+    {
+      "id": "07-03",
+      "seconds": 4.168,
+      "frames": 111,
+      "caption": "Clauser pehla test",
+      "lexicon": []
+    },
+    {
+      "id": "07-04",
+      "seconds": 3.03,
+      "frames": 84,
+      "caption": "Aspect chhed band",
+      "lexicon": []
+    },
+    {
+      "id": "07-05",
+      "seconds": 4.065,
+      "frames": 108,
+      "caption": "Zeilinger teleportation",
+      "lexicon": []
+    },
+    {
+      "id": "07-06",
+      "seconds": 4.121,
+      "frames": 110,
+      "caption": "Prayogon ke liye machine ke liye nahi",
+      "lexicon": []
+    },
+    {
+      "id": "07-07",
+      "seconds": 6.203,
+      "frames": 160,
+      "caption": "Clauser ke baad bhi chhed",
+      "lexicon": []
+    },
+    {
+      "id": "07-08",
+      "seconds": 5.607,
+      "frames": 145,
+      "caption": "Nobel ka hawaala",
+      "lexicon": []
+    },
+    {
+      "id": "07-09",
+      "seconds": 3.611,
+      "frames": 97,
+      "caption": "Doosra hissa",
+      "lexicon": []
+    },
+    {
+      "id": "07-10",
+      "seconds": 3.634,
+      "frames": 98,
+      "caption": "Quantum information",
+      "lexicon": []
+    },
+    {
+      "id": "07-11",
+      "seconds": 3.368,
+      "frames": 92,
+      "caption": "Machine ka certificate nahi",
+      "lexicon": []
+    },
+    {
+      "id": "07-12",
+      "seconds": 4.274,
+      "frames": 113,
+      "caption": "Sabse zaroori baat",
+      "lexicon": []
+    },
+    {
+      "id": "08-01",
+      "seconds": 5.125,
+      "frames": 134,
+      "caption": "Ek bit bhi nahi",
+      "lexicon": []
+    },
+    {
+      "id": "08-02",
+      "seconds": 6.449,
+      "frames": 166,
+      "caption": "Bob ko kuch nahi dikhta",
+      "lexicon": []
+    },
+    {
+      "id": "08-03",
+      "seconds": 3.82,
+      "frames": 102,
+      "caption": "Pata nahi chalta",
+      "lexicon": []
+    },
+    {
+      "id": "08-04",
+      "seconds": 4.576,
+      "frames": 121,
+      "caption": "Normal channel se bhejna padta hai",
+      "lexicon": []
+    },
+    {
+      "id": "08-05",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Tabhi milakar dekh sakte",
+      "lexicon": []
+    },
+    {
+      "id": "08-06",
+      "seconds": 3.624,
+      "frames": 98,
+      "caption": "Light se tez nahi",
+      "lexicon": []
+    },
+    {
+      "id": "08-07",
+      "seconds": 3.541,
+      "frames": 96,
+      "caption": "Relativity se nahi takrata",
+      "lexicon": []
+    },
+    {
+      "id": "08-08",
+      "seconds": 3.894,
+      "frames": 104,
+      "caption": "Judav asli sandesh nahi",
+      "lexicon": []
+    },
+    {
+      "id": "08-09",
+      "seconds": 4.563,
+      "frames": 120,
+      "caption": "Bob ki avastha badalti nahi",
+      "lexicon": []
+    },
+    {
+      "id": "08-10",
+      "seconds": 4.877,
+      "frames": 128,
+      "caption": "Kuch bhi naapo wahi rehti",
+      "lexicon": []
+    },
+    {
+      "id": "08-11",
+      "seconds": 4.483,
+      "frames": 118,
+      "caption": "Bina nateeja bheje kuch nahi",
+      "lexicon": []
+    },
+    {
+      "id": "08-12",
+      "seconds": 3.716,
+      "frames": 100,
+      "caption": "Suchi milate hain",
+      "lexicon": []
+    },
+    {
+      "id": "08-13",
+      "seconds": 4.609,
+      "frames": 121,
+      "caption": "Do suchiyan milana",
+      "lexicon": []
+    },
+    {
+      "id": "08-14",
+      "seconds": 3.67,
+      "frames": 99,
+      "caption": "Judav sandesh nahi",
+      "lexicon": []
+    },
+    {
+      "id": "08-15",
+      "seconds": 5.125,
+      "frames": 134,
+      "caption": "Phir bhi kaam teleportation",
+      "lexicon": []
+    },
+    {
+      "id": "09-01",
+      "seconds": 3.925,
+      "frames": 105,
+      "caption": "Avastha jaati hai padarth nahi",
+      "lexicon": []
+    },
+    {
+      "id": "09-02",
+      "seconds": 3.262,
+      "frames": 89,
+      "caption": "Bell maap dono kan",
+      "lexicon": []
+    },
+    {
+      "id": "09-03",
+      "seconds": 4.276,
+      "frames": 113,
+      "caption": "Do bit bas do",
+      "lexicon": []
+    },
+    {
+      "id": "09-04",
+      "seconds": 3.229,
+      "frames": 88,
+      "caption": "Do bit normal channel",
+      "lexicon": []
+    },
+    {
+      "id": "09-05",
+      "seconds": 3.727,
+      "frames": 100,
+      "caption": "Tabhi sudhaar",
+      "lexicon": []
+    },
+    {
+      "id": "09-06",
+      "seconds": 4.191,
+      "frames": 111,
+      "caption": "Avastha sandesh ke saath",
+      "lexicon": []
+    },
+    {
+      "id": "09-07",
+      "seconds": 4.173,
+      "frames": 111,
+      "caption": "1997 pehla prayog",
+      "lexicon": []
+    },
+    {
+      "id": "09-08",
+      "seconds": 3.494,
+      "frames": 95,
+      "caption": "Aaj sau kilomitar tak",
+      "lexicon": []
+    },
+    {
+      "id": "09-09",
+      "seconds": 4.312,
+      "frames": 114,
+      "caption": "Har baar channel chahiye",
+      "lexicon": []
+    },
+    {
+      "id": "09-10",
+      "seconds": 3.902,
+      "frames": 104,
+      "caption": "Dono ko milakar naapna",
+      "lexicon": []
+    },
+    {
+      "id": "09-11",
+      "seconds": 4.243,
+      "frames": 113,
+      "caption": "Chaar mein se ek do bit",
+      "lexicon": []
+    },
+    {
+      "id": "09-12",
+      "seconds": 5.693,
+      "frames": 147,
+      "caption": "Do bit kyun",
+      "lexicon": []
+    },
+    {
+      "id": "09-13",
+      "seconds": 4.415,
+      "frames": 117,
+      "caption": "Mool avastha mit jaati",
+      "lexicon": []
+    },
+    {
+      "id": "09-14",
+      "seconds": 5.938,
+      "frames": 153,
+      "caption": "Nakal nahi",
+      "lexicon": []
+    },
+    {
+      "id": "09-15",
+      "seconds": 3.169,
+      "frames": 87,
+      "caption": "Kahan kaam aata hai",
+      "lexicon": []
+    },
+    {
+      "id": "10-01",
+      "seconds": 3.216,
+      "frames": 88,
+      "caption": "Teen kaam teeno alag",
+      "lexicon": []
+    },
+    {
+      "id": "10-02",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Quantum cryptography",
+      "lexicon": []
+    },
+    {
+      "id": "10-03",
+      "seconds": 4.23,
+      "frames": 112,
+      "caption": "1984 Bennett Brassard",
+      "lexicon": []
+    },
+    {
+      "id": "10-04",
+      "seconds": 4.97,
+      "frames": 130,
+      "caption": "Chori pakdi jaati hai",
+      "lexicon": []
+    },
+    {
+      "id": "10-05",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Quantum computer",
+      "lexicon": []
+    },
+    {
+      "id": "10-06",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Quantum network",
+      "lexicon": []
+    },
+    {
+      "id": "10-07",
+      "seconds": 5.367,
+      "frames": 140,
+      "caption": "2017 Micius 1203 km",
+      "lexicon": []
+    },
+    {
+      "id": "10-08",
+      "seconds": 3.113,
+      "frames": 86,
+      "caption": "Jode ginna mushkil",
+      "lexicon": []
+    },
+    {
+      "id": "10-09",
+      "seconds": 4.661,
+      "frames": 123,
+      "caption": "Teeno ko ek na samjhein",
+      "lexicon": []
+    },
+    {
+      "id": "10-10",
+      "seconds": 4.029,
+      "frames": 107,
+      "caption": "Chabi baantne mein fayda",
+      "lexicon": []
+    },
+    {
+      "id": "10-11",
+      "seconds": 5.086,
+      "frames": 133,
+      "caption": "n qubit 2^n",
+      "lexicon": []
+    },
+    {
+      "id": "10-12",
+      "seconds": 3.322,
+      "frames": 91,
+      "caption": "Photon sabse achha",
+      "lexicon": []
+    },
+    {
+      "id": "10-13",
+      "seconds": 3.554,
+      "frames": 96,
+      "caption": "Repeater ki zaroorat",
+      "lexicon": []
+    },
+    {
+      "id": "10-14",
+      "seconds": 3.6,
+      "frames": 97,
+      "caption": "Satellite aur fibre",
+      "lexicon": []
+    },
+    {
+      "id": "10-15",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Sabse zaroori baat",
+      "lexicon": []
+    },
+    {
+      "id": "11-01",
+      "seconds": 4.405,
+      "frames": 117,
+      "caption": "Teen star milana galti",
+      "lexicon": []
+    },
+    {
+      "id": "11-02",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Pehla ganit",
+      "lexicon": []
+    },
+    {
+      "id": "11-03",
+      "seconds": 3.843,
+      "frames": 103,
+      "caption": "Yahan bahas nahi",
+      "lexicon": []
+    },
+    {
+      "id": "11-04",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Doosra prayog",
+      "lexicon": []
+    },
+    {
+      "id": "11-05",
+      "seconds": 3.169,
+      "frames": 87,
+      "caption": "Yahan maap",
+      "lexicon": []
+    },
+    {
+      "id": "11-06",
+      "seconds": 4.299,
+      "frames": 114,
+      "caption": "Teesra matlab",
+      "lexicon": []
+    },
+    {
+      "id": "11-07",
+      "seconds": 3.043,
+      "frames": 84,
+      "caption": "Koi kehta hai non-local",
+      "lexicon": []
+    },
+    {
+      "id": "11-08",
+      "seconds": 3.391,
+      "frames": 92,
+      "caption": "Jankari ki seema",
+      "lexicon": []
+    },
+    {
+      "id": "11-09",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Sawaal khula hai",
+      "lexicon": []
+    },
+    {
+      "id": "11-10",
+      "seconds": 3.889,
+      "frames": 104,
+      "caption": "Chaar vichar",
+      "lexicon": []
+    },
+    {
+      "id": "11-11",
+      "seconds": 4.831,
+      "frames": 127,
+      "caption": "Itna sab maante hain",
+      "lexicon": []
+    },
+    {
+      "id": "11-12",
+      "seconds": 4.005,
+      "frames": 107,
+      "caption": "Many worlds",
+      "lexicon": []
+    },
+    {
+      "id": "11-13",
+      "seconds": 4.227,
+      "frames": 112,
+      "caption": "Pilot wave",
+      "lexicon": []
+    },
+    {
+      "id": "11-14",
+      "seconds": 3.889,
+      "frames": 104,
+      "caption": "Koi prayog chun nahi paya",
+      "lexicon": []
+    },
+    {
+      "id": "11-15",
+      "seconds": 3.716,
+      "frames": 100,
+      "caption": "Teeno alag rakhiye",
+      "lexicon": []
+    },
+    {
+      "id": "12-01",
+      "seconds": 3.716,
+      "frames": 100,
+      "caption": "Ek line ek avastha do jagah",
+      "lexicon": []
+    },
+    {
+      "id": "12-02",
+      "seconds": 3.564,
+      "frames": 96,
+      "caption": "Product mein nahi tootti",
+      "lexicon": []
+    },
+    {
+      "id": "12-03",
+      "seconds": 3.693,
+      "frames": 99,
+      "caption": "1935 sawaal",
+      "lexicon": []
+    },
+    {
+      "id": "12-04",
+      "seconds": 3.229,
+      "frames": 88,
+      "caption": "1964 Bell ki seema",
+      "lexicon": []
+    },
+    {
+      "id": "12-05",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Seema tooti",
+      "lexicon": []
+    },
+    {
+      "id": "12-06",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "2022 Nobel",
+      "lexicon": []
+    },
+    {
+      "id": "12-07",
+      "seconds": 3.494,
+      "frames": 95,
+      "caption": "Sandesh light se tez nahi",
+      "lexicon": []
+    },
+    {
+      "id": "12-08",
+      "seconds": 3.881,
+      "frames": 104,
+      "caption": "Judav asli sandesh nahi",
+      "lexicon": []
+    },
+    {
+      "id": "12-09",
+      "seconds": 3.634,
+      "frames": 98,
+      "caption": "Chabi aur computer",
+      "lexicon": []
+    },
+    {
+      "id": "12-10",
+      "seconds": 3.773,
+      "frames": 101,
+      "caption": "Ek vaakya",
+      "lexicon": []
+    },
+    {
+      "id": "12-11",
+      "seconds": 4.158,
+      "frames": 111,
+      "caption": "Ek galatfehmi",
+      "lexicon": []
+    },
+    {
+      "id": "12-12",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Baaki sab isi se",
+      "lexicon": []
+    },
+    {
+      "id": "12-13",
+      "seconds": 3.0,
+      "frames": 83,
+      "caption": "Dhanyavaad",
+      "lexicon": []
+    },
+    {
+      "id": "12-14",
+      "seconds": 3.925,
+      "frames": 105,
+      "caption": "Yahi kahani hai",
+      "lexicon": []
+    }
+  ]
+}
