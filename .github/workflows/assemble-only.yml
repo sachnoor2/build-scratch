@@ -29,18 +29,20 @@ jobs:
       - name: ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - uses: actions/download-artifact@v4
-        with:
-          run-id: ${{ env.RUN_ID }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          pattern: shard-*
-          merge-multiple: true
-          path: public/out
-      - uses: actions/download-artifact@v4
-        with:
-          run-id: ${{ env.RUN_ID }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          name: voice
+      # gh run download, not actions/download-artifact: the action's pattern download stopped at
+      # 100 artifacts on a 180-shard run, and that failure looked exactly like missing frames.
+      - name: Fetch shards and voice
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p public/out
+          gh run download "$RUN_ID" --repo "${{ github.repository }}" --pattern 'shard-*' --dir public/out
+          gh run download "$RUN_ID" --repo "${{ github.repository }}" --name voice --dir .
+          # gh extracts each artifact into its own folder; flatten so stitch sees one directory
+          find public/out -name 'shard_*.mp4' -exec mv {} public/out/ \;
+          find public/out -mindepth 1 -type d -empty -delete
+          echo "shards on disk: $(ls public/out/shard_*.mp4 | wc -l)"
+          echo "audio files: $(ls public/audio/*.wav | wc -l)"
 
       - name: Install
         run: if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
