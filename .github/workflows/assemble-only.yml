@@ -1,0 +1,60 @@
+name: assemble-only
+
+# Re-composites from shard artifacts that already exist, without re-rendering them.
+# 180 shards is a night of Blender; a broken caption layer must never cost that again.
+on:
+  push:
+    branches: [quantum-3d-blender]
+
+jobs:
+  assemble:
+    if: contains(github.event.head_commit.message, '[assemble]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read the source run
+        run: |
+          ID=$(python3 -c "import json;print(json.load(open('assemble.json'))['runId'])")
+          echo "Assembling from run $ID"
+          echo "RUN_ID=$ID" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ env.RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pattern: shard-*
+          merge-multiple: true
+          path: public/out
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ env.RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          name: voice
+
+      - name: Install
+        run: if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
+      - run: npx tsc --noEmit
+      - name: Verify coverage and stitch
+        run: python3 scripts/stitch.py
+      - name: Composite captions and audio
+        run: npx remotion render src/index.ts Video out/video.mp4 --concurrency=3 --log=error
+      - run: python3 scripts/qa.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video
+          path: |
+            out/video.mp4
+            qa.log
+          if-no-files-found: error
+          retention-days: 14

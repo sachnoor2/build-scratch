@@ -7,6 +7,8 @@ on:
 
 jobs:
   voice:
+    # Same gate as the render job: a docs or assemble push must not spend 25 minutes on TTS.
+    if: contains(github.event.head_commit.message, '[render]')
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
@@ -116,7 +118,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
