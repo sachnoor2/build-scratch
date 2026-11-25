@@ -146,7 +146,7 @@ def add_camera(name, loc, target, lens=50.0, fstop=2.8):
 
 # --------------------------------------------------------------------------- world floor
 floor = mat("floor", (0.02, 0.03, 0.06), rough=0.22, metal=0.4)
-grid_line = mat("grid", CYAN, emit=1.6)
+grid_line = mat("grid", CYAN, emit=0.5)
 mesh("plane", "Floor", (0, 0, -1.6), scale=(220, 40, 1), material=floor)
 
 # a faint luminous grid: thin bars, so the space reads as a stage rather than a void
@@ -156,7 +156,7 @@ for j in range(-4, 5):
     mesh("cube", f"grid_y_{j}", (0, j * 7.0, -1.55), scale=(150, 0.02, 0.02), material=grid_line)
 
 # drifting dust: cheap, and it gives every lens a sense of depth
-dust = mat("dust", CREAM, emit=2.2)
+dust = mat("dust", CREAM, emit=0.6)
 for i in range(24):
     x = -10 + (i * 97 % 210)
     y = -14 + (i * 61 % 28)
@@ -167,17 +167,17 @@ for i in range(24):
 
 # --------------------------------------------------------------------------- 1. PAIR
 O = ORIGIN["pair"]
-core_a = mat("core_a", CYAN, emit=9.0)
-core_b = mat("core_b", MAGENTA, emit=9.0)
-halo_a = mat("halo_a", CYAN, emit=1.1, alpha=0.30)
-halo_b = mat("halo_b", MAGENTA, emit=1.1, alpha=0.30)
-filament = mat("filament", CREAM, emit=2.0, alpha=0.5)
+core_a = mat("core_a", CYAN, emit=0.6)
+core_b = mat("core_b", MAGENTA, emit=0.6)
+halo_a = mat("halo_a", CYAN, emit=0.15)
+halo_b = mat("halo_b", MAGENTA, emit=0.15)
+filament = mat("filament", CREAM, emit=0.8)
 
 a_sphere = mesh("sphere", "A_core", O + Vector((-7, 0, 0)), scale=(1.0, 1.0, 1.0), material=core_a)
 a_sphere["base_scale"] = (1.0, 1.0, 1.0)
 b_sphere = mesh("sphere", "B_core", O + Vector((7, 0, 0)), scale=(1.0, 1.0, 1.0), material=core_b)
 b_sphere["base_scale"] = (1.0, 1.0, 1.0)
-for i, (r, m) in enumerate([(1.9, halo_a), (2.9, halo_b), (4.2, halo_a)]):
+for i, (r, m) in enumerate([(1.25, halo_a), (1.65, halo_b), (2.05, halo_a)]):
     for side, sgn in (("A", -1), ("B", 1)):
         h = mesh("sphere", f"{side}_halo_{i}", O + Vector((sgn * 7, 0, 0)),
                  scale=(r, r, r), material=m)
@@ -195,14 +195,14 @@ for k in range(23):
     key_pulse(bead, lo=0.7, hi=1.6, period=40, phase=k)
 
 # entangled ellipse: one state drawn around both particles
-ell = mesh("torus", "pair_ellipse", O, scale=(9.6, 9.6, 9.6), material=mat("ell", VIOLET, emit=2.4))
+ell = mesh("torus", "pair_ellipse", O, scale=(6.2, 6.2, 6.2), material=mat("ell", VIOLET, emit=1.0))
 ell.rotation_euler = (math.radians(90), 0, 0)
 key_rotate(ell, turns=0.25, axis=1)
 
 # --------------------------------------------------------------------------- 2. CRYSTAL
 O = ORIGIN["crystal"]
-cry = mat("crystal", VIOLET, emit=1.4, rough=0.08, metal=0.2)
-beam = mat("beam", CREAM, emit=7.0)
+cry = mat("crystal", VIOLET, emit=0.6, rough=0.08, metal=0.2)
+beam = mat("beam", CREAM, emit=2.0)
 mesh("ico", "crystal_body", O + Vector((0, 0, 0)), scale=(3.4, 3.4, 3.4), material=cry)
 pump = mesh("cylinder", "pump_beam", O + Vector((-9, 0, 0)), scale=(0.16, 0.16, 7.0),
             material=beam, rot=(0, math.radians(90), 0))
@@ -210,15 +210,15 @@ for sgn in (-1, 1):
     ang = math.radians(26 * sgn)
     out = mesh("cylinder", f"spdc_{'l' if sgn < 0 else 'r'}",
                O + Vector((7.0, 5.2 * sgn, 0)), scale=(0.13, 0.13, 6.2),
-               material=mat(f"spdc_m{sgn}", CYAN if sgn < 0 else MAGENTA, emit=6.0),
+               material=mat(f"spdc_m{sgn}", CYAN if sgn < 0 else MAGENTA, emit=0.9),
                rot=(0, math.radians(90), ang))
 key_rotate(mesh("ico", "crystal_shell", O, scale=(4.6, 4.6, 4.6),
-                material=mat("shell", CYAN, emit=0.7, alpha=0.18)), turns=0.6, axis=2)
+                material=mat("shell", CYAN, emit=0.25)), turns=0.6, axis=2)
 
 # --------------------------------------------------------------------------- 3. RIG
 O = ORIGIN["rig"]
-ring = mat("ring", GOLD, emit=2.6, metal=0.6, rough=0.2)
-glass = mat("glass", CYAN, emit=0.9, alpha=0.22)
+ring = mat("ring", GOLD, emit=1.2, metal=0.6, rough=0.2)
+glass = mat("glass", CYAN, emit=0.3)
 boxmat = mat("box", (0.05, 0.07, 0.12), rough=0.3, metal=0.5)
 
 for sgn, col in ((-1, CYAN), (1, MAGENTA)):
@@ -228,13 +228,13 @@ for sgn, col in ((-1, CYAN), (1, MAGENTA)):
     r1.rotation_euler = (math.radians(90), 0, 0)
     key_rotate(r1, turns=1.2 * sgn, axis=1)
     r2 = mesh("torus", f"pol_inner_{sgn}", station, scale=(1.15, 1.15, 1.15),
-              material=mat(f"inner_{sgn}", col, emit=3.4))
+              material=mat(f"inner_{sgn}", col, emit=0.5))
     r2.rotation_euler = (0, math.radians(90), 0)
     key_rotate(r2, turns=-0.9 * sgn, axis=2)
 
 # photon travelling between the stations, on a loop
 photon = mesh("sphere", "photon", O + Vector((-10, 0, 0)), scale=(0.22, 0.22, 0.22),
-              material=mat("photon", CREAM, emit=10.0))
+              material=mat("photon", CREAM, emit=1.4))
 for f in range(0, a.frames, 24):
     t = (f % 96) / 96.0
     photon.location = O + Vector((-10 + 20 * t, 0, 0))
@@ -245,7 +245,7 @@ for fc in photon.animation_data.action.fcurves:
 
 # --------------------------------------------------------------------------- 4. LATTICE
 O = ORIGIN["lattice"]
-node = mat("node", CYAN, emit=3.0)
+node = mat("node", CYAN, emit=1.4)
 strut = mat("strut", CREAM, emit=0.6, alpha=0.5)
 for ix in range(-2, 3):
     for iy in range(-1, 2):
@@ -265,16 +265,16 @@ O = ORIGIN["channel"]
 alice = mesh("cube", "alice_box", O + Vector((-11, 0, 0)), scale=(2.4, 2.4, 2.4), material=boxmat)
 bob = mesh("cube", "bob_box", O + Vector((11, 0, 0)), scale=(2.4, 2.4, 2.4), material=boxmat)
 mesh("torus", "alice_ring", O + Vector((-11, 0, 0)), scale=(3.2, 3.2, 3.2),
-     material=mat("alice_ring", CYAN, emit=3.0))
+     material=mat("alice_ring", CYAN, emit=1.4))
 mesh("torus", "bob_ring", O + Vector((11, 0, 0)), scale=(3.2, 3.2, 3.2),
-     material=mat("bob_ring", MAGENTA, emit=3.0))
+     material=mat("bob_ring", MAGENTA, emit=1.4))
 # the classical channel: a dashed link with a pulse that crawls along it
-dash = mat("dash", GOLD, emit=2.4)
+dash = mat("dash", GOLD, emit=1.0)
 for k in range(21):
     x = -9.0 + k * 0.9
     mesh("cube", f"dash_{k}", O + Vector((x, 0, -0.4)), scale=(0.30, 0.06, 0.06), material=dash)
 pulse = mesh("sphere", "channel_pulse", O + Vector((-9, 0, -0.4)), scale=(0.2, 0.2, 0.2),
-             material=mat("pulse", GOLD, emit=9.0))
+             material=mat("pulse", GOLD, emit=0.6))
 for f in range(0, a.frames, 30):
     t = (f % 120) / 120.0
     pulse.location = O + Vector((-9 + 18 * t, 0, -0.4))
@@ -284,28 +284,28 @@ for fc in pulse.animation_data.action.fcurves:
         kp.interpolation = "LINEAR"
 
 # the forbidden faster-than-light link: a broken red arc between the same two boxes
-mesh("torus", "forbidden_arc", O + Vector((0, 0, 2.4)), scale=(11.0, 11.0, 11.0),
+mesh("torus", "forbidden_arc", O + Vector((0, 0, 2.2)), scale=(5.5, 5.5, 5.5),
      material=mat("forbidden", RED, emit=1.2, alpha=0.22))
 
 # --------------------------------------------------------------------------- 6. CHART
 O = ORIGIN["chart"]
-bar_ok = mat("bar_ok", CYAN, emit=1.8)
-bar_over = mat("bar_over", GREEN, emit=3.2)
+bar_ok = mat("bar_ok", CYAN, emit=0.9)
+bar_over = mat("bar_over", GREEN, emit=1.6)
 for i in range(9):
     h = 1.2 + i * 0.55
     mesh("cube", f"bar_{i}", O + Vector((-8 + i * 2.0, 0, h - 1.6)),
          scale=(0.55, 0.55, h), material=bar_ok if i < 6 else bar_over)
 # the limit plane the local theory cannot cross, and the quantum ceiling above it
 mesh("cube", "limit_plane", O + Vector((-1.0, 0, 3.4)), scale=(9.5, 2.2, 0.03),
-     material=mat("limit", RED, emit=2.0, alpha=0.55))
+     material=mat("limit", RED, emit=0.85))
 mesh("cube", "quantum_plane", O + Vector((-1.0, 0, 5.1)), scale=(9.5, 2.2, 0.03),
-     material=mat("qceil", GREEN, emit=2.0, alpha=0.45))
+     material=mat("qceil", GREEN, emit=0.8))
 
 # --------------------------------------------------------------------------- lights
 for i, s in enumerate(SETS):
     O = ORIGIN[s]
-    add_light(f"key_{s}", O + Vector((-8, -10, 12)), 2200, (1.0, 0.96, 0.9), size=9, target=O)
-    add_light(f"rim_{s}", O + Vector((10, 9, 7)), 1400, (0.45, 0.7, 1.0), size=8, target=O)
+    add_light(f"key_{s}", O + Vector((-8, -10, 12)), 380, (1.0, 0.96, 0.9), size=9, target=O)
+    add_light(f"rim_{s}", O + Vector((10, 9, 7)), 220, (0.45, 0.7, 1.0), size=8, target=O)
 
 world = bpy.data.worlds.new("World")
 world.use_nodes = True
@@ -317,17 +317,17 @@ scene.world = world
 # two angles per set: geography and the detail that proves it
 CAMS = {
     "cam-pair-wide":   ("pair",    (-2, -22, 9),   (0, 0, 0.5), 42, 4.0),
-    "cam-pair-macro":  ("pair",    (-9, -8, 1.2),  (-5, 0, 0),  85, 2.2),
+    "cam-pair-macro":  ("pair",    (-19, -13, 3.5), (-7, 0, 0),  58, 2.8),
     "cam-crystal":     ("crystal", (-12, -16, 8),  (2, 0, 0),   50, 3.2),
-    "cam-crystal-macro": ("crystal", (-6, -6, 2.5), (3, 1.5, 0), 85, 2.0),
+    "cam-crystal-macro": ("crystal", (-16, -13, 5.5), (2, 0, 0), 55, 2.6),
     "cam-rig-wide":    ("rig",     (0, -24, 7),    (0, 0, 0.5), 40, 4.0),
-    "cam-rig-macro":   ("rig",     (-12, -7, 1.0), (-9, 0, 0),  90, 2.0),
+    "cam-rig-macro":   ("rig",     (-22, -14, 3.0), (-9, 0, 0), 62, 2.6),
     "cam-lattice":     ("lattice", (0, -20, 10),   (0, 0, 1.5), 45, 3.5),
-    "cam-lattice-macro": ("lattice", (-5, -8, 2.0), (1, 0, 1.5), 80, 2.2),
+    "cam-lattice-macro": ("lattice", (-16, -13, 5.0), (0, 0, 1.5), 52, 2.8),
     "cam-channel":     ("channel", (0, -22, 6),    (0, 0, 0.5), 40, 4.0),
-    "cam-channel-macro": ("channel", (-13, -8, 0.6), (-9, 0, 0), 85, 2.0),
+    "cam-channel-macro": ("channel", (-22, -14, 2.5), (-9, 0, 0), 60, 2.6),
     "cam-chart":       ("chart",   (0, -20, 7),    (0, 0, 2.5), 45, 4.0),
-    "cam-chart-macro": ("chart",   (4, -8, 3.0),   (4, 0, 3.4), 80, 2.2),
+    "cam-chart-macro": ("chart",   (4, -18, 5.5),  (4, 0, 3.0), 55, 2.8),
 }
 for name, (setname, loc, tgt, lens, fstop) in CAMS.items():
     O = ORIGIN[setname]
@@ -339,7 +339,7 @@ scene.camera = bpy.data.objects["cam-pair-wide"]
 scene.render.engine = "CYCLES"
 scene.cycles.device = "CPU"
 scene.cycles.samples = 8
-scene.cycles.use_denoising = False
+scene.cycles.use_denoising = True
 scene.cycles.max_bounces = 1
 scene.cycles.diffuse_bounces = 1
 scene.cycles.glossy_bounces = 1
@@ -349,7 +349,13 @@ scene.render.resolution_x = a.width
 scene.render.resolution_y = a.height
 scene.render.resolution_percentage = 100
 scene.render.film_transparent = False
-scene.view_settings.view_transform = "Filmic" if "Filmic" in [v.name for v in scene.view_settings.bl_rna.properties["view_transform"].enum_items] else "Standard"
+_tf = [v.name for v in scene.view_settings.bl_rna.properties["view_transform"].enum_items]
+scene.view_settings.view_transform = "AgX" if "AgX" in _tf else "Standard"
+try:
+    scene.view_settings.look = "AgX - Medium High Contrast"
+except Exception:
+    pass
+scene.view_settings.exposure = -0.2
 
 # no compositor: the glare pass costs a full-frame buffer operation per sample
 scene.use_nodes = False

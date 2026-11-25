@@ -23,9 +23,11 @@ shots, at = [], 0
 for i, s in enumerate(man["scenes"]):
     ch = int(s["id"].split("-")[0])
     setname = SET_OF_CHAPTER.get(ch, "pair")
-    cam = CAMS[setname][i % 2]
-    if i % 4 == 3:                      # break the alternation so it never feels mechanical
-        other = [k for k in CAMS if k != setname][(i // 4) % 5]
+    # Macro on one shot in five, not every other one. Alternating put the camera close for half
+    # the film, which read as a slideshow of close-ups rather than a film with a grammar.
+    cam = CAMS[setname][0] if i % 5 else CAMS[setname][1]
+    if i % 11 == 7:                     # a neighbour set for variety, still one of its own angles
+        other = [k for k in CAMS if k != setname][(i // 11) % 5]
         cam = CAMS[other][i % 2]
     shots.append({"id": s["id"], "start": at, "end": at + s["frames"] - 1, "camera": cam,
                   "set": setname, "sim": "none", "character": "none",
