@@ -37,7 +37,9 @@ jobs:
         run: |
           mkdir -p public/out
           gh run download "$RUN_ID" --repo "${{ github.repository }}" --pattern 'shard-*' --dir public/out
-          gh run download "$RUN_ID" --repo "${{ github.repository }}" --name voice --dir .
+          # voice goes to a temp dir first: gh will not extract over files already in the checkout
+          gh run download "$RUN_ID" --repo "${{ github.repository }}" --name voice --dir /tmp/voice
+          cp -rf /tmp/voice/. .
           # gh extracts each artifact into its own folder; flatten so stitch sees one directory
           find public/out -name 'shard_*.mp4' -exec mv {} public/out/ \;
           find public/out -mindepth 1 -type d -empty -delete
