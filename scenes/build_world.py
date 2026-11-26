@@ -40,7 +40,8 @@ VIOLET = (0.55, 0.40, 1.00)
 CREAM = (1.00, 0.97, 0.90)
 INK = (0.012, 0.018, 0.035)
 
-SETS = ["pair", "crystal", "rig", "lattice", "channel", "chart"]
+SETS = ["pair", "crystal", "rig", "lattice", "channel", "chart",
+        "interference", "mirror", "detector", "timeline", "cloud", "split"]
 GAP = 34.0
 ORIGIN = {s: Vector((i * GAP, 0.0, 0.0)) for i, s in enumerate(SETS)}
 
@@ -301,6 +302,94 @@ mesh("cube", "limit_plane", O + Vector((-1.0, 0, 3.4)), scale=(9.5, 2.2, 0.03),
 mesh("cube", "quantum_plane", O + Vector((-1.0, 0, 5.1)), scale=(9.5, 2.2, 0.03),
      material=mat("qceil", GREEN, emit=0.8))
 
+
+# --------------------------------------------------------------------------- 7. INTERFERENCE
+# expanding rings meeting at a node: the "two paths arrive" beat
+O = ORIGIN["interference"]
+ring_m = mat("if_ring", CYAN, emit=1.0)
+ring_m2 = mat("if_ring2", MAGENTA, emit=1.0)
+for k in range(9):
+    r = 0.55 + k * 0.34
+    a_ring = mesh("torus", f"if_a_{k}", O + Vector((-2.2, 0, 0.6)), scale=(r, r, r), material=ring_m)
+    a_ring.rotation_euler = (math.radians(90), 0, 0)
+    a_ring["base_scale"] = (r, r, r)
+    key_pulse(a_ring, lo=0.86, hi=1.14, period=48 + k * 6)
+    b_ring = mesh("torus", f"if_b_{k}", O + Vector((2.2, 0, 0.6)), scale=(r, r, r), material=ring_m2)
+    b_ring.rotation_euler = (math.radians(90), 0, 0)
+    b_ring["base_scale"] = (r, r, r)
+    key_pulse(b_ring, lo=1.14, hi=0.86, period=48 + k * 6)
+mesh("sphere", "if_node", O, scale=(0.5, 0.5, 0.5), material=mat("if_node", CREAM, emit=3.0))
+
+# --------------------------------------------------------------------------- 8. MIRROR
+# a Mach-Zehnder style path: two angled slabs, the beam bending off each
+O = ORIGIN["mirror"]
+slab = mat("mirror_slab", (0.05, 0.08, 0.14), rough=0.12, metal=0.85)
+beam_m = mat("beam_path", CREAM, emit=2.0)
+for sgn, ang in ((-1, 45), (1, -45)):
+    m = mesh("cube", f"mirror_{sgn}", O + Vector((sgn * 2.4, 0, 1.0)), scale=(1.3, 0.06, 1.3),
+             material=slab, rot=(0, math.radians(ang), 0))
+for k in range(11):
+    x = -5.0 + k * 0.85
+    mesh("cube", f"beam_in_{k}", O + Vector((x, 0, 1.0)), scale=(0.10, 0.10, 0.10), material=beam_m)
+for k in range(8):
+    mesh("cube", f"beam_up_{k}", O + Vector((4.0, 0, 1.0 + k * 0.9)), scale=(0.10, 0.10, 0.10),
+         material=mat("beam_up", GOLD, emit=2.0))
+mesh("torus", "mz_loop", O + Vector((0, 0, 1.0)), scale=(2.4, 2.4, 2.4), material=mat("mz", VIOLET, emit=0.7))
+
+# --------------------------------------------------------------------------- 9. DETECTOR
+# a pixel wall with a few cells firing: the measurement outcome
+O = ORIGIN["detector"]
+cell = mat("cell", (0.06, 0.09, 0.16), rough=0.4, metal=0.3)
+cell_hit = mat("cell_hit", GOLD, emit=3.0)
+for ix in range(-3, 4):
+    for iz in range(-2, 3):
+        hot = (ix in (-2, 3)) and (iz in (0, -1))
+        mesh("cube", f"px_{ix}_{iz}", O + Vector((ix * 0.95, 0, iz * 0.95 + 0.8)),
+             scale=(0.36, 0.10, 0.36), material=cell_hit if hot else cell)
+mesh("cube", "px_frame", O + Vector((0, 0.45, 0.8)), scale=(4.2, 0.04, 2.8),
+     material=mat("px_frame", CYAN, emit=0.6))
+
+# --------------------------------------------------------------------------- 10. TIMELINE
+# floating year slabs: the history beats
+O = ORIGIN["timeline"]
+slab_m = mat("tl_slab", (0.07, 0.10, 0.18), rough=0.3, metal=0.5)
+edge = mat("tl_edge", CYAN, emit=1.4)
+for k in range(6):
+    h = 0.6 + (k % 3) * 1.1
+    x = -6.5 + k * 2.6
+    mesh("cube", f"tl_{k}", O + Vector((x, 0, h)), scale=(1.0, 0.18, 0.7), material=slab_m)
+    mesh("cube", f"tl_edge_{k}", O + Vector((x, 0, h + 0.9)), scale=(1.5, 0.22, 0.05), material=edge)
+    mesh("cube", f"tl_stem_{k}", O + Vector((x, 0, h - 1.1)), scale=(0.05, 0.05, h), material=slab_m)
+
+# --------------------------------------------------------------------------- 11. CLOUD
+# a shell of motes: the state as a cloud rather than a point
+O = ORIGIN["cloud"]
+mote = mat("mote", CYAN, emit=1.6)
+mote2 = mat("mote2", VIOLET, emit=1.2)
+for i in range(64):
+    th = i * 2.399963
+    ph = math.acos(1 - 2 * ((i + 0.5) / 64))
+    r = 3.9 + 0.55 * math.sin(i)
+    p = O + Vector((r * math.sin(ph) * math.cos(th), r * math.sin(ph) * math.sin(th),
+                    r * math.cos(ph) + 1.5))
+    ob = mesh("sphere", f"mote_{i}", p, scale=(0.20, 0.20, 0.20),
+              material=mote if i % 3 else mote2)
+    ob["base_scale"] = (0.20, 0.20, 0.20)
+    key_pulse(ob, lo=0.6, hi=1.5, period=54 + (i % 7) * 9)
+
+# --------------------------------------------------------------------------- 12. SPLIT
+# one object dividing in two: separability, made physical
+O = ORIGIN["split"]
+half_m = mat("split_half", (0.10, 0.13, 0.22), rough=0.18, metal=0.7)
+rim = mat("split_rim", GREEN, emit=1.4)
+for sgn in (-1, 1):
+    h = mesh("cube", f"split_{sgn}", O + Vector((sgn * 1.7, 0, 1.0)), scale=(1.4, 1.4, 1.4),
+             material=half_m)
+    mesh("cube", f"split_rim_{sgn}", O + Vector((sgn * 2.4, 0, 1.0)), scale=(2.05, 2.05, 0.04),
+         material=rim)
+mesh("torus", "split_ring", O + Vector((0, 0, 1.0)), scale=(4.2, 4.2, 4.2),
+     material=mat("split_ring", RED, emit=0.9))
+
 # --------------------------------------------------------------------------- lights
 for i, s in enumerate(SETS):
     O = ORIGIN[s]
@@ -315,20 +404,15 @@ scene.world = world
 
 # --------------------------------------------------------------------------- cameras
 # two angles per set: geography and the detail that proves it
-CAMS = {
-    "cam-pair-wide":   ("pair",    (-2, -22, 9),   (0, 0, 0.5), 42, 4.0),
-    "cam-pair-macro":  ("pair",    (-19, -13, 3.5), (-7, 0, 0),  58, 2.8),
-    "cam-crystal":     ("crystal", (-12, -16, 8),  (2, 0, 0),   50, 3.2),
-    "cam-crystal-macro": ("crystal", (-16, -13, 5.5), (2, 0, 0), 55, 2.6),
-    "cam-rig-wide":    ("rig",     (0, -24, 7),    (0, 0, 0.5), 40, 4.0),
-    "cam-rig-macro":   ("rig",     (-22, -14, 3.0), (-9, 0, 0), 62, 2.6),
-    "cam-lattice":     ("lattice", (0, -20, 10),   (0, 0, 1.5), 45, 3.5),
-    "cam-lattice-macro": ("lattice", (-16, -13, 5.0), (0, 0, 1.5), 52, 2.8),
-    "cam-channel":     ("channel", (0, -22, 6),    (0, 0, 0.5), 40, 4.0),
-    "cam-channel-macro": ("channel", (-22, -14, 2.5), (-9, 0, 0), 60, 2.6),
-    "cam-chart":       ("chart",   (0, -20, 7),    (0, 0, 2.5), 45, 4.0),
-    "cam-chart-macro": ("chart",   (4, -18, 5.5),  (4, 0, 3.0), 55, 2.8),
-}
+CAM_RIGS = [
+    ("wide",  (-2, -22, 9),   (0, 0, 0.6),  42),
+    ("med",   (-8, -16, 5),   (0, 0, 1.0),  58),
+    ("macro", (-16, -11, 3.2), (-5, 0, 0.8), 55),
+]
+CAMS = {}
+for _set in SETS:
+    for _rig, _loc, _tgt, _lens in CAM_RIGS:
+        CAMS[f"cam-{_set}-{_rig}"] = (_set, _loc, _tgt, _lens, 2.8)
 for name, (setname, loc, tgt, lens, fstop) in CAMS.items():
     O = ORIGIN[setname]
     add_camera(name, O + Vector(loc), O + Vector(tgt), lens=lens, fstop=fstop)

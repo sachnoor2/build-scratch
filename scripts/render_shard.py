@@ -29,9 +29,10 @@ if not todo:
 
 for s, lo, hi in todo:
     samples = a.samples if a.samples is not None else s.get("samples", 32)
+    move = s.get("cameraIn") or s.get("cameraOut") or "push-in@0.6"
     cmd = ["blender", "-b", world, "-P", "scenes/render.py", "--",
            "--camera", s["camera"], "--start", str(lo), "--end", str(hi),
-           "--out", a.out, "--samples", str(samples)]
+           "--out", a.out, "--samples", str(samples), "--move", move]
     print(" ".join(cmd), flush=True)
     if subprocess.run(cmd).returncode != 0:
         print(f"FAILED shot {s['id']} ({s['camera']}) frames {lo}-{hi}")

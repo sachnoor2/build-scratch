@@ -5,18 +5,18 @@
  "world": "scenes/world.blend",
  "totalFrames": 19750,
  "sets": [
-  "channel",
-  "channel",
-  "chart",
-  "chart",
+  "pair",
   "crystal",
-  "lattice",
-  "lattice",
-  "pair",
-  "pair",
-  "pair",
   "rig",
-  "rig"
+  "lattice",
+  "channel",
+  "chart",
+  "interference",
+  "mirror",
+  "detector",
+  "timeline",
+  "cloud",
+  "split"
  ],
  "shots": [
   {
@@ -25,107 +25,107 @@
    "end": 189,
    "camera": "cam-pair-wide",
    "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 1 begins",
    "stateOut": "beat 1 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "01-02",
    "start": 190,
    "end": 335,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-crystal-med",
+   "set": "crystal",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 2 begins",
    "stateOut": "beat 2 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "01-03",
    "start": 336,
    "end": 477,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-rig-wide",
+   "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 3 begins",
    "stateOut": "beat 3 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "01-04",
    "start": 478,
    "end": 649,
-   "camera": "cam-crystal-macro",
+   "camera": "cam-pair-med",
    "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 4 begins",
    "stateOut": "beat 4 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "01-05",
    "start": 650,
    "end": 801,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-channel-macro",
+   "set": "channel",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 5 begins",
    "stateOut": "beat 5 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "01-06",
    "start": 802,
    "end": 913,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-chart-med",
+   "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 6 begins",
    "stateOut": "beat 6 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "01-07",
@@ -133,53 +133,53 @@
    "end": 1085,
    "camera": "cam-pair-wide",
    "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 7 begins",
    "stateOut": "beat 7 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "01-08",
    "start": 1086,
    "end": 1188,
-   "camera": "cam-rig-macro",
-   "set": "pair",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 8 begins",
    "stateOut": "beat 8 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "01-09",
    "start": 1189,
    "end": 1352,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-detector-wide",
+   "set": "detector",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 9 begins",
    "stateOut": "beat 9 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "01-10",
@@ -187,13 +187,13 @@
    "end": 1497,
    "camera": "cam-pair-macro",
    "set": "pair",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 10 begins",
    "stateOut": "beat 10 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -203,37 +203,37 @@
    "id": "01-11",
    "start": 1498,
    "end": 1661,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 11 begins",
    "stateOut": "beat 11 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "01-12",
    "start": 1662,
    "end": 1819,
-   "camera": "cam-lattice-macro",
-   "set": "pair",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 12 begins",
    "stateOut": "beat 12 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "01-13",
@@ -241,139 +241,139 @@
    "end": 1965,
    "camera": "cam-pair-wide",
    "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 13 begins",
    "stateOut": "beat 13 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "02-01",
    "start": 1966,
    "end": 2116,
-   "camera": "cam-crystal-macro",
-   "set": "crystal",
+   "camera": "cam-rig-med",
+   "set": "rig",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 14 begins",
    "stateOut": "beat 14 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "02-02",
    "start": 2117,
    "end": 2260,
-   "camera": "cam-crystal",
-   "set": "crystal",
+   "camera": "cam-lattice-macro",
+   "set": "lattice",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 15 begins",
    "stateOut": "beat 15 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "02-03",
    "start": 2261,
    "end": 2373,
-   "camera": "cam-channel-macro",
+   "camera": "cam-crystal-med",
    "set": "crystal",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 16 begins",
    "stateOut": "beat 16 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "02-04",
    "start": 2374,
    "end": 2529,
-   "camera": "cam-crystal",
-   "set": "crystal",
+   "camera": "cam-chart-wide",
+   "set": "chart",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 17 begins",
    "stateOut": "beat 17 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "02-05",
    "start": 2530,
    "end": 2675,
-   "camera": "cam-crystal-macro",
-   "set": "crystal",
+   "camera": "cam-interference-med",
+   "set": "interference",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 18 begins",
    "stateOut": "beat 18 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "02-06",
    "start": 2676,
    "end": 2839,
-   "camera": "cam-crystal",
+   "camera": "cam-crystal-wide",
    "set": "crystal",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 19 begins",
    "stateOut": "beat 19 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "02-07",
    "start": 2840,
    "end": 3001,
-   "camera": "cam-chart-macro",
-   "set": "crystal",
+   "camera": "cam-detector-macro",
+   "set": "detector",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 20 begins",
    "stateOut": "beat 20 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -383,177 +383,177 @@
    "id": "02-08",
    "start": 3002,
    "end": 3102,
-   "camera": "cam-crystal",
-   "set": "crystal",
+   "camera": "cam-timeline-wide",
+   "set": "timeline",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 21 begins",
    "stateOut": "beat 21 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "02-09",
    "start": 3103,
    "end": 3195,
-   "camera": "cam-crystal-macro",
+   "camera": "cam-crystal-med",
    "set": "crystal",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 22 begins",
    "stateOut": "beat 22 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "02-10",
    "start": 3196,
    "end": 3323,
-   "camera": "cam-crystal",
-   "set": "crystal",
+   "camera": "cam-split-wide",
+   "set": "split",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 23 begins",
    "stateOut": "beat 23 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "02-11",
    "start": 3324,
    "end": 3444,
-   "camera": "cam-pair-macro",
-   "set": "crystal",
+   "camera": "cam-pair-med",
+   "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 24 begins",
    "stateOut": "beat 24 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "02-12",
    "start": 3445,
    "end": 3569,
-   "camera": "cam-crystal",
+   "camera": "cam-crystal-macro",
    "set": "crystal",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 25 begins",
    "stateOut": "beat 25 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "02-13",
    "start": 3570,
    "end": 3708,
-   "camera": "cam-crystal-macro",
-   "set": "crystal",
+   "camera": "cam-rig-med",
+   "set": "rig",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 26 begins",
    "stateOut": "beat 26 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "02-14",
    "start": 3709,
    "end": 3841,
-   "camera": "cam-crystal",
-   "set": "crystal",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 27 begins",
    "stateOut": "beat 27 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "02-15",
    "start": 3842,
    "end": 3971,
-   "camera": "cam-rig-macro",
+   "camera": "cam-crystal-med",
    "set": "crystal",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 28 begins",
    "stateOut": "beat 28 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "03-01",
    "start": 3972,
    "end": 4121,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 29 begins",
    "stateOut": "beat 29 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "03-02",
    "start": 4122,
    "end": 4238,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-channel-macro",
+   "set": "channel",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 30 begins",
    "stateOut": "beat 30 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -563,177 +563,177 @@
    "id": "03-03",
    "start": 4239,
    "end": 4356,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-split-wide",
+   "set": "split",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 31 begins",
    "stateOut": "beat 31 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "03-04",
    "start": 4357,
    "end": 4463,
-   "camera": "cam-lattice-macro",
-   "set": "pair",
+   "camera": "cam-interference-med",
+   "set": "interference",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 32 begins",
    "stateOut": "beat 32 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "03-05",
    "start": 4464,
    "end": 4570,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-mirror-wide",
+   "set": "mirror",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 33 begins",
    "stateOut": "beat 33 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "03-06",
    "start": 4571,
    "end": 4668,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 34 begins",
    "stateOut": "beat 34 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "03-07",
    "start": 4669,
    "end": 4779,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-timeline-macro",
+   "set": "timeline",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 35 begins",
    "stateOut": "beat 35 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "03-08",
    "start": 4780,
    "end": 4890,
-   "camera": "cam-channel-macro",
-   "set": "pair",
+   "camera": "cam-cloud-med",
+   "set": "cloud",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 36 begins",
    "stateOut": "beat 36 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "03-09",
    "start": 4891,
    "end": 4976,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-split-wide",
+   "set": "split",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 37 begins",
    "stateOut": "beat 37 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "03-10",
    "start": 4977,
    "end": 5099,
-   "camera": "cam-pair-macro",
+   "camera": "cam-pair-med",
    "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 38 begins",
    "stateOut": "beat 38 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "03-11",
    "start": 5100,
    "end": 5230,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-crystal-wide",
+   "set": "crystal",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 39 begins",
    "stateOut": "beat 39 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "03-12",
    "start": 5231,
    "end": 5337,
-   "camera": "cam-chart-macro",
-   "set": "pair",
+   "camera": "cam-split-macro",
+   "set": "split",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 40 begins",
    "stateOut": "beat 40 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -743,177 +743,177 @@
    "id": "03-13",
    "start": 5338,
    "end": 5442,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 41 begins",
    "stateOut": "beat 41 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "03-14",
    "start": 5443,
    "end": 5552,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-channel-med",
+   "set": "channel",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 42 begins",
    "stateOut": "beat 42 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "03-15",
    "start": 5553,
    "end": 5663,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-split-wide",
+   "set": "split",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 43 begins",
    "stateOut": "beat 43 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "04-01",
    "start": 5664,
    "end": 5837,
-   "camera": "cam-pair-macro",
-   "set": "chart",
+   "camera": "cam-pair-med",
+   "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 44 begins",
    "stateOut": "beat 44 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "04-02",
    "start": 5838,
    "end": 5970,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-crystal-macro",
+   "set": "crystal",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 45 begins",
    "stateOut": "beat 45 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "04-03",
    "start": 5971,
    "end": 6119,
-   "camera": "cam-chart-macro",
+   "camera": "cam-chart-med",
    "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 46 begins",
    "stateOut": "beat 46 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "04-04",
    "start": 6120,
    "end": 6220,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 47 begins",
    "stateOut": "beat 47 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "04-05",
    "start": 6221,
    "end": 6359,
-   "camera": "cam-crystal-macro",
-   "set": "chart",
+   "camera": "cam-channel-med",
+   "set": "channel",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 48 begins",
    "stateOut": "beat 48 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "04-06",
    "start": 6360,
    "end": 6461,
-   "camera": "cam-chart",
+   "camera": "cam-chart-wide",
    "set": "chart",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 49 begins",
    "stateOut": "beat 49 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "04-07",
    "start": 6462,
    "end": 6585,
-   "camera": "cam-chart-macro",
-   "set": "chart",
+   "camera": "cam-interference-macro",
+   "set": "interference",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 50 begins",
    "stateOut": "beat 50 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -923,177 +923,177 @@
    "id": "04-08",
    "start": 6586,
    "end": 6689,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-mirror-wide",
+   "set": "mirror",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 51 begins",
    "stateOut": "beat 51 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "04-09",
    "start": 6690,
    "end": 6799,
-   "camera": "cam-rig-macro",
+   "camera": "cam-chart-med",
    "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 52 begins",
    "stateOut": "beat 52 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "04-10",
    "start": 6800,
    "end": 6902,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-timeline-wide",
+   "set": "timeline",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 53 begins",
    "stateOut": "beat 53 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "04-11",
    "start": 6903,
    "end": 7025,
-   "camera": "cam-chart-macro",
-   "set": "chart",
+   "camera": "cam-cloud-med",
+   "set": "cloud",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 54 begins",
    "stateOut": "beat 54 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "04-12",
    "start": 7026,
    "end": 7129,
-   "camera": "cam-chart",
+   "camera": "cam-chart-macro",
    "set": "chart",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 55 begins",
    "stateOut": "beat 55 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "04-13",
    "start": 7130,
    "end": 7235,
-   "camera": "cam-lattice-macro",
-   "set": "chart",
+   "camera": "cam-pair-med",
+   "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 56 begins",
    "stateOut": "beat 56 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "04-14",
    "start": 7236,
    "end": 7322,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-crystal-wide",
+   "set": "crystal",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 57 begins",
    "stateOut": "beat 57 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "04-15",
    "start": 7323,
    "end": 7418,
-   "camera": "cam-chart-macro",
+   "camera": "cam-chart-med",
    "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 58 begins",
    "stateOut": "beat 58 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "04-16",
    "start": 7419,
    "end": 7522,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 59 begins",
    "stateOut": "beat 59 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "05-01",
    "start": 7523,
    "end": 7633,
-   "camera": "cam-chart-macro",
-   "set": "rig",
+   "camera": "cam-crystal-macro",
+   "set": "crystal",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 60 begins",
    "stateOut": "beat 60 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -1105,107 +1105,107 @@
    "end": 7735,
    "camera": "cam-rig-wide",
    "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 61 begins",
    "stateOut": "beat 61 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "05-03",
    "start": 7736,
    "end": 7821,
-   "camera": "cam-rig-macro",
-   "set": "rig",
+   "camera": "cam-lattice-med",
+   "set": "lattice",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 62 begins",
    "stateOut": "beat 62 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "05-04",
    "start": 7822,
    "end": 7933,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-channel-wide",
+   "set": "channel",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 63 begins",
    "stateOut": "beat 63 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "05-05",
    "start": 7934,
    "end": 8022,
-   "camera": "cam-pair-macro",
+   "camera": "cam-rig-med",
    "set": "rig",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 64 begins",
    "stateOut": "beat 64 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "05-06",
    "start": 8023,
    "end": 8142,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-interference-macro",
+   "set": "interference",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 65 begins",
    "stateOut": "beat 65 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "05-07",
    "start": 8143,
    "end": 8244,
-   "camera": "cam-rig-macro",
-   "set": "rig",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 66 begins",
    "stateOut": "beat 66 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "05-08",
@@ -1213,53 +1213,53 @@
    "end": 8373,
    "camera": "cam-rig-wide",
    "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 67 begins",
    "stateOut": "beat 67 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "05-09",
    "start": 8374,
    "end": 8503,
-   "camera": "cam-crystal-macro",
-   "set": "rig",
+   "camera": "cam-timeline-med",
+   "set": "timeline",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 68 begins",
    "stateOut": "beat 68 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "05-10",
    "start": 8504,
    "end": 8645,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 69 begins",
    "stateOut": "beat 69 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "05-11",
@@ -1267,13 +1267,13 @@
    "end": 8751,
    "camera": "cam-rig-macro",
    "set": "rig",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 70 begins",
    "stateOut": "beat 70 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -1283,37 +1283,37 @@
    "id": "05-12",
    "start": 8752,
    "end": 8838,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-pair-wide",
+   "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 71 begins",
    "stateOut": "beat 71 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "05-13",
    "start": 8839,
    "end": 8921,
-   "camera": "cam-lattice-macro",
-   "set": "rig",
+   "camera": "cam-crystal-med",
+   "set": "crystal",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 72 begins",
    "stateOut": "beat 72 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "05-14",
@@ -1321,139 +1321,139 @@
    "end": 9015,
    "camera": "cam-rig-wide",
    "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 73 begins",
    "stateOut": "beat 73 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "05-15",
    "start": 9016,
    "end": 9118,
-   "camera": "cam-rig-macro",
-   "set": "rig",
+   "camera": "cam-lattice-med",
+   "set": "lattice",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 74 begins",
    "stateOut": "beat 74 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "06-01",
    "start": 9119,
    "end": 9233,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-cloud-macro",
+   "set": "cloud",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 75 begins",
    "stateOut": "beat 75 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "06-02",
    "start": 9234,
    "end": 9350,
-   "camera": "cam-channel-macro",
-   "set": "rig",
+   "camera": "cam-detector-med",
+   "set": "detector",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 76 begins",
    "stateOut": "beat 76 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "06-03",
    "start": 9351,
    "end": 9442,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-pair-wide",
+   "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 77 begins",
    "stateOut": "beat 77 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "06-04",
    "start": 9443,
    "end": 9560,
-   "camera": "cam-rig-macro",
-   "set": "rig",
+   "camera": "cam-crystal-med",
+   "set": "crystal",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 78 begins",
    "stateOut": "beat 78 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "06-05",
    "start": 9561,
    "end": 9650,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-detector-wide",
+   "set": "detector",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 79 begins",
    "stateOut": "beat 79 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "06-06",
    "start": 9651,
    "end": 9775,
-   "camera": "cam-chart-macro",
-   "set": "rig",
+   "camera": "cam-lattice-macro",
+   "set": "lattice",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 80 begins",
    "stateOut": "beat 80 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -1463,177 +1463,177 @@
    "id": "06-07",
    "start": 9776,
    "end": 9872,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-channel-wide",
+   "set": "channel",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 81 begins",
    "stateOut": "beat 81 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "06-08",
    "start": 9873,
    "end": 9967,
-   "camera": "cam-rig-macro",
-   "set": "rig",
+   "camera": "cam-detector-med",
+   "set": "detector",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 82 begins",
    "stateOut": "beat 82 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "06-09",
    "start": 9968,
    "end": 10052,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-interference-wide",
+   "set": "interference",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 83 begins",
    "stateOut": "beat 83 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "06-10",
    "start": 10053,
    "end": 10215,
-   "camera": "cam-pair-macro",
-   "set": "rig",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 84 begins",
    "stateOut": "beat 84 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "06-11",
    "start": 10216,
    "end": 10314,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-detector-macro",
+   "set": "detector",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 85 begins",
    "stateOut": "beat 85 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "06-12",
    "start": 10315,
    "end": 10425,
-   "camera": "cam-rig-macro",
-   "set": "rig",
+   "camera": "cam-timeline-med",
+   "set": "timeline",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 86 begins",
    "stateOut": "beat 86 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "06-13",
    "start": 10426,
    "end": 10511,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 87 begins",
    "stateOut": "beat 87 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "06-14",
    "start": 10512,
    "end": 10598,
-   "camera": "cam-crystal-macro",
-   "set": "rig",
+   "camera": "cam-detector-med",
+   "set": "detector",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 88 begins",
    "stateOut": "beat 88 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "06-15",
    "start": 10599,
    "end": 10682,
-   "camera": "cam-rig-wide",
-   "set": "rig",
+   "camera": "cam-pair-wide",
+   "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 89 begins",
    "stateOut": "beat 89 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "07-01",
    "start": 10683,
    "end": 10804,
-   "camera": "cam-chart-macro",
-   "set": "chart",
+   "camera": "cam-rig-macro",
+   "set": "rig",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 90 begins",
    "stateOut": "beat 90 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -1643,177 +1643,177 @@
    "id": "07-02",
    "start": 10805,
    "end": 10896,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-timeline-wide",
+   "set": "timeline",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 91 begins",
    "stateOut": "beat 91 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "07-03",
    "start": 10897,
    "end": 11007,
-   "camera": "cam-rig-macro",
-   "set": "chart",
+   "camera": "cam-channel-med",
+   "set": "channel",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 92 begins",
    "stateOut": "beat 92 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "07-04",
    "start": 11008,
    "end": 11091,
-   "camera": "cam-chart",
+   "camera": "cam-chart-wide",
    "set": "chart",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 93 begins",
    "stateOut": "beat 93 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "07-05",
    "start": 11092,
    "end": 11199,
-   "camera": "cam-chart-macro",
-   "set": "chart",
+   "camera": "cam-timeline-med",
+   "set": "timeline",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 94 begins",
    "stateOut": "beat 94 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "07-06",
    "start": 11200,
    "end": 11309,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-mirror-macro",
+   "set": "mirror",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 95 begins",
    "stateOut": "beat 95 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "07-07",
    "start": 11310,
    "end": 11469,
-   "camera": "cam-lattice-macro",
-   "set": "chart",
+   "camera": "cam-detector-med",
+   "set": "detector",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 96 begins",
    "stateOut": "beat 96 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "07-08",
    "start": 11470,
    "end": 11614,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-timeline-wide",
+   "set": "timeline",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 97 begins",
    "stateOut": "beat 97 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "07-09",
    "start": 11615,
    "end": 11711,
-   "camera": "cam-chart-macro",
-   "set": "chart",
+   "camera": "cam-cloud-med",
+   "set": "cloud",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 98 begins",
    "stateOut": "beat 98 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "07-10",
    "start": 11712,
    "end": 11809,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-split-wide",
+   "set": "split",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 99 begins",
    "stateOut": "beat 99 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "07-11",
    "start": 11810,
    "end": 11901,
-   "camera": "cam-channel-macro",
-   "set": "chart",
+   "camera": "cam-timeline-macro",
+   "set": "timeline",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 100 begins",
    "stateOut": "beat 100 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -1823,177 +1823,177 @@
    "id": "07-12",
    "start": 11902,
    "end": 12014,
-   "camera": "cam-chart",
-   "set": "chart",
+   "camera": "cam-crystal-wide",
+   "set": "crystal",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 101 begins",
    "stateOut": "beat 101 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "08-01",
    "start": 12015,
    "end": 12148,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-timeline-med",
+   "set": "timeline",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 102 begins",
    "stateOut": "beat 102 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "08-02",
    "start": 12149,
    "end": 12314,
-   "camera": "cam-channel",
+   "camera": "cam-channel-wide",
    "set": "channel",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 103 begins",
    "stateOut": "beat 103 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "08-03",
    "start": 12315,
    "end": 12416,
-   "camera": "cam-pair-macro",
-   "set": "channel",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 104 begins",
    "stateOut": "beat 104 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "08-04",
    "start": 12417,
    "end": 12537,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-pair-macro",
+   "set": "pair",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 105 begins",
    "stateOut": "beat 105 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "08-05",
    "start": 12538,
    "end": 12620,
-   "camera": "cam-channel-macro",
+   "camera": "cam-channel-med",
    "set": "channel",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 106 begins",
    "stateOut": "beat 106 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "08-06",
    "start": 12621,
    "end": 12718,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-rig-wide",
+   "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 107 begins",
    "stateOut": "beat 107 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "08-07",
    "start": 12719,
    "end": 12814,
-   "camera": "cam-crystal-macro",
-   "set": "channel",
+   "camera": "cam-lattice-med",
+   "set": "lattice",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 108 begins",
    "stateOut": "beat 108 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "08-08",
    "start": 12815,
    "end": 12918,
-   "camera": "cam-channel",
+   "camera": "cam-channel-wide",
    "set": "channel",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 109 begins",
    "stateOut": "beat 109 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "08-09",
    "start": 12919,
    "end": 13038,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-chart-macro",
+   "set": "chart",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 110 begins",
    "stateOut": "beat 110 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -2003,177 +2003,177 @@
    "id": "08-10",
    "start": 13039,
    "end": 13166,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-interference-wide",
+   "set": "interference",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 111 begins",
    "stateOut": "beat 111 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "08-11",
    "start": 13167,
    "end": 13284,
-   "camera": "cam-rig-macro",
+   "camera": "cam-channel-med",
    "set": "channel",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 112 begins",
    "stateOut": "beat 112 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "08-12",
    "start": 13285,
    "end": 13384,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-detector-wide",
+   "set": "detector",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 113 begins",
    "stateOut": "beat 113 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "08-13",
    "start": 13385,
    "end": 13505,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-timeline-med",
+   "set": "timeline",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 114 begins",
    "stateOut": "beat 114 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "08-14",
    "start": 13506,
    "end": 13604,
-   "camera": "cam-channel",
+   "camera": "cam-channel-macro",
    "set": "channel",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 115 begins",
    "stateOut": "beat 115 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "08-15",
    "start": 13605,
    "end": 13738,
-   "camera": "cam-lattice-macro",
-   "set": "channel",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 116 begins",
    "stateOut": "beat 116 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "09-01",
    "start": 13739,
    "end": 13843,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 117 begins",
    "stateOut": "beat 117 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "09-02",
    "start": 13844,
    "end": 13932,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 118 begins",
    "stateOut": "beat 118 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "09-03",
    "start": 13933,
    "end": 14045,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-chart-wide",
+   "set": "chart",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 119 begins",
    "stateOut": "beat 119 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "09-04",
    "start": 14046,
    "end": 14133,
-   "camera": "cam-chart-macro",
-   "set": "channel",
+   "camera": "cam-interference-macro",
+   "set": "interference",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 120 begins",
    "stateOut": "beat 120 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -2183,177 +2183,177 @@
    "id": "09-05",
    "start": 14134,
    "end": 14233,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-mirror-wide",
+   "set": "mirror",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 121 begins",
    "stateOut": "beat 121 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "09-06",
    "start": 14234,
    "end": 14344,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-detector-med",
+   "set": "detector",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 122 begins",
    "stateOut": "beat 122 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "09-07",
    "start": 14345,
    "end": 14455,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-timeline-wide",
+   "set": "timeline",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 123 begins",
    "stateOut": "beat 123 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "09-08",
    "start": 14456,
    "end": 14550,
-   "camera": "cam-pair-macro",
-   "set": "channel",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 124 begins",
    "stateOut": "beat 124 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "09-09",
    "start": 14551,
    "end": 14664,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-split-macro",
+   "set": "split",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 125 begins",
    "stateOut": "beat 125 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "09-10",
    "start": 14665,
    "end": 14768,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-pair-med",
+   "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 126 begins",
    "stateOut": "beat 126 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "09-11",
    "start": 14769,
    "end": 14881,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-mirror-wide",
+   "set": "mirror",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 127 begins",
    "stateOut": "beat 127 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "09-12",
    "start": 14882,
    "end": 15028,
-   "camera": "cam-crystal-macro",
-   "set": "channel",
+   "camera": "cam-rig-med",
+   "set": "rig",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 128 begins",
    "stateOut": "beat 128 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "09-13",
    "start": 15029,
    "end": 15145,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-lattice-wide",
+   "set": "lattice",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 129 begins",
    "stateOut": "beat 129 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "09-14",
    "start": 15146,
    "end": 15298,
-   "camera": "cam-channel-macro",
-   "set": "channel",
+   "camera": "cam-mirror-macro",
+   "set": "mirror",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 130 begins",
    "stateOut": "beat 130 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -2363,177 +2363,177 @@
    "id": "09-15",
    "start": 15299,
    "end": 15385,
-   "camera": "cam-channel",
-   "set": "channel",
+   "camera": "cam-chart-wide",
+   "set": "chart",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 131 begins",
    "stateOut": "beat 131 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "10-01",
    "start": 15386,
    "end": 15473,
-   "camera": "cam-rig-macro",
-   "set": "lattice",
+   "camera": "cam-interference-med",
+   "set": "interference",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 132 begins",
    "stateOut": "beat 132 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "10-02",
    "start": 15474,
    "end": 15556,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-mirror-wide",
+   "set": "mirror",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 133 begins",
    "stateOut": "beat 133 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "10-03",
    "start": 15557,
    "end": 15668,
-   "camera": "cam-lattice-macro",
-   "set": "lattice",
+   "camera": "cam-detector-med",
+   "set": "detector",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 134 begins",
    "stateOut": "beat 134 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "10-04",
    "start": 15669,
    "end": 15798,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-timeline-macro",
+   "set": "timeline",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 135 begins",
    "stateOut": "beat 135 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "10-05",
    "start": 15799,
    "end": 15881,
-   "camera": "cam-channel-macro",
-   "set": "lattice",
+   "camera": "cam-interference-med",
+   "set": "interference",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 136 begins",
    "stateOut": "beat 136 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "10-06",
    "start": 15882,
    "end": 15964,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 137 begins",
    "stateOut": "beat 137 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "10-07",
    "start": 15965,
    "end": 16104,
-   "camera": "cam-lattice-macro",
-   "set": "lattice",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 138 begins",
    "stateOut": "beat 138 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "10-08",
    "start": 16105,
    "end": 16190,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-interference-wide",
+   "set": "interference",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 139 begins",
    "stateOut": "beat 139 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "10-09",
    "start": 16191,
    "end": 16313,
-   "camera": "cam-chart-macro",
-   "set": "lattice",
+   "camera": "cam-crystal-macro",
+   "set": "crystal",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 140 begins",
    "stateOut": "beat 140 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -2543,163 +2543,163 @@
    "id": "10-10",
    "start": 16314,
    "end": 16420,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-rig-wide",
+   "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 141 begins",
    "stateOut": "beat 141 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "10-11",
    "start": 16421,
    "end": 16553,
-   "camera": "cam-lattice-macro",
-   "set": "lattice",
+   "camera": "cam-interference-med",
+   "set": "interference",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 142 begins",
    "stateOut": "beat 142 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "10-12",
    "start": 16554,
    "end": 16644,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-channel-wide",
+   "set": "channel",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 143 begins",
    "stateOut": "beat 143 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "10-13",
    "start": 16645,
    "end": 16740,
-   "camera": "cam-pair-macro",
-   "set": "lattice",
+   "camera": "cam-chart-med",
+   "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 144 begins",
    "stateOut": "beat 144 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "10-14",
    "start": 16741,
    "end": 16837,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-interference-macro",
+   "set": "interference",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 145 begins",
    "stateOut": "beat 145 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "10-15",
    "start": 16838,
    "end": 16920,
-   "camera": "cam-lattice-macro",
-   "set": "lattice",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 146 begins",
    "stateOut": "beat 146 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "11-01",
    "start": 16921,
    "end": 17037,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-pair-wide",
+   "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 147 begins",
    "stateOut": "beat 147 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "11-02",
    "start": 17038,
    "end": 17120,
-   "camera": "cam-crystal-macro",
-   "set": "lattice",
+   "camera": "cam-cloud-med",
+   "set": "cloud",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 148 begins",
    "stateOut": "beat 148 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "11-03",
    "start": 17121,
    "end": 17223,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-rig-wide",
+   "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 149 begins",
    "stateOut": "beat 149 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "11-04",
@@ -2707,13 +2707,13 @@
    "end": 17306,
    "camera": "cam-lattice-macro",
    "set": "lattice",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 150 begins",
    "stateOut": "beat 150 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -2723,177 +2723,177 @@
    "id": "11-05",
    "start": 17307,
    "end": 17393,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 151 begins",
    "stateOut": "beat 151 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "11-06",
    "start": 17394,
    "end": 17507,
-   "camera": "cam-rig-macro",
-   "set": "lattice",
+   "camera": "cam-chart-med",
+   "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 152 begins",
    "stateOut": "beat 152 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "11-07",
    "start": 17508,
    "end": 17591,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-interference-wide",
+   "set": "interference",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 153 begins",
    "stateOut": "beat 153 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "11-08",
    "start": 17592,
    "end": 17683,
-   "camera": "cam-lattice-macro",
-   "set": "lattice",
+   "camera": "cam-cloud-med",
+   "set": "cloud",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 154 begins",
    "stateOut": "beat 154 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "11-09",
    "start": 17684,
    "end": 17766,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-detector-macro",
+   "set": "detector",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 155 begins",
    "stateOut": "beat 155 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "11-10",
    "start": 17767,
    "end": 17870,
-   "camera": "cam-channel-macro",
-   "set": "lattice",
+   "camera": "cam-timeline-med",
+   "set": "timeline",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 156 begins",
    "stateOut": "beat 156 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "11-11",
    "start": 17871,
    "end": 17997,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 157 begins",
    "stateOut": "beat 157 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "11-12",
    "start": 17998,
    "end": 18104,
-   "camera": "cam-lattice-macro",
-   "set": "lattice",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 158 begins",
    "stateOut": "beat 158 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "11-13",
    "start": 18105,
    "end": 18216,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-pair-wide",
+   "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 159 begins",
    "stateOut": "beat 159 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "11-14",
    "start": 18217,
    "end": 18320,
-   "camera": "cam-chart-macro",
-   "set": "lattice",
+   "camera": "cam-cloud-macro",
+   "set": "cloud",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 160 begins",
    "stateOut": "beat 160 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -2903,37 +2903,37 @@
    "id": "11-15",
    "start": 18321,
    "end": 18420,
-   "camera": "cam-lattice",
-   "set": "lattice",
+   "camera": "cam-rig-wide",
+   "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 161 begins",
    "stateOut": "beat 161 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "12-01",
    "start": 18421,
    "end": 18520,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-chart-med",
+   "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 162 begins",
    "stateOut": "beat 162 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "12-02",
@@ -2941,107 +2941,107 @@
    "end": 18616,
    "camera": "cam-pair-wide",
    "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 163 begins",
    "stateOut": "beat 163 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "12-03",
    "start": 18617,
    "end": 18715,
-   "camera": "cam-crystal-macro",
-   "set": "pair",
+   "camera": "cam-mirror-med",
+   "set": "mirror",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 164 begins",
    "stateOut": "beat 164 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "12-04",
    "start": 18716,
    "end": 18803,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-detector-macro",
+   "set": "detector",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 165 begins",
    "stateOut": "beat 165 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   },
   {
    "id": "12-05",
    "start": 18804,
    "end": 18886,
-   "camera": "cam-pair-macro",
+   "camera": "cam-pair-med",
    "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 166 begins",
    "stateOut": "beat 166 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-right@0.9",
+   "cameraOut": "orbit-right@0.9"
   },
   {
    "id": "12-06",
    "start": 18887,
    "end": 18969,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-cloud-wide",
+   "set": "cloud",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 167 begins",
    "stateOut": "beat 167 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-down"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-down@0.5",
+   "cameraOut": "crane-down@0.5"
   },
   {
    "id": "12-07",
    "start": 18970,
    "end": 19064,
-   "camera": "cam-rig-macro",
-   "set": "pair",
+   "camera": "cam-split-med",
+   "set": "split",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 168 begins",
    "stateOut": "beat 168 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-left@0.6",
+   "cameraOut": "drift-left@0.6"
   },
   {
    "id": "12-08",
@@ -3049,31 +3049,31 @@
    "end": 19168,
    "camera": "cam-pair-wide",
    "set": "pair",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 169 begins",
    "stateOut": "beat 169 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "roll-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "roll-left@0.5",
+   "cameraOut": "roll-left@0.5"
   },
   {
    "id": "12-09",
    "start": 19169,
    "end": 19266,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-crystal-macro",
+   "set": "crystal",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 170 begins",
    "stateOut": "beat 170 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
    "cameraIn": "push-in@1.0",
@@ -3083,91 +3083,91 @@
    "id": "12-10",
    "start": 19267,
    "end": 19367,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-rig-wide",
+   "set": "rig",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 171 begins",
    "stateOut": "beat 171 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "push-in"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "push-in@0.7",
+   "cameraOut": "push-in@0.7"
   },
   {
    "id": "12-11",
    "start": 19368,
    "end": 19478,
-   "camera": "cam-lattice-macro",
+   "camera": "cam-pair-med",
    "set": "pair",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 172 begins",
    "stateOut": "beat 172 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "orbit-left"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "orbit-left@0.8",
+   "cameraOut": "orbit-left@0.8"
   },
   {
    "id": "12-12",
    "start": 19479,
    "end": 19561,
-   "camera": "cam-pair-wide",
-   "set": "pair",
+   "camera": "cam-channel-wide",
+   "set": "channel",
+   "rig": "wide",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 173 begins",
    "stateOut": "beat 173 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "crane-up"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "crane-up@0.6",
+   "cameraOut": "crane-up@0.6"
   },
   {
    "id": "12-13",
    "start": 19562,
    "end": 19644,
-   "camera": "cam-pair-macro",
-   "set": "pair",
+   "camera": "cam-chart-med",
+   "set": "chart",
+   "rig": "med",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 174 begins",
    "stateOut": "beat 174 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "drift-right"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "drift-right@0.7",
+   "cameraOut": "drift-right@0.7"
   },
   {
    "id": "12-14",
    "start": 19645,
    "end": 19749,
-   "camera": "cam-pair-wide",
+   "camera": "cam-pair-macro",
    "set": "pair",
+   "rig": "macro",
    "sim": "none",
    "character": "none",
    "stateIn": "beat 175 begins",
    "stateOut": "beat 175 lands",
    "motion": [
-    "camera drift",
-    "loop animation"
+    "pull-out"
    ],
    "samples": 8,
-   "cameraIn": "push-in@1.0",
-   "cameraOut": "push-in@1.0"
+   "cameraIn": "pull-out@0.6",
+   "cameraOut": "pull-out@0.6"
   }
  ]
 }
