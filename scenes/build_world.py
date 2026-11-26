@@ -95,6 +95,23 @@ def mesh(kind, name, loc, scale=(1, 1, 1), material=None, rot=(0, 0, 0), parent=
     return ob
 
 
+
+def fcurves_of(action):
+    """F-curves from an action, on Blender 4.x and 5.x.
+
+    Blender 4.4+ moved animation onto layered actions, so `action.fcurves` raises
+    AttributeError on 5.0 - which silently killed every shard before a frame was written.
+    """
+    try:
+        return list(action.fcurves)
+    except AttributeError:
+        curves = []
+        for layer in getattr(action, "layers", []) or []:
+            for strip in getattr(layer, "strips", []) or []:
+                for bag in getattr(strip, "channelbags", []) or []:
+                    curves.extend(getattr(bag, "fcurves", []) or [])
+        return curves
+
 def key_rotate(ob, turns=1.0, axis=2, phase=0.0):
     """One full revolution across the film, linear, so it never stalls at a cut."""
     ob.rotation_mode = "XYZ"
@@ -103,7 +120,7 @@ def key_rotate(ob, turns=1.0, axis=2, phase=0.0):
     e[axis] = phase + turns * 2 * math.pi
     ob.rotation_euler = e
     ob.keyframe_insert("rotation_euler", frame=a.frames - 1)
-    for fc in ob.animation_data.action.fcurves:
+    for fc in fcurves_of(ob.animation_data.action):
         for kp in fc.keyframe_points:
             kp.interpolation = "LINEAR"
 
@@ -115,7 +132,7 @@ def key_pulse(ob, lo=0.85, hi=1.15, period=48, phase=0):
         s = hi if t else lo
         ob.scale = tuple(v * s for v in ob.get("base_scale", ob.scale))
         ob.keyframe_insert("scale", frame=f)
-    for fc in ob.animation_data.action.fcurves:
+    for fc in fcurves_of(ob.animation_data.action):
         for kp in fc.keyframe_points:
             kp.interpolation = "BEZIER"
 
@@ -240,7 +257,7 @@ for f in range(0, a.frames, 24):
     t = (f % 96) / 96.0
     photon.location = O + Vector((-10 + 20 * t, 0, 0))
     photon.keyframe_insert("location", frame=f)
-for fc in photon.animation_data.action.fcurves:
+for fc in fcurves_of(photon.animation_data.action):
     for kp in fc.keyframe_points:
         kp.interpolation = "LINEAR"
 
@@ -280,7 +297,7 @@ for f in range(0, a.frames, 30):
     t = (f % 120) / 120.0
     pulse.location = O + Vector((-9 + 18 * t, 0, -0.4))
     pulse.keyframe_insert("location", frame=f)
-for fc in pulse.animation_data.action.fcurves:
+for fc in fcurves_of(pulse.animation_data.action):
     for kp in fc.keyframe_points:
         kp.interpolation = "LINEAR"
 

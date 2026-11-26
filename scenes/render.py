@@ -31,6 +31,23 @@ if cam is None:
 scene.camera = cam
 
 
+
+def fcurves_of(action):
+    """F-curves from an action, on Blender 4.x and 5.x.
+
+    Blender 4.4+ moved animation onto layered actions, so `action.fcurves` raises
+    AttributeError on 5.0 - which silently killed every shard before a frame was written.
+    """
+    try:
+        return list(action.fcurves)
+    except AttributeError:
+        curves = []
+        for layer in getattr(action, "layers", []) or []:
+            for strip in getattr(layer, "strips", []) or []:
+                for bag in getattr(strip, "channelbags", []) or []:
+                    curves.extend(getattr(bag, "fcurves", []) or [])
+        return curves
+
 def apply_move(ob, move, frames):
     """Key the camera from where it is to where the move takes it, across this shot only."""
     name, _, strength = move.partition("@")
@@ -86,7 +103,7 @@ def apply_move(ob, move, frames):
     ob.keyframe_insert("location", frame=a.end)
     ob.keyframe_insert("rotation_euler", frame=a.end)
     if ob.animation_data and ob.animation_data.action:
-        for fc in ob.animation_data.action.fcurves:
+        for fc in fcurves_of(ob.animation_data.action):
             for kp in fc.keyframe_points:
                 kp.interpolation = "LINEAR"
     ob.location = base_loc

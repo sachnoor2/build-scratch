@@ -55,14 +55,19 @@ jobs:
       - name: Blender
         run: sudo apt-get update && sudo apt-get install -y blender
       - name: Build world
-        run: blender -b -P scenes/build_world.py -- --out scenes/world.blend
+        run: |
+          blender -b -P scenes/build_world.py -- --out scenes/world.blend || { echo "world build FAILED"; exit 1; }
+          test -s scenes/world.blend || { echo "no world.blend produced"; exit 1; }
+          blender -b scenes/world.blend --python-expr "import bpy;print('blender', bpy.app.version_string)" 2>&1 | grep -i blender
       # Measure, never guess. plan_shards sizes every shard to ~60 minutes from this number,
       # which is what keeps each job far inside GitHub's 6-hour limit.
       - name: Benchmark seconds per frame
         run: |
           s=$(date +%s)
           blender -b scenes/world.blend -P scenes/render.py -- \
-            --camera cam-pair-wide --start 0 --end 5 --out public/out --samples 8 > /dev/null 2>&1
+            --camera cam-pair-wide --start 0 --end 5 --out public/out --samples 8 > /tmp/bench.log 2>&1 \
+            || { echo "benchmark render FAILED - refusing to size shards from a crashed run"; tail -20 /tmp/bench.log; exit 1; }
+          test -f public/out/frame_000000.png || { echo "benchmark wrote no frames"; exit 1; }
           e=$(date +%s)
           python3 scripts/record_bench.py --start "$s" --end "$e" --frames 6
       - id: plan
@@ -86,7 +91,10 @@ jobs:
       - name: Blender and ffmpeg
         run: sudo apt-get update && sudo apt-get install -y blender ffmpeg
       - name: Build world
-        run: blender -b -P scenes/build_world.py -- --out scenes/world.blend
+        run: |
+          blender -b -P scenes/build_world.py -- --out scenes/world.blend || { echo "world build FAILED"; exit 1; }
+          test -s scenes/world.blend || { echo "no world.blend produced"; exit 1; }
+          blender -b scenes/world.blend --python-expr "import bpy;print('blender', bpy.app.version_string)" 2>&1 | grep -i blender
       - name: Render shard
         run: python3 scripts/render_shard.py --start ${{ matrix.shard.start }} --end ${{ matrix.shard.end }}
       # Frames travel as ONE mp4 per shard. 19,700 PNGs is ~10 GB against a 500 MB quota;
